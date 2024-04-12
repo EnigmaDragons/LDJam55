@@ -25,7 +25,6 @@
 
 ## Code Style Conventions
 
-- All editor fields should be private, camel-cased `[SerializeField] private Type name = default`
 - All properties should be Pascal-cased `public string Name { get; }`
 - All methods should be Pascal-cased `public void Execute()`
 - Don't use code regions
@@ -43,7 +42,7 @@
 ## Unity-isms
 
 - Every PreFab and ScriptableObject should have sensible defaults wired in
-- Don't include constructors in any `MonoBehavior` or `ScriptbleObject`
+- Don't include constructors in any `MonoBehavior` or `ScriptableObject`
 - If an object should be configurable from code, use a method `public void Init(...)` instead
 - There should never be any unused methods in code (such as Start/Update)
 - There should never be any Unity-generated comments in code
