@@ -8,20 +8,32 @@ public class AmbienceAboveBelowTrigger : MonoBehaviour
 {
 
     public EventReference ambienceEvent;
-    public EventReference musicEvent;
+    public EventReference musicUnderWaterEvent;
     EventInstance ambienceInstance;
+    EventInstance musicInstance;
+
+    private void Start()
+    {
+        ambienceInstance = RuntimeManager.CreateInstance(ambienceEvent);
+        ambienceInstance.start();
+
+        musicInstance = RuntimeManager.CreateInstance(musicUnderWaterEvent);
+        musicInstance.start();
+    }
 
     private void OnTriggerEnter(Collider other)
     {
-        if (CompareTag(other.tag))
+        if (other.CompareTag("Player"))
         {
-            ambienceInstance = RuntimeManager.CreateInstance(ambienceEvent);
-            ambienceInstance.start();
+            Debug.Log("player"); 
+            musicInstance = RuntimeManager.CreateInstance(musicUnderWaterEvent);
+            musicInstance.start();
         }
     }
 
     private void OnDisable()
     {
         ambienceInstance.release();
+        musicInstance.release();
     }
 }
