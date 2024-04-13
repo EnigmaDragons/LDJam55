@@ -64,7 +64,8 @@ public class SummonUI : MonoBehaviour
 
     private void OnEnable()
     {
-        SetActiveState(_summon.ManaCost <= CurrentGameState.GameState.Mana);
+        var manaCost = _summon != null ? _summon.ManaCost : 10;
+        SetActiveState(manaCost <= CurrentGameState.GameState.Mana);
         _keyIndex = 0;
     }
 
