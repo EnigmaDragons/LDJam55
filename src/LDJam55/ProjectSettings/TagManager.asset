@@ -9,6 +9,7 @@ TagManager:
   - Loader
   - AppManagers
   - Door
+  - Water
   layers:
   - Default
   - TransparentFX
