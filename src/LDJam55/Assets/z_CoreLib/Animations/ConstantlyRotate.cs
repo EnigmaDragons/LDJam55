@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class ConstantlyRotate : MonoBehaviour
 {
-    [SerializeField] private Vector3 rotationSpeed = new Vector3(1, 1, 1);
+    [SerializeField] private Vector3 rotationSpeed = new Vector3(0, 80, 0);
 
     private void FixedUpdate()
     {
