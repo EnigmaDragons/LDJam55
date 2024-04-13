@@ -58,11 +58,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 105043143214374525, guid: 9599dfb68106fa34a9193126b8e54a1c,
+        type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 5bf69faebbf169a408aafab0130ccfff, type: 2}
     - target: {fileID: 919132149155446097, guid: 9599dfb68106fa34a9193126b8e54a1c,
         type: 3}
       propertyPath: m_Name
       value: Decoractive_Crystal
       objectReference: {fileID: 0}
+    - target: {fileID: 8284820123739030887, guid: 9599dfb68106fa34a9193126b8e54a1c,
+        type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 5bf69faebbf169a408aafab0130ccfff, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

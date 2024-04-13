@@ -1,8 +1,9 @@
 public class ShowInfoSignDialog {
 
-    public string Text;
+    public string text;
+
     public ShowInfoSignDialog(string text){
-        Text = text;
+        this.text = text;
     }
 
 }
