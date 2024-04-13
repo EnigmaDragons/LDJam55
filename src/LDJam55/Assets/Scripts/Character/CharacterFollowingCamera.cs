@@ -5,21 +5,30 @@ namespace Character
 {
     public class CharacterFollowingCamera : MonoBehaviour
     {
+        [SerializeField] private float cameraYOffset = 15f;
         [SerializeField] private float xMin;
         [SerializeField] private float xMax;
         [SerializeField] private float zMin;
         [SerializeField] private float zMax;
 
         private GameObject player;
-        
-        private void OnEnable()
+
+        private void Start()
         {
-            player = GameObject.FindWithTag("Player");
+            transform.position = new Vector3(player.transform.position.x, cameraYOffset,
+                player.transform.position.z);
         }
 
         public void Update()
         {
-            transform.position = new Vector3(Math.Clamp(player.transform.position.x, xMin, xMax), transform.position.y, Math.Clamp(player.transform.position.z, zMin, zMax));
+            transform.position = new Vector3(
+                Math.Clamp(player.transform.position.x, xMin, xMax), 
+                transform.position.y, Math.Clamp(player.transform.position.z, zMin, zMax));
+        }
+
+        private void OnEnable()
+        {
+            player = GameObject.FindWithTag("Player");
         }
     }
 }
