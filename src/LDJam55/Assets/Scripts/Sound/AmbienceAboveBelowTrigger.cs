@@ -7,33 +7,47 @@ using FMODUnity;
 public class AmbienceAboveBelowTrigger : MonoBehaviour
 {
 
-    public EventReference ambienceEvent;
-    public EventReference musicUnderWaterEvent;
+    public EventReference ambienceRef;
+    public EventReference musicUnderWaterRef;
+    public EventReference musicTempleRef;
     EventInstance ambienceInstance;
-    EventInstance musicInstance;
+    EventInstance musicUnderWaterInstance;
+    EventInstance musicTempleInstance; 
 
     private void Start()
     {
-        ambienceInstance = RuntimeManager.CreateInstance(ambienceEvent);
+        ambienceInstance = RuntimeManager.CreateInstance(ambienceRef);
         ambienceInstance.start();
 
-        musicInstance = RuntimeManager.CreateInstance(musicUnderWaterEvent);
-        musicInstance.start();
+        musicTempleInstance = RuntimeManager.CreateInstance(musicTempleRef);
+        musicTempleInstance.start();
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Player"))
+        Debug.Log("player one"); 
+        if (other.gameObject.tag == "Player")
         {
-            Debug.Log("player"); 
-            musicInstance = RuntimeManager.CreateInstance(musicUnderWaterEvent);
-            musicInstance.start();
+            Debug.Log("player");
+            musicUnderWaterInstance = RuntimeManager.CreateInstance(musicUnderWaterRef);
+            musicUnderWaterInstance.start();
         }
     }
 
-    private void OnDisable()
+    private void OnTriggerExit(Collider other) 
+    {
+        if (other.gameObject.tag == "Player")
+        {
+            Debug.Log("player");
+            musicTempleInstance = RuntimeManager.CreateInstance(musicTempleRef);
+            musicTempleInstance.start();
+        }
+    }
+
+   private void OnDisable()
     {
         ambienceInstance.release();
-        musicInstance.release();
+        musicUnderWaterInstance.release();
+        musicTempleInstance.release();
     }
 }
