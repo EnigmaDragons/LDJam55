@@ -131,6 +131,7 @@
 		<relationship name="effects">
 			<destination>{f2c7d6e5-8444-47c5-ba8c-760eab35cf2a}</destination>
 			<destination>{2073565c-bb7a-4050-abec-428bf3c95e2f}</destination>
+			<destination>{69bb3b4a-c774-4a8d-a496-788de08dc349}</destination>
 			<destination>{38045437-6f24-44a3-81a1-a357ed341631}</destination>
 		</relationship>
 	</object>
@@ -147,7 +148,10 @@
 			<value>96</value>
 		</property>
 		<property name="level">
-			<value>-8</value>
+			<value>-10.5</value>
+		</property>
+		<property name="dryLevel">
+			<value>-9</value>
 		</property>
 	</object>
 	<object class="FlangerEffect" id="{2073565c-bb7a-4050-abec-428bf3c95e2f}">
@@ -155,7 +159,18 @@
 			<value>11</value>
 		</property>
 		<property name="delay">
-			<value>0.0820000023</value>
+			<value>0.0720000044</value>
+		</property>
+		<property name="mix">
+			<value>41</value>
+		</property>
+	</object>
+	<object class="TremoloEffect" id="{69bb3b4a-c774-4a8d-a496-788de08dc349}">
+		<property name="frequency">
+			<value>20</value>
+		</property>
+		<property name="depth">
+			<value>0.48999998</value>
 		</property>
 	</object>
 	<object class="MixerBusFader" id="{38045437-6f24-44a3-81a1-a357ed341631}" />
