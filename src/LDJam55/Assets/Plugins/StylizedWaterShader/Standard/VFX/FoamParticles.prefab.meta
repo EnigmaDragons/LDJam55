@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 93ffb0797dd32df4388e9fc3fc3a1580
+timeCreated: 1490285581
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 87062
+  packageName: Definitive Stylized Water
+  packageVersion: 2
+  assetPath: Assets/StylizedWaterShader/Standard/VFX/FoamParticles.prefab
+  uploadId: 446866

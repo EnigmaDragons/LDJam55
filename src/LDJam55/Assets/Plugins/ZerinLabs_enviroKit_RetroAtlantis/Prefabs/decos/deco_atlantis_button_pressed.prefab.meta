@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: f6927a7bb2e10034c9c3392e312ef91e
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 197038
+  packageName: 'Retro Dungeons : Modular Atlantis'
+  packageVersion: 2.2
+  assetPath: Assets/ZerinLabs_enviroKit_RetroAtlantis/Prefabs/decos/deco_atlantis_button_pressed.prefab
+  uploadId: 625695

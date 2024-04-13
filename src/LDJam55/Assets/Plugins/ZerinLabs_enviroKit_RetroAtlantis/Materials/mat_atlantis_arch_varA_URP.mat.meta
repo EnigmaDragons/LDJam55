@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 7bb6c5abdac1d3a4cb124e4627e7cb78
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 197038
+  packageName: 'Retro Dungeons : Modular Atlantis'
+  packageVersion: 2.2
+  assetPath: Assets/ZerinLabs_enviroKit_RetroAtlantis/Materials/mat_atlantis_arch_varA_URP.mat
+  uploadId: 625695

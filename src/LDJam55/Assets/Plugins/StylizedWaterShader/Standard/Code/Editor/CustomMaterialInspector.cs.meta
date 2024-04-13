@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 926d475eb345425429047202a35195b5
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 87062
+  packageName: Definitive Stylized Water
+  packageVersion: 2
+  assetPath: Assets/StylizedWaterShader/Standard/Code/Editor/CustomMaterialInspector.cs
+  uploadId: 446866

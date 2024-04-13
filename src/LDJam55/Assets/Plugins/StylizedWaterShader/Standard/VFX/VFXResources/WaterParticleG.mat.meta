@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 207c3e861a54f4c4ea3d643e1421af36
+timeCreated: 1484851086
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 87062
+  packageName: Definitive Stylized Water
+  packageVersion: 2
+  assetPath: Assets/StylizedWaterShader/Standard/VFX/VFXResources/WaterParticleG.mat
+  uploadId: 446866

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 6932d0db0b693e041aa3a05fac649415
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 197038
+  packageName: 'Retro Dungeons : Modular Atlantis'
+  packageVersion: 2.2
+  assetPath: Assets/ZerinLabs_enviroKit_RetroAtlantis/Animation/pivotTimeline.playable
+  uploadId: 625695

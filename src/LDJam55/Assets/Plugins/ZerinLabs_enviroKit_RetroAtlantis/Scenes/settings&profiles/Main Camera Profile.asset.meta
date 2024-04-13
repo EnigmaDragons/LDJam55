@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 3a0a0434a9edb5d479e9a408b43013bb
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 197038
+  packageName: 'Retro Dungeons : Modular Atlantis'
+  packageVersion: 2.2
+  assetPath: Assets/ZerinLabs_enviroKit_RetroAtlantis/Scenes/settings&profiles/Main
+    Camera Profile.asset
+  uploadId: 625695
