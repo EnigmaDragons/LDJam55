@@ -11,5 +11,6 @@ public sealed class GameState
     // All enums used in this class should have specified integer values.
     // This is necessary to preserve backwards save compatibility.
 
-    public float currentGameTime;
+    public float CurrentGameTime;
+    public int Mana;
 }
