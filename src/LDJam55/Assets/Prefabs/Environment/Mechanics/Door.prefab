@@ -10,9 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 4825326441237645215}
   - component: {fileID: 2021242608083196252}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Door
-  m_TagString: Untagged
+  m_TagString: Door
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -127,11 +127,48 @@ PrefabInstance:
       propertyPath: m_Name
       value: arch_atlantis_wall_straightA_varA
       objectReference: {fileID: 0}
+    - target: {fileID: 8782091912424230379, guid: b5fd168982b1561409e500ce671a4751,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8782091912424230379, guid: b5fd168982b1561409e500ce671a4751,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5274542989188752156}
   m_SourcePrefab: {fileID: 100100000, guid: b5fd168982b1561409e500ce671a4751, type: 3}
+--- !u!1 &1230636992663491003 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8782091912424230379, guid: b5fd168982b1561409e500ce671a4751,
+    type: 3}
+  m_PrefabInstance: {fileID: 7562770569549651024}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &5274542989188752156
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1230636992663491003}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -6344261926359567579, guid: 3f0a226725a74cd40b48b56f3ccd3796, type: 3}
 --- !u!4 &1900459117246008065 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8262859277531666257, guid: b5fd168982b1561409e500ce671a4751,
