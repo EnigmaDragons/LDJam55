@@ -3,10 +3,10 @@ using UnityEngine;
 
 public static class CurrentGameState
 {
-    [SerializeField] private static GameState gameState;
+    [SerializeField] public static GameState GameState;
 
-    public static void Init() => gameState = new GameState();
-    public static void Init(GameState initialState) => gameState = initialState;
+    public static void Init() => GameState = new GameState();
+    public static void Init(GameState initialState) => GameState = initialState;
     public static void Subscribe(Action<GameStateChanged> onChange, object owner) => Message.Subscribe(onChange, owner);
     public static void Unsubscribe(object owner) => Message.Unsubscribe(owner);
     
@@ -14,14 +14,14 @@ public static class CurrentGameState
     {
         UpdateState(_ =>
         {
-            apply(gameState);
-            return gameState;
+            apply(GameState);
+            return GameState;
         });
     }
     
     public static void UpdateState(Func<GameState, GameState> apply)
     {
-        gameState = apply(gameState);
-        Message.Publish(new GameStateChanged(gameState));
+        GameState = apply(GameState);
+        Message.Publish(new GameStateChanged(GameState));
     }
 }
