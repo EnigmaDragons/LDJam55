@@ -149,5 +149,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f47f9abc1446be8a8e17d0277f59881, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultTimeInSeconds: 100
+  defaultTimeInSeconds: 90
   clockText: {fileID: 6848308673117820055}

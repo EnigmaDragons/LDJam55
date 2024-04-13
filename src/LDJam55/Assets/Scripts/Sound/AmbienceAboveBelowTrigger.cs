@@ -43,6 +43,7 @@ public class AmbienceAboveBelowTrigger : MonoBehaviour
         {
             musicTempleInstance = RuntimeManager.CreateInstance(musicTempleRef);
             musicTempleInstance.start();
+            musicUnderWaterInstance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
             ambienceInstance.setParameterByName("AboveBelowWaterVol", 0);
         }
     }
