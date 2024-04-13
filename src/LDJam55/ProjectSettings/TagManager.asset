@@ -9,6 +9,7 @@ TagManager:
   - Loader
   - AppManagers
   - Door
+  - Flammable
   - Water
   layers:
   - Default

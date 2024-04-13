@@ -9,7 +9,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6805667336067049853}
-  - component: {fileID: 5428231279025971407}
   m_Layer: 0
   m_Name: Brazier
   m_TagString: Untagged
@@ -34,36 +33,6 @@ Transform:
   - {fileID: 6684304657525964644}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &5428231279025971407
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7927948654153011600}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 529c80c2c01b4393b8dbdcd7dcf70dcc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isTriggered: 0
-  canBeUntriggered: 1
-  startsTriggered: 0
-  onTrigger:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 8130851738336360034}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
 --- !u!1 &8130851738336360034
 GameObject:
   m_ObjectHideFlags: 0
@@ -234,10 +203,19 @@ PrefabInstance:
       propertyPath: m_Name
       value: deco_atlantis_fountain
       objectReference: {fileID: 0}
+    - target: {fileID: 8045461507557318945, guid: 2d24287ea01d41746a8a109ccc7efa2b,
+        type: 3}
+      propertyPath: m_TagString
+      value: Flammable
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8045461507557318945, guid: 2d24287ea01d41746a8a109ccc7efa2b,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3302666735473779158}
   m_SourcePrefab: {fileID: 100100000, guid: 2d24287ea01d41746a8a109ccc7efa2b, type: 3}
 --- !u!4 &2703451138610538775 stripped
 Transform:
@@ -245,3 +223,39 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 4713155880935854732}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &3372992505798849453 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8045461507557318945, guid: 2d24287ea01d41746a8a109ccc7efa2b,
+    type: 3}
+  m_PrefabInstance: {fileID: 4713155880935854732}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &3302666735473779158
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3372992505798849453}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 529c80c2c01b4393b8dbdcd7dcf70dcc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isTriggered: 0
+  canBeUntriggered: 1
+  startsTriggered: 0
+  onTrigger:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8130851738336360034}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
