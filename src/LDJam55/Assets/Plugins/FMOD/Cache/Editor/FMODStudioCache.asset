@@ -15,10 +15,10 @@ MonoBehaviour:
   Path: ../FMOD_LD55/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638482622684179157
+  lastModified: 638485671634720963
   FileSizes:
   - Name: Desktop
-    Value: 1092
+    Value: 1096
   Exists: 1
 --- !u!114 &-8464556247854868311
 MonoBehaviour:
@@ -35,7 +35,7 @@ MonoBehaviour:
   Path: ../FMOD_LD55/Build/Desktop/SFX_Bank.bank
   Name: SFX_Bank
   StudioPath: bank:/SFX_Bank
-  lastModified: 638482625126995872
+  lastModified: 638485671635536748
   FileSizes:
   - Name: Desktop
     Value: 61600
@@ -75,7 +75,7 @@ MonoBehaviour:
   Path: ../FMOD_LD55/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638482622684109151
+  lastModified: 638485671634681130
   FileSizes:
   - Name: Desktop
     Value: 1632
@@ -120,13 +120,13 @@ MonoBehaviour:
   - {fileID: 1862621419450891083}
   - {fileID: -8464556247854868311}
   EditorEvents:
-  - {fileID: 5656243069393215075}
+  - {fileID: 4096526281205031736}
   EditorParameters: []
   MasterBanks:
   - {fileID: -4440883823525131375}
   StringsBanks:
   - {fileID: -8673037805795469943}
-  cacheTime: 638482625126995872
+  cacheTime: 638485671635536748
   cacheVersion: 131617
 --- !u!114 &1862621419450891083
 MonoBehaviour:
@@ -148,7 +148,7 @@ MonoBehaviour:
   - Name: Desktop
     Value: 494
   Exists: 1
---- !u!114 &5656243069393215075
+--- !u!114 &4096526281205031736
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -158,9 +158,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/TestEvent
+  m_Name: event:/SFX/TestEvent
   m_EditorClassIdentifier: 
-  Path: event:/TestEvent
+  Path: event:/SFX/TestEvent
   Guid:
     Data1: -1405774676
     Data2: 1100335583
