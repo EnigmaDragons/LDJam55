@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.02.00">
 	<object class="Event" id="{175eee62-bb12-4b9e-956b-9f9e2d40ba3c}">
 		<property name="name">
-			<value>SummonsSFX</value>
+			<value>SummonSFX</value>
 		</property>
 		<property name="outputFormat">
 			<value>2</value>

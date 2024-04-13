@@ -6,7 +6,7 @@ using FMOD.Studio;
 
 public static class PlayOneShot_Helper 
 {
-    public static void PlayOneShotWithParameters(string fmodEvent, Vector3 position, params (string name, float value)[] parameters)
+    public static void PlayOneShotWithParameters(EventReference fmodEvent, Vector3 position, params (string name, float value)[] parameters)
     {
         FMOD.Studio.EventInstance instance = FMODUnity.RuntimeManager.CreateInstance(fmodEvent);
 
