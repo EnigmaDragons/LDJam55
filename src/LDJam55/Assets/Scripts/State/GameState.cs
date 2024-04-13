@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 
 [Serializable]
 public sealed class GameState
@@ -13,4 +14,5 @@ public sealed class GameState
 
     public float CurrentGameTime;
     public int Mana;
+    public List<string> SummonNames = new();
 }

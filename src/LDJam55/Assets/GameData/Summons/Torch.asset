@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9912793f47fb7b4d893b8be85b683bf, type: 3}
+  m_Name: Torch
+  m_EditorClassIdentifier: 
+  summonName: Torch
+  keyCodes: 120100001101000011010000
+  icon: {fileID: 21300000, guid: 4e29bbe67f13f7a419b65dd6f60fd1a5, type: 3}
+  summonPrefab: {fileID: 7341300473993803242, guid: 3043305c9f2150548b118ff7327af050,
+    type: 3}
+  manaCost: 10
