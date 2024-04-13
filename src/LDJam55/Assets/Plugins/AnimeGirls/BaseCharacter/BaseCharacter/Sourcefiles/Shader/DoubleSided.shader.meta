@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 9566ab5898d15b44c83d8c8c7deb8865
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures: []
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 169595
+  packageName: Fairies - Anime Girl Characters
+  packageVersion: 1.0
+  assetPath: Assets/AnimeGirls/BaseCharacter/BaseCharacter/Sourcefiles/Shader/DoubleSided.shader
+  uploadId: 405093
