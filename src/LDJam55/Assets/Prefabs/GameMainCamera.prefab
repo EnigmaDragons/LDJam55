@@ -106,7 +106,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cameraYOffset: 17
-  xMin: 0
-  xMax: 10
-  zMin: 0
-  zMax: 30
+  xMin: -9999999
+  xMax: 9999999
+  zMin: -9999999
+  zMax: 9999999
