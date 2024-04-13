@@ -60,6 +60,7 @@ sysinfo.txt
 **/[Aa]ssets/Plugins/FMOD/Cache/Editor.meta
 **/.cache/**
 .unsaved/
+src/LDJam55/Assets/Plugins/FMOD/Cache/Editor/FMODStudioCache.asset.meta
 
 **/Assets/StreamingAssets/
 **/Assets/StreamingAssets/*
