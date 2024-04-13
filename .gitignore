@@ -60,6 +60,7 @@ sysinfo.txt
 **/[Aa]ssets/Plugins/FMOD/Cache/Editor.meta
 **/.cache/**
 .unsaved/
+src/LDJam55/Assets/Plugins/FMOD/Cache/Editor/FMODStudioCache.asset.meta
 
 **/Assets/StreamingAssets/
 **/Assets/StreamingAssets/*
@@ -76,3 +77,4 @@ fmod_editor.log
 src/LDJam55/.vscode/extensions.json
 src/LDJam55/.vscode/launch.json
 src/LDJam55/.vscode/settings.json
+src/LDJam55/fmod_editor.log
