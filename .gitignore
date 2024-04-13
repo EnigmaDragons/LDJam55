@@ -58,7 +58,7 @@ sysinfo.txt
 **/[Aa]ssets/**/FMODStudioCache.asset.meta
 **/[Aa]ssets/Plugins/FMOD/Cache.meta
 **/[Aa]ssets/Plugins/FMOD/Cache/Editor.meta
-.cache/
+**/.cache/**
 .unsaved/
 
 **/Assets/StreamingAssets/

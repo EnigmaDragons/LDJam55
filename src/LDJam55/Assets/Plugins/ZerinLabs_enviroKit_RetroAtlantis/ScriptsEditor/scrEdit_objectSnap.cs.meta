@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: c0d2fa9eccbe9d04a84155245d3f1d4d
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 197038
+  packageName: 'Retro Dungeons : Modular Atlantis'
+  packageVersion: 2.2
+  assetPath: Assets/ZerinLabs_enviroKit_RetroAtlantis/ScriptsEditor/scrEdit_objectSnap.cs
+  uploadId: 625695

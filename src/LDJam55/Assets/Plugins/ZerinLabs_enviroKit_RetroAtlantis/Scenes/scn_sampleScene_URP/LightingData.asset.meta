@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 3036f092689ffc140a336cdfdc47215d
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 112000000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 197038
+  packageName: 'Retro Dungeons : Modular Atlantis'
+  packageVersion: 2.2
+  assetPath: Assets/ZerinLabs_enviroKit_RetroAtlantis/Scenes/scn_sampleScene_URP/LightingData.asset
+  uploadId: 625695

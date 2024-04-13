@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: fd615791d5ca41247a2f355782cd4632
+timeCreated: 1493033953
+licenseType: Store
+ShaderImporter:
+  defaultTextures: []
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 87062
+  packageName: Definitive Stylized Water
+  packageVersion: 2
+  assetPath: Assets/StylizedWaterShader/Standard/VFX/VFXResources/VFXWater.shader
+  uploadId: 446866

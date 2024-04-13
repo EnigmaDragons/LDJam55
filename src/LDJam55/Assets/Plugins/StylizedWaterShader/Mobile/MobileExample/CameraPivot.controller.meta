@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 371ca0e02e9487c47b6d364512bc86a8
+timeCreated: 1497006456
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 9100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 87062
+  packageName: Definitive Stylized Water
+  packageVersion: 2
+  assetPath: Assets/StylizedWaterShader/Mobile/MobileExample/CameraPivot.controller
+  uploadId: 446866

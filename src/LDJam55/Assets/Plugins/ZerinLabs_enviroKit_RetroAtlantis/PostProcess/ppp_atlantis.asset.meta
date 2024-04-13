@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: ab96950bc16da764694602d64350beb5
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 197038
+  packageName: 'Retro Dungeons : Modular Atlantis'
+  packageVersion: 2.2
+  assetPath: Assets/ZerinLabs_enviroKit_RetroAtlantis/PostProcess/ppp_atlantis.asset
+  uploadId: 625695

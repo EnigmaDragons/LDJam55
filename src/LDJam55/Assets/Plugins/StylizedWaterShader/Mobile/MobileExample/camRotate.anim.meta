@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 6522457c516412843aa0c0acd04d7a46
+timeCreated: 1497006456
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 7400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 87062
+  packageName: Definitive Stylized Water
+  packageVersion: 2
+  assetPath: Assets/StylizedWaterShader/Mobile/MobileExample/camRotate.anim
+  uploadId: 446866
