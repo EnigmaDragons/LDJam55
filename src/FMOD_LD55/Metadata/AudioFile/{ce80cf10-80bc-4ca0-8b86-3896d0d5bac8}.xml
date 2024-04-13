@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{ce80cf10-80bc-4ca0-8b86-3896d0d5bac8}">
+		<property name="assetPath">
+			<value>Soundly Voice Designer, Tony.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>5.0534999999999997</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{df5182c8-be50-4e4a-913f-fc5f8a6ced71}</destination>
+		</relationship>
+	</object>
+</objects>

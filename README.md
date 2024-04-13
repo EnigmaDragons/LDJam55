@@ -19,19 +19,19 @@ Details on each are found below.
 
 ### Guides
 
-[Game Jam Guide](./guides/game-jam-guide.md)
-[Kanban Workflow Process](./guides/kanban-workflow-guide.md)
-[Kanban Board Setup](./guides/kanban-board-guide.md)
-[Unity Programming Guidelines](./guides/unity-design-guidelines.md)
+- [Game Jam Guide](./guides/game-jam-guide.md)
+- [Kanban Workflow Process](./guides/kanban-workflow-guide.md)
+- [Kanban Board Setup](./guides/kanban-board-guide.md)
+- [Unity Programming Guidelines](./guides/unity-design-guidelines.md)
 
 ----
 
 ### Kanban Board
 
-[Project Kanban Board](https://zube.io/enigmadragons/ldjam55/w/workspace-1/kanban)
+- [Project Kanban Board](https://zube.io/enigmadragons/ldjam55/w/workspace-1/kanban)
 
-[Kanban Workflow Process](./guides/kanban-workflow-guide.md)
-[Kanban Board Setup](./guides/kanban-board-guide.md)
+- [Kanban Workflow Process](./guides/kanban-workflow-guide.md)
+- [Kanban Board Setup](./guides/kanban-board-guide.md)
 
 ----
 
@@ -41,6 +41,7 @@ Software Requirements:
 - Git
 - Unity 2023 (Version: 2023.2.17f1)
 - Any C# IDE
+- FMOD Studio v.2.02.21 (Unity Verified)
 
 Setup:
 1. Clone this repository using git
@@ -50,6 +51,21 @@ Setup:
 5. In Unity Hub, click Open
 6. Browse and select `../repo/src/LDJam55`
 7. Click on Open
+
+FMOD: The Fmod studio project is in src/FMOD_LD55
+
+Creating an event and adding a sound in FMOD
+In the Browser add a 2D or 3D Timeline Event and name it
+Add sound in the start of the timeline
+Assign the Event to the relevant bank e.g., SFX, music, etc (right click on the event in the browser). 
+
+Build from the File menu or (F7)
+
+In Unity
+Add an FMOD Studio Event Emitter to a gameobject
+Set start and stop method (OnTrigger, etc)
+Add the event from the build (if the events aren't visible try refreshing the banks from the FMOD windows menu)
+Note that while built files are compressed FMOD Studio accepts any file format and higher res files can grow the FMOD session quickly. Therefore 48kHz/16 or 24 bit files are recommended.
 
 ----
 
