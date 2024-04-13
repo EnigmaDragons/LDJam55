@@ -22,7 +22,7 @@ namespace Character
         public void Update()
         {
             transform.position = new Vector3(
-                Math.Clamp(player.transform.position.x, xMin, xMax), 
+                Math.Clamp(player.transform.position.x, xMin, xMax),
                 transform.position.y, Math.Clamp(player.transform.position.z, zMin, zMax));
         }
 
