@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: ec1683be71e02f548b9023d92d51ac31
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+AssetOrigin:
+  serializedVersion: 1
+  productId: 4010
+  packageName: Cartoon FX Remaster
+  packageVersion: R 1.3.1
+  assetPath: Assets/JMO Assets/Cartoon FX (legacy)/Spawn System/CFX_SpawnSystem.cs
+  uploadId: 623840
