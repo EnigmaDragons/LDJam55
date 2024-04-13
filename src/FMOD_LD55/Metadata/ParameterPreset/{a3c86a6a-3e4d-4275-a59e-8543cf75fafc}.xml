@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="ParameterPreset" id="{a3c86a6a-3e4d-4275-a59e-8543cf75fafc}">
+		<property name="name">
+			<value>AboveBelowWaterVol</value>
+		</property>
+		<relationship name="folder">
+			<destination>{f8ba242f-54ca-46f2-879e-3ba30151d4cc}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{9a18b17e-723b-448b-96a6-be895f74585c}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{9a18b17e-723b-448b-96a6-be895f74585c}">
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+		<property name="seekSpeed">
+			<value>0.61000001430511475</value>
+		</property>
+	</object>
+</objects>

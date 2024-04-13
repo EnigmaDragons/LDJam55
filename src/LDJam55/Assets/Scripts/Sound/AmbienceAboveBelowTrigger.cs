@@ -18,6 +18,7 @@ public class AmbienceAboveBelowTrigger : MonoBehaviour
     {
         ambienceInstance = RuntimeManager.CreateInstance(ambienceRef);
         ambienceInstance.start();
+        ambienceInstance.setParameterByName("AboveBelowWaterVol", 0);
 
         musicTempleInstance = RuntimeManager.CreateInstance(musicTempleRef);
         musicTempleInstance.start();
@@ -25,12 +26,14 @@ public class AmbienceAboveBelowTrigger : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("player one"); 
         if (other.gameObject.tag == "Player")
         {
-            Debug.Log("player");
+            musicTempleInstance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+            musicTempleInstance.release();
             musicUnderWaterInstance = RuntimeManager.CreateInstance(musicUnderWaterRef);
             musicUnderWaterInstance.start();
+
+            ambienceInstance.setParameterByName("AboveBelowWaterVol", 1);
         }
     }
 
@@ -38,9 +41,9 @@ public class AmbienceAboveBelowTrigger : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {
-            Debug.Log("player");
             musicTempleInstance = RuntimeManager.CreateInstance(musicTempleRef);
             musicTempleInstance.start();
+            ambienceInstance.setParameterByName("AboveBelowWaterVol", 0);
         }
     }
 
