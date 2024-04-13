@@ -12,15 +12,6 @@ public class Interactable : MonoBehaviour
   {
       Log.Info("Interactable", this);
   }
-  private void OnCollisionEnter(Collision other)
-  {
-      Log.Info("Collision Enter", this);
-      if (other.gameObject.CompareTag("Player"))
-      {
-          _isPlayerInRange = true;
-          Log.Info("Interact - In Range", this);
-      }
-  }
 
   private void OnTriggerEnter(Collider other)
   {
@@ -32,15 +23,6 @@ public class Interactable : MonoBehaviour
       }
   }
 
-  private void OnCollisionExit(Collision other)
-  {
-      Log.Info("Collision Exit", this);
-      if (other.gameObject.CompareTag("Player"))
-      {
-          _isPlayerInRange = false;
-          Log.Info("Interact - Out of Range", this);
-      }
-  }
 
   private void OnTriggerExit(Collider other)
   {
