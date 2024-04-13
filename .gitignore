@@ -73,3 +73,6 @@ fmod_editor.log
 /Assets/FMODAssets/*
 /Assets/FMODStudioCache.meta
 
+src/LDJam55/.vscode/extensions.json
+src/LDJam55/.vscode/launch.json
+src/LDJam55/.vscode/settings.json
