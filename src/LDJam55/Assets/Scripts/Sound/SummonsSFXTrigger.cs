@@ -19,14 +19,14 @@ public class SummonsSFXTrigger : MonoBehaviour
 
     public SummonType summonType;
 
-    public void PlaySummonSFX()//var from SummonUI?
+    public void PlaySummonSFX()//var from SummonMenu summon?
     {
         // Use a switch statement based on the enum value
         switch (summonType)
         {
             case SummonType.Summon1:
                 
-                summonToPlay = 1f;//if poss replace with var from teh UI script
+                summonToPlay = 1f;//if poss replace with var from the summonMenu script
                 break;
             case SummonType.Summon2:
                 
