@@ -3,14 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
-public class SummonMenu : OnMessage<GameStateChanged, HideSummonMenu>
+public class SummonMenu : OnMessage<GameStateChanged, HideSummonMenu, ShowSummonMenu>
 {
     [SerializeField] private List<Summon> summons;
     [SerializeField] private SummonUI summonUIPrefab;
     [SerializeField] private GameObject summonDaddy;
     [SerializeField] private GameObject[] thingsToDisable;
 
-    Dictionary<string, SummonUI> summonDic = new ();
+    Dictionary<string, SummonUI> summonDic = new();
 
     private void Awake()
     {
@@ -29,18 +29,19 @@ public class SummonMenu : OnMessage<GameStateChanged, HideSummonMenu>
 
     private void Update()
     {
-        if(Input.GetKeyDown(KeyCode.LeftControl) || Input.GetKeyDown(KeyCode.RightControl))
-            ShowActiveSummons();
-        else if(Input.GetKeyUp(KeyCode.LeftControl) || Input.GetKeyUp(KeyCode.RightControl))
-            HideActiveSummons();
+        if (Input.GetKeyDown(KeyCode.LeftControl) || Input.GetKeyDown(KeyCode.RightControl))
+            if (_isActive)
+                Message.Publish(new HideSummonMenu());
+            else
+                Message.Publish(new ShowSummonMenu());
     }
 
     private void ShowActiveSummons()
     {
         foreach (var thing in thingsToDisable)
             thing.SetActive(false);
-        foreach(var summon in CurrentGameState.GameState.SummonNames.Where(x => summonDic.ContainsKey(x)))
-                summonDic[summon].gameObject.SetActive(true);
+        foreach (var summon in CurrentGameState.GameState.SummonNames.Where(x => summonDic.ContainsKey(x)))
+            summonDic[summon].gameObject.SetActive(true);
 
         _isActive = true;
     }
@@ -55,7 +56,7 @@ public class SummonMenu : OnMessage<GameStateChanged, HideSummonMenu>
         _isActive = false;
     }
 
-    
+
     protected override void Execute(GameStateChanged msg)
     {
         if (_isActive)
@@ -64,4 +65,7 @@ public class SummonMenu : OnMessage<GameStateChanged, HideSummonMenu>
 
     protected override void Execute(HideSummonMenu msg)
         => HideActiveSummons();
+
+    protected override void Execute(ShowSummonMenu msg)
+        => ShowActiveSummons();
 }

@@ -1,7 +1,6 @@
-using KinematicCharacterController.Walkthrough.BasicMovement;
 using UnityEngine;
 
-public class PlayerController : MonoBehaviour
+public class PlayerController : OnMessage<ShowSummonMenu, HideSummonMenu>
 {
     [SerializeField] private Rigidbody playerRigidBody;
     [SerializeField] private float movementSpeed = 8;
@@ -13,6 +12,9 @@ public class PlayerController : MonoBehaviour
 
     private Vector3 movement;
     private GameObject targetPosition;
+
+    private void Start()
+       => playerHasControl = true;
 
     private void Update()
     {
@@ -67,7 +69,7 @@ public class PlayerController : MonoBehaviour
     {
         if (collider.CompareTag("Water"))
         {
-            if (collider.TryGetComponent<WaterTile>(out WaterTile waterTile))
+            if (collider.TryGetComponent(out WaterTile waterTile))
             {
                 if (waterTile.IsFastWater())
                 {
@@ -78,4 +80,10 @@ public class PlayerController : MonoBehaviour
             }
         }
     }
+
+    protected override void Execute(ShowSummonMenu msg)
+        => playerHasControl = false;
+
+    protected override void Execute(HideSummonMenu msg)
+        => playerHasControl = true;
 }
