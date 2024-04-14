@@ -44,17 +44,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 597403217892444896115971da7d88cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  summonLoopSound:
+  summonLoopSoundRef:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
-  summonKeyPressed:
+      Data1: -1453391050
+      Data2: 1268350587
+      Data3: 850719930
+      Data4: 1936652684
+    Path: event:/SFX/SummonDrone
+  summonKeyPressedRef:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: -1559521645
+      Data2: 1341181789
+      Data3: -1408085595
+      Data4: 443347313
+    Path: event:/SFX/SummonClicks

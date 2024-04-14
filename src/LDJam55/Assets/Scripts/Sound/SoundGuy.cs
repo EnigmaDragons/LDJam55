@@ -1,16 +1,18 @@
-﻿using FMODUnity;
+﻿using FMOD.Studio;
+using FMODUnity;
 using UnityEngine;
 
 public class SoundGuy : MonoBehaviour
 {
-    public EventReference summonLoopSound;
-    public EventReference summonKeyPressed;
+    public EventReference summonLoopSoundRef;
+    public EventReference summonKeyPressedRef;
+    EventInstance summonLoopInstance;
 
     private bool _isSummoning;
     
     private void OnEnable()
     {
-        Message.Subscribe<SummonBegin>(_ => OnSummonStarted(), this);
+        Message.Subscribe<ShowSummonMenu>(_ => OnSummonStarted(), this);
         Message.Subscribe<SummonFailed>(_ => OnSummonFailed(), this);
     }
 
@@ -22,6 +24,9 @@ public class SoundGuy : MonoBehaviour
     private void OnSummonStarted()
     {
         _isSummoning = true;
+        summonLoopInstance = RuntimeManager.CreateInstance(summonLoopSoundRef);
+        summonLoopInstance.start();
+        Debug.Log("SUMMON HAS STARTED");
         // Code to start the Summon Loop Sound
         // Code to trigger any Summon start oneshots
     }
