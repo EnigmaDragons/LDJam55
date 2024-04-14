@@ -4,7 +4,7 @@ using UnityEngine;
 public class OpenDoorWhenConditionsMet : MonoBehaviour
 {
     [SerializeField] private Door target;
-    [SerializeField] private Triggerable[] triggerables = Array.Empty<Triggerable>();
+    [SerializeField] private ConstraintBase[] triggerables = Array.Empty<ConstraintBase>();
 
     private void Awake()
     {
