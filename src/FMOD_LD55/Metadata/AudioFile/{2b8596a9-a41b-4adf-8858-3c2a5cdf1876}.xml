@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.02.00">
-	<object class="AudioFile" id="{a9311b46-4c78-4124-9c47-7a0d9ee10984}">
+	<object class="AudioFile" id="{2b8596a9-a41b-4adf-8858-3c2a5cdf1876}">
 		<property name="assetPath">
-			<value>SFX/RockSlide.ogg</value>
+			<value>RockSlide.ogg</value>
 		</property>
 		<property name="frequencyInKHz">
 			<value>48</value>
 		</property>
 		<property name="channelCount">
-			<value>2</value>
+			<value>1</value>
 		</property>
 		<property name="length">
-			<value>5.1811875000000001</value>
+			<value>1.909</value>
 		</property>
 		<relationship name="masterAssetFolder">
 			<destination>{df5182c8-be50-4e4a-913f-fc5f8a6ced71}</destination>

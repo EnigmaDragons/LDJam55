@@ -123,6 +123,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveDurationSeconds: 1
   requiredContactSeconds: 0.3
+  pushBlockSFX:
+    Guid:
+      Data1: -1814119214
+      Data2: 1241691021
+      Data3: -1152890722
+      Data4: 1182226427
+    Path: event:/SFX/PushBlockSFX
 --- !u!114 &8043607288284481908
 MonoBehaviour:
   m_ObjectHideFlags: 0

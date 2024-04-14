@@ -33,7 +33,7 @@ public class SummonUI : OnMessage<SummonBegin>
         icon.sprite = summon.Icon;
         summonName.text = summon.SummonName;
         _summonCode = summon.KeyCodes;
-        ManaCostText.text = summon.ManaCost.ToString();
+        ManaCostText.text = "";
 
         foreach (KeyCode keyCode in summon.KeyCodes)
         {
@@ -62,8 +62,7 @@ public class SummonUI : OnMessage<SummonBegin>
 
     protected override void AfterEnable()
     {
-        var manaCost = _summon != null ? _summon.ManaCost : 10;
-        SetActiveState(manaCost <= CurrentGameState.GameState.Mana);
+        SetActiveState(true);
         _keyIndex = 0;
         isFrozen = false;
     }
@@ -92,7 +91,6 @@ public class SummonUI : OnMessage<SummonBegin>
             _keyIndex++;
             if (_keyIndex >= _summonCode.Length)
             {
-                CurrentGameState.UpdateState(x => x.Mana -= _summon.ManaCost);
                 Message.Publish(new SummonBegin(_summon));
             }
                

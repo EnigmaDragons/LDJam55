@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using FMODUnity;
 
 public class Pushable : MonoBehaviour
 {
@@ -13,6 +14,7 @@ public class Pushable : MonoBehaviour
     private float _movingT;
     private float _contactT; 
     private bool _isPlayerAdjacent;
+    public EventReference pushBlockSFX;
 
     private void Start()
     {
@@ -52,6 +54,7 @@ public class Pushable : MonoBehaviour
                 _movingT = 0;
                 _contactT = 0;
                 _isMoving = true;
+                RuntimeManager.PlayOneShotAttached(pushBlockSFX, gameObject);
             }
         }
     }
@@ -83,7 +86,7 @@ public class Pushable : MonoBehaviour
             ResetPushMechanism();
         }
     }
-
+    
     private void ResetPushMechanism()
     {
       _isPlayerAdjacent = false;
