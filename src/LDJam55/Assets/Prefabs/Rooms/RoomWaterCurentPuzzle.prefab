@@ -1,0 +1,212 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5508047599416068369
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7874533387756271552}
+  - component: {fileID: 7868491285904676948}
+  m_Layer: 0
+  m_Name: RoomWaterCurentPuzzle
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7874533387756271552
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5508047599416068369}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 244047807304692627}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7868491285904676948
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5508047599416068369}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cadcfd97a8b04c1ab39e3b7a7b19b6e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 7659169447406251655}
+  doorCanBeClosedAgain: 0
+  triggerables: []
+  invertCondition: 1
+--- !u!1001 &6833619361312699365
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 7874533387756271552}
+    m_Modifications:
+    - target: {fileID: 87215984042764694, guid: 9c7b50896b675234686be3f354111d89,
+        type: 3}
+      propertyPath: m_Name
+      value: WaterExitDoor
+      objectReference: {fileID: 0}
+    - target: {fileID: 287605142250862837, guid: 9c7b50896b675234686be3f354111d89,
+        type: 3}
+      propertyPath: isOpen
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3741558146723076876, guid: 9c7b50896b675234686be3f354111d89,
+        type: 3}
+      propertyPath: isOpen
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3741558146723076876, guid: 9c7b50896b675234686be3f354111d89,
+        type: 3}
+      propertyPath: startsOpens
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3791805014627507554, guid: 9c7b50896b675234686be3f354111d89,
+        type: 3}
+      propertyPath: isOpen
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3791805014627507554, guid: 9c7b50896b675234686be3f354111d89,
+        type: 3}
+      propertyPath: startsOpens
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5504065501111173572, guid: 9c7b50896b675234686be3f354111d89,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5767992482558943205, guid: 9c7b50896b675234686be3f354111d89,
+        type: 3}
+      propertyPath: m_Name
+      value: WaterEntryDoor
+      objectReference: {fileID: 0}
+    - target: {fileID: 6304928736706009483, guid: 9c7b50896b675234686be3f354111d89,
+        type: 3}
+      propertyPath: m_Name
+      value: ExitDoor
+      objectReference: {fileID: 0}
+    - target: {fileID: 6752844908054020214, guid: 9c7b50896b675234686be3f354111d89,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.4999838
+      objectReference: {fileID: 0}
+    - target: {fileID: 6752844908054020214, guid: 9c7b50896b675234686be3f354111d89,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6752844908054020214, guid: 9c7b50896b675234686be3f354111d89,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 44.750034
+      objectReference: {fileID: 0}
+    - target: {fileID: 6752844908054020214, guid: 9c7b50896b675234686be3f354111d89,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.0000009834765
+      objectReference: {fileID: 0}
+    - target: {fileID: 6752844908054020214, guid: 9c7b50896b675234686be3f354111d89,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6752844908054020214, guid: 9c7b50896b675234686be3f354111d89,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6752844908054020214, guid: 9c7b50896b675234686be3f354111d89,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6752844908054020214, guid: 9c7b50896b675234686be3f354111d89,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6752844908054020214, guid: 9c7b50896b675234686be3f354111d89,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -180
+      objectReference: {fileID: 0}
+    - target: {fileID: 6752844908054020214, guid: 9c7b50896b675234686be3f354111d89,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6925813365589244956, guid: 9c7b50896b675234686be3f354111d89,
+        type: 3}
+      propertyPath: m_Name
+      value: EntryDoor
+      objectReference: {fileID: 0}
+    - target: {fileID: 7017449287168313318, guid: 9c7b50896b675234686be3f354111d89,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7017449287168313318, guid: 9c7b50896b675234686be3f354111d89,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7121725570147396991, guid: 9c7b50896b675234686be3f354111d89,
+        type: 3}
+      propertyPath: isOpen
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7121725570147396991, guid: 9c7b50896b675234686be3f354111d89,
+        type: 3}
+      propertyPath: startsOpens
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8191412714443659824, guid: 9c7b50896b675234686be3f354111d89,
+        type: 3}
+      propertyPath: m_Name
+      value: RoomWatyer Current Puzzle
+      objectReference: {fileID: 0}
+    - target: {fileID: 8745901132882164811, guid: 9c7b50896b675234686be3f354111d89,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9c7b50896b675234686be3f354111d89, type: 3}
+--- !u!4 &244047807304692627 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6752844908054020214, guid: 9c7b50896b675234686be3f354111d89,
+    type: 3}
+  m_PrefabInstance: {fileID: 6833619361312699365}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &7659169447406251655 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3791805014627507554, guid: 9c7b50896b675234686be3f354111d89,
+    type: 3}
+  m_PrefabInstance: {fileID: 6833619361312699365}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d912a55eae5441aa5610654a30ab9e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

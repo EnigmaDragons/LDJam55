@@ -9,6 +9,7 @@ public class Door : MonoBehaviour
     [SerializeField] private bool isOpen = false;
     [SerializeField] private bool startsOpens = false;
     [SerializeField] private Transform doorScaleTarget;
+    [SerializeField] private float animDurationSeconds = 1.5f;
 
     public bool IsOpen => isOpen;
     
@@ -25,7 +26,8 @@ public class Door : MonoBehaviour
         
         isOpen = true;
         if (scaleForOpen)
-            doorScaleTarget.DOScale(scaleWhenOpen, 1.5f);
+            doorScaleTarget.DOScale(scaleWhenOpen, animDurationSeconds);
+        doorScaleTarget.DOLocalMoveY(-0.1f, animDurationSeconds);
     }
 
     public void Close()
@@ -35,7 +37,7 @@ public class Door : MonoBehaviour
 
         isOpen = false;
         if (scaleForOpen)
-            doorScaleTarget.DOScale(scaleWhenClosed, 1.5f);
+            doorScaleTarget.DOScale(scaleWhenClosed, animDurationSeconds);
+        doorScaleTarget.DOLocalMoveY(0.1f, animDurationSeconds);
     }
 }
-

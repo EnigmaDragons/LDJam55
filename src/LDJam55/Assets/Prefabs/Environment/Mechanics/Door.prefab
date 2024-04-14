@@ -46,8 +46,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d912a55eae5441aa5610654a30ab9e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scaleWhenOpen: {x: 1, y: 0, z: 1}
-  scaleWhenClosed: {x: 1, y: 1, z: 1}
+  scaleWhenOpen: {x: 1, y: 0, z: 2}
+  scaleWhenClosed: {x: 1, y: 1, z: 2}
   scaleForOpen: 1
   isOpen: 0
   startsOpens: 0
@@ -60,11 +60,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4825326441237645215}
     m_Modifications:
-    - target: {fileID: 224680640789860377, guid: ed04a6ec81792054596e0a86839b8cbf,
-        type: 3}
-      propertyPath: 'm_Materials.Array.data[0]'
-      value: 
-      objectReference: {fileID: 2100000, guid: 6353470f0c327ea4c84dd79661bad3b2, type: 2}
     - target: {fileID: 1512927364294144196, guid: ed04a6ec81792054596e0a86839b8cbf,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -120,11 +115,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Doorway
       objectReference: {fileID: 0}
-    - target: {fileID: 2839755753522307181, guid: ed04a6ec81792054596e0a86839b8cbf,
-        type: 3}
-      propertyPath: 'm_Materials.Array.data[0]'
-      value: 
-      objectReference: {fileID: 2100000, guid: 154f59f0101f70f4084284b4936734c2, type: 2}
     - target: {fileID: 4696665469286296284, guid: ed04a6ec81792054596e0a86839b8cbf,
         type: 3}
       propertyPath: m_LocalScale.y
