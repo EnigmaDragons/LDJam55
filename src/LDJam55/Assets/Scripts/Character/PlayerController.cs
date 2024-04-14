@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class PlayerController : OnMessage<SummonLearned, SummonLearningDismissed, ShowSummonMenu, HideSummonMenu, PushingObjectBegin, PushingObjectEnd>
+public class PlayerController : OnMessage<SummonLearned, SummonLearningDismissed, ShowSummonMenu, HideSummonMenu>
 {
     [SerializeField] private Rigidbody playerRigidBody;
     [SerializeField] private float movementSpeed = 8f;
@@ -62,11 +62,6 @@ public class PlayerController : OnMessage<SummonLearned, SummonLearningDismissed
         => PlayerHasControl = false;
 
     protected override void Execute(HideSummonMenu msg)
-        => PlayerHasControl = true;
-
-    protected override void Execute(PushingObjectBegin msg)
-        => PlayerHasControl = false;
-    protected override void Execute(PushingObjectEnd msg)
         => PlayerHasControl = true;
 
     protected override void Execute(SummonLearned msg)
