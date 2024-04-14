@@ -1,5 +1,7 @@
 using UnityEngine;
 using DG.Tweening;
+using FMOD.Studio;
+using FMODUnity;
 
 public class Pushable : MonoBehaviour
 {
@@ -11,6 +13,7 @@ public class Pushable : MonoBehaviour
     private Vector3 pushDirection;
 
     private bool _isMoving = false;
+    public EventReference pushBlockSFX;
 
     private void Update()
     {
@@ -75,6 +78,7 @@ public class Pushable : MonoBehaviour
             _isMoving = false;
             playerContactTime = 0f;
         }, moveDurationSeconds);
+        RuntimeManager.PlayOneShotAttached(pushBlockSFX, gameObject);
     }
 
     private void ResetPushMechanism()
