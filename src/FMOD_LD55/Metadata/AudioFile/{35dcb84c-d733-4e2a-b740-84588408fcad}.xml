@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.02.00">
 	<object class="AudioFile" id="{35dcb84c-d733-4e2a-b740-84588408fcad}">
 		<property name="assetPath">
-			<value>WaterFastAddOnLoop.ogg</value>
+			<value>SFX/WaterFastAddOnLoop.ogg</value>
 		</property>
 		<property name="frequencyInKHz">
 			<value>48</value>

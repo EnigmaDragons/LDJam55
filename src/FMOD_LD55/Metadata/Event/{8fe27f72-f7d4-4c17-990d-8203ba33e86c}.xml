@@ -5,7 +5,7 @@
 			<value>FastWater</value>
 		</property>
 		<property name="outputFormat">
-			<value>2</value>
+			<value>0</value>
 		</property>
 		<relationship name="folder">
 			<destination>{b81b9e4e-6202-4cfb-905e-2bae11a0562d}</destination>
@@ -136,6 +136,9 @@
 		<property name="name">
 			<value>Audio 1</value>
 		</property>
+		<relationship name="modulators">
+			<destination>{fee42ffc-bb87-4919-97dd-9f20813ec4e2}</destination>
+		</relationship>
 		<relationship name="effectChain">
 			<destination>{22530c6f-2b5d-485d-8c00-ded84ecf5e4f}</destination>
 		</relationship>
@@ -208,7 +211,6 @@
 	<object class="MixerBusEffectChain" id="{8e3c6f2c-3c54-4d6c-9cb8-fc2192747dfd}">
 		<relationship name="effects">
 			<destination>{d770a2e6-6d8e-4776-bc16-95e677adae7a}</destination>
-			<destination>{728a1e66-9973-4d4f-87d5-b7c8f8460fb9}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{50b99280-f89d-4121-a52f-7f4c3c25805a}" />
@@ -225,6 +227,23 @@
 		</property>
 		<property name="direction">
 			<value>-100</value>
+		</property>
+	</object>
+	<object class="ADSRModulator" id="{fee42ffc-bb87-4919-97dd-9f20813ec4e2}">
+		<property name="nameOfPropertyBeingModulated">
+			<value>volume</value>
+		</property>
+		<property name="initialValue">
+			<value>-80</value>
+		</property>
+		<property name="attackTime">
+			<value>0</value>
+		</property>
+		<property name="releaseTime">
+			<value>1400</value>
+		</property>
+		<property name="finalValue">
+			<value>-80</value>
 		</property>
 	</object>
 	<object class="MixerBusEffectChain" id="{22530c6f-2b5d-485d-8c00-ded84ecf5e4f}">
@@ -261,16 +280,15 @@
 	</object>
 	<object class="MixerBusPanner" id="{61bb33f1-ffe4-4d5c-95e7-a00a15649f8e}" />
 	<object class="MixerBusFader" id="{d770a2e6-6d8e-4776-bc16-95e677adae7a}" />
-	<object class="SpatialiserEffect" id="{728a1e66-9973-4d4f-87d5-b7c8f8460fb9}" />
 	<object class="FlangerEffect" id="{f254dd9f-0ffa-4582-8246-5f9509bad831}">
 		<property name="rate">
 			<value>0.239999995</value>
 		</property>
 		<property name="delay">
-			<value>0.229999989</value>
+			<value>0.589999974</value>
 		</property>
 		<property name="mix">
-			<value>46</value>
+			<value>26</value>
 		</property>
 	</object>
 	<object class="MixerBusFader" id="{3a9ebe50-1ad5-41b8-9bed-2f2f9928c6b0}" />

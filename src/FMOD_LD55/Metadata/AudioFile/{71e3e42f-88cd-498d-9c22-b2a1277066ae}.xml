@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.02.00">
 	<object class="AudioFile" id="{71e3e42f-88cd-498d-9c22-b2a1277066ae}">
 		<property name="assetPath">
-			<value>Underwater_Victory_Fanfare.ogg</value>
+			<value>Music/Underwater_Victory_Fanfare.ogg</value>
 		</property>
 		<property name="isStreaming">
 			<value>true</value>
