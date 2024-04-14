@@ -11,6 +11,7 @@ TagManager:
   - Door
   - Flammable
   - Water
+  - Moveable
   layers:
   - Default
   - TransparentFX

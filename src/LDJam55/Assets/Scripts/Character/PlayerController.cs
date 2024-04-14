@@ -8,39 +8,23 @@ public class PlayerController : OnMessage<ShowSummonMenu, HideSummonMenu>
 
     private const string HorizontalInput = "Horizontal";
     private const string VerticalInput = "Vertical";
-    private bool playerHasControl = true;
 
     private Vector3 movement;
-    private GameObject targetPosition;
+
+    public bool PlayerHasControl { get; set; } = true;
 
     private void Start()
-       => playerHasControl = true;
+       => PlayerHasControl = true;
 
     private void Update()
     {
-        if (!playerHasControl && targetPosition != null)
+        if (!PlayerHasControl)
         {
-            HandleLossOfControl();
             return;
         }
         HandleRotation();
     }
 
-    private void HandleLossOfControl()
-    {
-        var distance = Vector3.Distance(transform.position, targetPosition.transform.position);
-        if (distance > 0.5)
-        {
-            transform.position = Vector3.MoveTowards(transform.position, targetPosition.transform.position, movementSpeed / 20);
-            playerRigidBody.MoveRotation(Quaternion.LookRotation(targetPosition.transform.position - transform.position));
-        }
-        else
-        {
-            transform.rotation = new Quaternion(0, transform.rotation.y, 0, 0);
-            playerHasControl = true;
-            targetPosition = null;
-        }
-    }
 
     private void HandleRotation()
     {
@@ -49,10 +33,9 @@ public class PlayerController : OnMessage<ShowSummonMenu, HideSummonMenu>
             transform.forward = movement;
         }
     }
-
     private void FixedUpdate()
     {
-        if (!playerHasControl)
+        if (!PlayerHasControl)
         {
             return;
         }
@@ -60,30 +43,14 @@ public class PlayerController : OnMessage<ShowSummonMenu, HideSummonMenu>
         playerRigidBody.MovePosition(transform.position + movementSpeed * Time.deltaTime * movement);
     }
 
-    private void OnTriggerEnter(Collider collider)
+    public void RotatePlayer(Quaternion quatty)
     {
-        HandleWaterCollision(collider);
-    }
-
-    private void HandleWaterCollision(Collider collider)
-    {
-        if (collider.CompareTag("Water"))
-        {
-            if (collider.TryGetComponent(out WaterTile waterTile))
-            {
-                if (waterTile.IsFastWater())
-                {
-                    playerHasControl = false;
-                    targetPosition = waterTile.TargetPosition();
-                    movement = Vector3.zero;
-                }
-            }
-        }
+        playerRigidBody.MoveRotation(quatty);
     }
 
     protected override void Execute(ShowSummonMenu msg)
-        => playerHasControl = false;
+        => PlayerHasControl = false;
 
     protected override void Execute(HideSummonMenu msg)
-        => playerHasControl = true;
+        => PlayerHasControl = true;
 }
