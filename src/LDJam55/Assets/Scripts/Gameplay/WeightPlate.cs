@@ -19,7 +19,7 @@ public class WeightPlate : ConstraintBase
     {
         if (Time.time >= nextLogTime)
         {
-            Log.Info($"Heavies present: {_heavies.Count}", this);
+            //Log.Info($"Heavies present: {_heavies.Count}", this);
             nextLogTime = Time.time + logInterval;
         }
 
