@@ -8,6 +8,36 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -77760362682738934, guid: f1a0c466dfed5d44fbda3578c1b1f614,
+        type: 3}
+      propertyPath: StopEvent
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -77760362682738934, guid: f1a0c466dfed5d44fbda3578c1b1f614,
+        type: 3}
+      propertyPath: EventReference.Path
+      value: event:/SFX/SlideBlock
+      objectReference: {fileID: 0}
+    - target: {fileID: -77760362682738934, guid: f1a0c466dfed5d44fbda3578c1b1f614,
+        type: 3}
+      propertyPath: EventReference.Guid.Data1
+      value: -1961637375
+      objectReference: {fileID: 0}
+    - target: {fileID: -77760362682738934, guid: f1a0c466dfed5d44fbda3578c1b1f614,
+        type: 3}
+      propertyPath: EventReference.Guid.Data2
+      value: 1142941125
+      objectReference: {fileID: 0}
+    - target: {fileID: -77760362682738934, guid: f1a0c466dfed5d44fbda3578c1b1f614,
+        type: 3}
+      propertyPath: EventReference.Guid.Data3
+      value: -767373902
+      objectReference: {fileID: 0}
+    - target: {fileID: -77760362682738934, guid: f1a0c466dfed5d44fbda3578c1b1f614,
+        type: 3}
+      propertyPath: EventReference.Guid.Data4
+      value: 1023311242
+      objectReference: {fileID: 0}
     - target: {fileID: 1174364296123389774, guid: f1a0c466dfed5d44fbda3578c1b1f614,
         type: 3}
       propertyPath: m_Name
