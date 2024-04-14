@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.02.00">
 	<object class="MixerGroup" id="{a5f7b745-f37c-42cb-a02a-55bfc7b24599}">
+		<property name="color">
+			<value>Yellow</value>
+		</property>
+		<property name="volume">
+			<value>-80</value>
+		</property>
 		<property name="name">
 			<value>DX_MST</value>
 		</property>
@@ -11,7 +17,7 @@
 			<destination>{080e937e-12c6-4c20-b030-668d654e0c50}</destination>
 		</relationship>
 		<relationship name="output">
-			<destination>{045ac4d1-d9e1-4c45-ac17-d14bcf51b2ef}</destination>
+			<destination>{aac20f68-7727-4058-a71d-6956b6326e0c}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusEffectChain" id="{180a67e4-bd04-4e8f-8c19-3cbe764130e7}">
