@@ -595,6 +595,7 @@ MonoBehaviour:
   summons:
   - {fileID: 11400000, guid: 3076243629c3d01408f6f45dd9187d7d, type: 2}
   - {fileID: 11400000, guid: 3a92c6687d9263f419734f0af732761a, type: 2}
+  - {fileID: 11400000, guid: 168c89e9ebe81a947a90a499ae6d5e3b, type: 2}
   summonUIPrefab: {fileID: 3425548198175253414, guid: 5ed64558410fc8b49a9f8f8504374d94,
     type: 3}
   summonDaddy: {fileID: 3284791825536060262}
