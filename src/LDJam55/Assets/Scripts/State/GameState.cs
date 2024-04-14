@@ -14,7 +14,6 @@ public sealed class GameState
     // This is necessary to preserve backwards save compatibility.
 
     public float CurrentGameTime;
-    public int Mana;
     public List<string> SummonNames = new();
     public HashSet<GameObject> Heavies = new();
 }

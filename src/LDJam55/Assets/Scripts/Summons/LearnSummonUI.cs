@@ -46,7 +46,8 @@ public class LearnSummonUI : OnMessage<SummonLearned>
     protected override void Execute(SummonLearned msg)
     {
         summonName.text = msg.Summon.SummonName;
-        cost.text = "Mana Cost: " + msg.Summon.ManaCost.ToString();
+        cost.enabled = false;
+        //cost.text = "Mana Cost: " + msg.Summon.ManaCost.ToString();
         description.text = msg.Summon.Description;
         summonIcon.sprite = msg.Summon.Icon;
         summonCard.sprite = msg.Summon.SummonCardArt;

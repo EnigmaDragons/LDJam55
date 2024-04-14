@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.02.00">
 	<object class="AudioFile" id="{b60282f5-b0a7-4d24-a6e8-76fff34b0fac}">
 		<property name="assetPath">
-			<value>Magic Door 2 sec.ogg</value>
+			<value>SFX/Magic Door 2 sec.ogg</value>
 		</property>
 		<property name="frequencyInKHz">
 			<value>48</value>
