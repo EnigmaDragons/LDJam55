@@ -19,3 +19,5 @@ MonoBehaviour:
   summonPrefab: {fileID: 7911707069537308427, guid: ab97ed3fc2d816a47af058c2977227c9,
     type: 3}
   manaCost: 20
+  fixedYPosition: 0
+  summonAtFixedYPosition: 1

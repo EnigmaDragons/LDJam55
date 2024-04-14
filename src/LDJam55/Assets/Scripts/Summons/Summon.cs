@@ -10,6 +10,8 @@ public class Summon : ScriptableObject
     [SerializeField] private Sprite summonCardArt;
     [SerializeField] private GameObject summonPrefab;
     [SerializeField] private int manaCost;
+    [SerializeField] private float fixedYPosition;
+    [SerializeField] private bool summonAtFixedYPosition;
 
     public string SummonName => summonName;
     public KeyCode[] KeyCodes => keyCodes;
@@ -17,4 +19,6 @@ public class Summon : ScriptableObject
     public Sprite SummonCardArt => summonCardArt;
     public GameObject SummonPrefab => summonPrefab;
     public int ManaCost => manaCost;
+    public float FixedYPosition => fixedYPosition;
+    public bool SummonAtFixedYPosition => summonAtFixedYPosition;
 }
