@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5588461627521783654}
   - component: {fileID: 4250853390922807938}
-  m_Layer: 7
+  m_Layer: 8
   m_Name: LearnSummonUI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -72,7 +72,7 @@ GameObject:
   - component: {fileID: 1159808747953296599}
   - component: {fileID: 4554413772505962335}
   - component: {fileID: 5560199801704512028}
-  m_Layer: 7
+  m_Layer: 8
   m_Name: Water
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4964,7 +4964,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8985417936878483386}
-  m_Layer: 7
+  m_Layer: 8
   m_Name: Vfx
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5004,7 +5004,7 @@ GameObject:
   - component: {fileID: 3266929318273951113}
   - component: {fileID: 3890158977369608494}
   - component: {fileID: 2039366044299558917}
-  m_Layer: 7
+  m_Layer: 8
   m_Name: SummonName
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5140,7 +5140,7 @@ GameObject:
   - component: {fileID: 3471135596082970551}
   - component: {fileID: 5385414369990104725}
   - component: {fileID: 8382445755255138234}
-  m_Layer: 7
+  m_Layer: 8
   m_Name: Bubbles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9977,7 +9977,7 @@ GameObject:
   - component: {fileID: 8025269875753554335}
   - component: {fileID: 2280568923652622944}
   - component: {fileID: 8273370702081536054}
-  m_Layer: 7
+  m_Layer: 8
   m_Name: Scroll
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10102,7 +10102,7 @@ GameObject:
   - component: {fileID: 2688792823040220095}
   - component: {fileID: 7634489386365093312}
   - component: {fileID: 7651405144890482153}
-  m_Layer: 7
+  m_Layer: 8
   m_Name: Trails
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14936,7 +14936,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1128831741970219234}
-  m_Layer: 7
+  m_Layer: 8
   m_Name: SummonPrefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14973,7 +14973,7 @@ GameObject:
   - component: {fileID: 3693033119192601651}
   - component: {fileID: 5846985465556386138}
   - component: {fileID: 5739277952770068764}
-  m_Layer: 7
+  m_Layer: 8
   m_Name: Description
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15109,7 +15109,7 @@ GameObject:
   - component: {fileID: 7382191096323673056}
   - component: {fileID: 491141432611518456}
   - component: {fileID: 1075531863439157962}
-  m_Layer: 7
+  m_Layer: 8
   m_Name: SummonIcon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15184,7 +15184,7 @@ GameObject:
   - component: {fileID: 2394059563925582211}
   - component: {fileID: 1426622622129326339}
   - component: {fileID: 2973956616577800639}
-  m_Layer: 7
+  m_Layer: 8
   m_Name: Cost
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15320,7 +15320,7 @@ GameObject:
   - component: {fileID: 253627520327006058}
   - component: {fileID: 6737924447870748384}
   - component: {fileID: 4460963702410217450}
-  m_Layer: 7
+  m_Layer: 8
   m_Name: ClickToDismiss
   m_TagString: Untagged
   m_Icon: {fileID: 0}

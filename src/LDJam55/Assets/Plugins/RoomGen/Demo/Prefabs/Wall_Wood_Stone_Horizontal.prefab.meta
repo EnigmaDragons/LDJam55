@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: cd0f7fa6e706d47e78bd4decf20a4bcd
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 215804
+  packageName: RoomGen - Procedural Generator
+  packageVersion: 2.6.4
+  assetPath: Assets/RoomGen/Demo/Prefabs/Wall_Wood_Stone_Horizontal.prefab
+  uploadId: 636268

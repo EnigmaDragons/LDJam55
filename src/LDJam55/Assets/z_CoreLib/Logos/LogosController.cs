@@ -96,5 +96,5 @@ public class LogosController : MonoBehaviour
         _finishInSeconds = Mathf.Max(0, _finishInSeconds - Time.deltaTime);
     }
 
-    private void NavigateToNextScene() => Message.Publish(new NavigateToSceneRequested("MainMenu"));
+    private void NavigateToNextScene() => Message.Publish(new NavigateToSceneRequested("GameScene"));
 }

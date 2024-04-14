@@ -50,7 +50,7 @@ public class LearnSummonUI : OnMessage<SummonLearned>
         panel.gameObject.SetActive(true);
         vfx.SetActive(true);
         summonInstance = Instantiate(msg.Summon.SummonPrefab, objectParent.transform);
-        SetGameLayerRecursive(summonInstance, 7);
+        SetGameLayerRecursive(summonInstance, 8);
         _showing = true;
         _t = 0;
     }

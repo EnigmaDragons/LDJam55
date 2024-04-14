@@ -4,7 +4,9 @@ using UnityEngine;
 public class OpenDoorWhenConditionsMet : MonoBehaviour
 {
     [SerializeField] private Door target;
-    [SerializeField] private Triggerable[] triggerables = Array.Empty<Triggerable>();
+    [SerializeField] private bool doorCanBeClosedAgain = false;
+    [SerializeField] private ConstraintBase[] triggerables = Array.Empty<ConstraintBase>();
+    [SerializeField] private bool invertCondition = false;
 
     private void Awake()
     {
@@ -18,10 +20,18 @@ public class OpenDoorWhenConditionsMet : MonoBehaviour
 
     private void Update()
     {
-        if (triggerables.AllNonAlloc(t => t.IsSatisfied))
+        var allSatisfied = triggerables.AllNonAlloc(t => t.IsSatisfied);
+        var shouldBeOpen = invertCondition ? !allSatisfied : allSatisfied;
+        if (!target.IsOpen && shouldBeOpen)
         {
             Log.Info($"Door Opened - {triggerables.Length} Triggers were Activated", this);
             target.Open();
+        }
+
+        if (target.IsOpen && doorCanBeClosedAgain && !shouldBeOpen)
+        {
+            Log.Info($"Door Closed - {triggerables.Length} Triggers were Not All Active", this);
+            target.Close();
         }
     }
 }

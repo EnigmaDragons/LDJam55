@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 0730c0803aad647f9bb7eb8389f7c8cf
+DefaultImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 215804
+  packageName: RoomGen - Procedural Generator
+  packageVersion: 2.6.4
+  assetPath: Assets/RoomGen/RoomGen Documentation.pdf
+  uploadId: 636268

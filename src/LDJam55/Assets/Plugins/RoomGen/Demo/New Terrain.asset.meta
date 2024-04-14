@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 0a0f4c4be145b42378da999d02631bd9
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 15600000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 215804
+  packageName: RoomGen - Procedural Generator
+  packageVersion: 2.6.4
+  assetPath: Assets/RoomGen/Demo/New Terrain.asset
+  uploadId: 636268

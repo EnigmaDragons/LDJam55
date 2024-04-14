@@ -211,7 +211,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1524780660
+--- !u!1 &1513688270
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -219,8 +219,8 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1524780662}
-  - component: {fileID: 1524780661}
+  - component: {fileID: 1513688272}
+  - component: {fileID: 1513688271}
   m_Layer: 0
   m_Name: Directional Light
   m_TagString: Untagged
@@ -228,24 +228,24 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!108 &1524780661
+--- !u!108 &1513688271
 Light:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1524780660}
+  m_GameObject: {fileID: 1513688270}
   m_Enabled: 1
   serializedVersion: 11
   m_Type: 1
-  m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 1
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 2
+    m_Type: 0
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
@@ -289,16 +289,16 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!4 &1524780662
+--- !u!4 &1513688272
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1524780660}
+  m_GameObject: {fileID: 1513688270}
   serializedVersion: 2
   m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
-  m_LocalPosition: {x: 0, y: 3, z: 0}
+  m_LocalPosition: {x: 117.66647, y: -141.08981, z: -23.33725}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -370,7 +370,7 @@ PrefabInstance:
     - target: {fileID: 3560728622826215533, guid: bb0b93249436381418ebf2325b62ae21,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -440,61 +440,66 @@ PrefabInstance:
       propertyPath: m_Name
       value: RoomWatyer Current Puzzle
       objectReference: {fileID: 0}
+    - target: {fileID: 8191412714443659824, guid: 9c7b50896b675234686be3f354111d89,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 1174097273964083771, guid: 9c7b50896b675234686be3f354111d89,
         type: 3}
-      insertIndex: 3
+      insertIndex: -1
       addedObject: {fileID: 0}
     - targetCorrespondingSourceObject: {fileID: 2177452625416850948, guid: 9c7b50896b675234686be3f354111d89,
         type: 3}
-      insertIndex: 3
+      insertIndex: -1
       addedObject: {fileID: 0}
     - targetCorrespondingSourceObject: {fileID: 2417374854340743794, guid: 9c7b50896b675234686be3f354111d89,
         type: 3}
-      insertIndex: 3
+      insertIndex: -1
       addedObject: {fileID: 0}
     - targetCorrespondingSourceObject: {fileID: 6448326747880006881, guid: 9c7b50896b675234686be3f354111d89,
         type: 3}
-      insertIndex: 3
+      insertIndex: -1
       addedObject: {fileID: 0}
     - targetCorrespondingSourceObject: {fileID: 1774075932282629715, guid: 9c7b50896b675234686be3f354111d89,
         type: 3}
-      insertIndex: 3
+      insertIndex: -1
       addedObject: {fileID: 0}
     - targetCorrespondingSourceObject: {fileID: 3974034714787522682, guid: 9c7b50896b675234686be3f354111d89,
         type: 3}
-      insertIndex: 3
+      insertIndex: -1
       addedObject: {fileID: 0}
     - targetCorrespondingSourceObject: {fileID: 550400453570513952, guid: 9c7b50896b675234686be3f354111d89,
         type: 3}
-      insertIndex: 3
+      insertIndex: -1
       addedObject: {fileID: 0}
     - targetCorrespondingSourceObject: {fileID: 6437902293491859198, guid: 9c7b50896b675234686be3f354111d89,
         type: 3}
-      insertIndex: 3
+      insertIndex: -1
       addedObject: {fileID: 0}
     - targetCorrespondingSourceObject: {fileID: 3536867524512507545, guid: 9c7b50896b675234686be3f354111d89,
         type: 3}
-      insertIndex: 3
+      insertIndex: -1
       addedObject: {fileID: 0}
     - targetCorrespondingSourceObject: {fileID: 2502771096837000724, guid: 9c7b50896b675234686be3f354111d89,
         type: 3}
-      insertIndex: 3
+      insertIndex: -1
       addedObject: {fileID: 0}
     - targetCorrespondingSourceObject: {fileID: 985296525975375685, guid: 9c7b50896b675234686be3f354111d89,
         type: 3}
-      insertIndex: 3
+      insertIndex: -1
       addedObject: {fileID: 0}
     - targetCorrespondingSourceObject: {fileID: 8971193887160673141, guid: 9c7b50896b675234686be3f354111d89,
         type: 3}
-      insertIndex: 3
+      insertIndex: -1
       addedObject: {fileID: 0}
     - targetCorrespondingSourceObject: {fileID: 6875235746290338669, guid: 9c7b50896b675234686be3f354111d89,
         type: 3}
-      insertIndex: 3
+      insertIndex: -1
       addedObject: {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: 9c7b50896b675234686be3f354111d89, type: 3}
 --- !u!1660057539 &9223372036854775807
@@ -502,6 +507,6 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 1440780614}
-  - {fileID: 1524780662}
   - {fileID: 2063841215}
   - {fileID: 7395156622905679444}
+  - {fileID: 1513688272}

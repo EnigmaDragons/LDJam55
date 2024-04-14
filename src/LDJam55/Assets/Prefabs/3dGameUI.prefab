@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 6450429963538440808}
   - component: {fileID: 95828501697378682}
   - component: {fileID: 5062488525783979327}
-  m_Layer: 7
+  m_Layer: 8
   m_Name: 3dCanvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -207,7 +207,7 @@ Camera:
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 128
+    m_Bits: 256
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
@@ -239,6 +239,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: LearnSummonUI
+      objectReference: {fileID: 0}
+    - target: {fileID: 97999337158552224, guid: e29e72fe5fdfb544790007131fb08117,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1655583233291771401, guid: e29e72fe5fdfb544790007131fb08117,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3890949562918039369, guid: e29e72fe5fdfb544790007131fb08117,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 5588461627521783654, guid: e29e72fe5fdfb544790007131fb08117,
         type: 3}
@@ -339,6 +354,31 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6007982113656103788, guid: e29e72fe5fdfb544790007131fb08117,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7431080980387851084, guid: e29e72fe5fdfb544790007131fb08117,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8029868828689914184, guid: e29e72fe5fdfb544790007131fb08117,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8320743053314602476, guid: e29e72fe5fdfb544790007131fb08117,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8749742815785397306, guid: e29e72fe5fdfb544790007131fb08117,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

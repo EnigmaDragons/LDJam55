@@ -11,6 +11,7 @@ TagManager:
   - Door
   - Flammable
   - Water
+  - Moveable
   layers:
   - Default
   - TransparentFX
@@ -19,6 +20,7 @@ TagManager:
   - Water
   - UI
   - Interactable
+  - LightSource
   - VfxUI
   - 
   - 

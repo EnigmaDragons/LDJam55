@@ -42,6 +42,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 5749128202003887793}
     m_Modifications:
+    - target: {fileID: 5026333982251793075, guid: 0f5cc22bfe8c7ad4ab1aadb769ea0424,
+        type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 6353470f0c327ea4c84dd79661bad3b2, type: 2}
     - target: {fileID: 6163753320281817564, guid: 0f5cc22bfe8c7ad4ab1aadb769ea0424,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -100,7 +105,7 @@ PrefabInstance:
     - target: {fileID: 6827980748242819942, guid: 0f5cc22bfe8c7ad4ab1aadb769ea0424,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -180,6 +185,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: arch_atlantis_wall_straightA_varA
+      objectReference: {fileID: 0}
+    - target: {fileID: 8782091912424230379, guid: b5fd168982b1561409e500ce671a4751,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -296,6 +306,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: arch_atlantis_wall_straightA_varA (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8782091912424230379, guid: b5fd168982b1561409e500ce671a4751,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

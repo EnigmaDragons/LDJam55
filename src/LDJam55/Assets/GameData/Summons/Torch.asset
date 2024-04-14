@@ -15,6 +15,7 @@ MonoBehaviour:
   summonName: Torch
   keyCodes: 120100001101000011010000
   icon: {fileID: 21300000, guid: 4e29bbe67f13f7a419b65dd6f60fd1a5, type: 3}
+  summonCardArt: {fileID: 21300000, guid: 270e383c44ef9c34db428a8eed88ffc3, type: 3}
   summonPrefab: {fileID: 4447634453200432577, guid: 34183bfa2e2ce0f4cbb0f24db97b87dd,
     type: 3}
   manaCost: 10
