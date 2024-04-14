@@ -27,6 +27,7 @@ public class LearnSummonUI : OnMessage<SummonLearned>
     {
         buttonToDismiss.onClick.AddListener(() =>
         {
+            Destroy(_summonInstance);
             panel.gameObject.SetActive(false);
             vfx.SetActive(false);
             _showing = false;
