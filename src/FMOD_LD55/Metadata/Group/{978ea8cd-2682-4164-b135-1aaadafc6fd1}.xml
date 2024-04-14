@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.02.00">
 	<object class="MixerGroup" id="{978ea8cd-2682-4164-b135-1aaadafc6fd1}">
+		<property name="color">
+			<value>Green</value>
+		</property>
 		<property name="name">
 			<value>SFX_MST</value>
 		</property>
@@ -11,7 +14,7 @@
 			<destination>{951599e7-c672-406f-b8ee-3e605fbc6691}</destination>
 		</relationship>
 		<relationship name="output">
-			<destination>{045ac4d1-d9e1-4c45-ac17-d14bcf51b2ef}</destination>
+			<destination>{aac20f68-7727-4058-a71d-6956b6326e0c}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusEffectChain" id="{18203851-e7bd-4071-804a-b80bbdfdfd4e}">
