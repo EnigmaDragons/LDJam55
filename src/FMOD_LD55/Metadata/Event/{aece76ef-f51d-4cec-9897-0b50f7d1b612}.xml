@@ -99,6 +99,7 @@
 	<object class="MixerBusPanner" id="{dcacf1c3-9063-450a-926d-119d5c196b13}" />
 	<object class="MixerBusEffectChain" id="{9a5728a3-7dfd-4408-ae74-39061a06cb80}">
 		<relationship name="effects">
+			<destination>{afdc5f2b-2fda-4778-956a-bac3990b610e}</destination>
 			<destination>{2b6f3937-e8d7-49f2-bee7-8f84717656b6}</destination>
 			<destination>{74f890f5-1394-4a85-a2d9-20d916d7d0b5}</destination>
 		</relationship>
@@ -117,7 +118,7 @@
 	</object>
 	<object class="SingleSound" id="{ff4800b2-9342-4dcf-833f-3987cfc63039}">
 		<property name="volume">
-			<value>-1</value>
+			<value>-9.5</value>
 		</property>
 		<relationship name="modulators">
 			<destination>{9f4ed248-d520-47fa-962c-381b07f5e493}</destination>
@@ -127,6 +128,11 @@
 		</relationship>
 	</object>
 	<object class="MixerBusFader" id="{ce171cd8-f9b2-408a-94bc-415141f39d68}" />
+	<object class="DistortionEffect" id="{afdc5f2b-2fda-4778-956a-bac3990b610e}">
+		<property name="level">
+			<value>0.449999988</value>
+		</property>
+	</object>
 	<object class="MixerSend" id="{2b6f3937-e8d7-49f2-bee7-8f84717656b6}">
 		<property name="level">
 			<value>-14</value>
