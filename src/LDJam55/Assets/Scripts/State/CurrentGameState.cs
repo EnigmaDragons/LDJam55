@@ -29,6 +29,7 @@ public static class CurrentGameState
     
     public static void UpdateState(Action<GameState> apply)
     {
+        InitIfNeeded();
         UpdateState(_ =>
         {
             apply(gameState);
@@ -38,6 +39,7 @@ public static class CurrentGameState
     
     public static void UpdateState(Func<GameState, GameState> apply)
     {
+        InitIfNeeded();
         gameState = apply(gameState);
         Message.Publish(new GameStateChanged(gameState));
     }

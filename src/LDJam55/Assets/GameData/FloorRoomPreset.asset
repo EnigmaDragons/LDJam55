@@ -42,13 +42,13 @@ MonoBehaviour:
   - prefab: {fileID: 6337331242435386637, guid: 0a52db9ed4da4d9479e4946c6a1340a5,
       type: 3}
     positionOffset: {x: 0, y: 0, z: 0}
-    rotationOffset: {x: 0, y: 0, z: 0}
+    rotationOffset: {x: 0, y: 180, z: 0}
     weight: 0
     alignToSurface: 0
     tileLayer:
       serializedVersion: 2
       m_Bits: 0
-    isExpanded: 0
+    isExpanded: 1
     allowDecor: 0
   - prefab: {fileID: 5695319015503728279, guid: 5b74c393ccf929648a4673643839d361,
       type: 3}

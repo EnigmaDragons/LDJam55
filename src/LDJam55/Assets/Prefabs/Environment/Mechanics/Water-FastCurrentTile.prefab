@@ -214,11 +214,10 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 2}
-  m_LocalScale: {x: 4.23, y: 1, z: 7.7045813}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 3847500678232789447}
-  - {fileID: 4180212559662180947}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &3528226198927421694
@@ -232,8 +231,8 @@ GameObject:
   - component: {fileID: 3847500678232789447}
   - component: {fileID: 6479434859581281327}
   - component: {fileID: 4887294314662552605}
-  - component: {fileID: 526042671736917167}
   - component: {fileID: 541159680377694168}
+  - component: {fileID: 9018290349862385903}
   m_Layer: 0
   m_Name: Quad
   m_TagString: Water
@@ -254,6 +253,7 @@ Transform:
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 4180212559662180947}
   - {fileID: 1880929962658723533}
   m_Father: {fileID: 3267435433495046762}
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
@@ -309,28 +309,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &526042671736917167
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3528226198927421694}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!114 &541159680377694168
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -346,6 +324,7 @@ MonoBehaviour:
   targetPosition: {fileID: 7471391303402276258}
   isFastWater: 1
   movementSpeed: 2
+  epsilon: 0.01
   soundEventsStart:
     m_PersistentCalls:
       m_Calls:
@@ -378,6 +357,27 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!65 &9018290349862385903
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3528226198927421694}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 0.6379057}
+  m_Center: {x: 0, y: 0, z: -0.31895286}
 --- !u!1 &7471391303402276258
 GameObject:
   m_ObjectHideFlags: 0
@@ -403,9 +403,9 @@ Transform:
   m_GameObject: {fileID: 7471391303402276258}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.655, y: 0.065, z: 1.138}
+  m_LocalPosition: {x: -0.75, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 3267435433495046762}
+  m_Father: {fileID: 3847500678232789447}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

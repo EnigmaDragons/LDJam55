@@ -12,6 +12,7 @@ public class PlayerController : OnMessage<ShowSummonMenu, HideSummonMenu>
     private Vector3 movement;
 
     public bool PlayerHasControl { get; set; } = true;
+    public Transform ForceMover { get; set; } = null;
 
     private void Start()
        => PlayerHasControl = true;
