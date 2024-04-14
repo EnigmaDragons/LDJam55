@@ -2923,7 +2923,7 @@ PrefabInstance:
     - target: {fileID: 9217826807603502517, guid: 9252bb6603aa0234da406fd50b9d2b32,
         type: 3}
       propertyPath: m_Name
-      value: Door
+      value: EntryDoor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3909,7 +3909,7 @@ PrefabInstance:
     - target: {fileID: 2021242608083196252, guid: 9252bb6603aa0234da406fd50b9d2b32,
         type: 3}
       propertyPath: startsOpens
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4825326441237645215, guid: 9252bb6603aa0234da406fd50b9d2b32,
         type: 3}
@@ -3964,7 +3964,7 @@ PrefabInstance:
     - target: {fileID: 9217826807603502517, guid: 9252bb6603aa0234da406fd50b9d2b32,
         type: 3}
       propertyPath: m_Name
-      value: Door (1)
+      value: LockedDoor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

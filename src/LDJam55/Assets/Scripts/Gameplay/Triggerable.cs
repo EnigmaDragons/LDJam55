@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.Events;
 
-public class Triggerable : MonoBehaviour, Constraint
+public class Triggerable : ConstraintBase
 {
     [SerializeField] private bool isTriggered;
     [SerializeField] private bool canBeUntriggered;
@@ -9,7 +9,7 @@ public class Triggerable : MonoBehaviour, Constraint
     [SerializeField] private UnityEvent onTrigger;
 
     public bool IsTriggered => isTriggered;
-    public bool IsSatisfied => IsTriggered;
+    public override bool IsSatisfied => IsTriggered;
 
     private void Start()
     {

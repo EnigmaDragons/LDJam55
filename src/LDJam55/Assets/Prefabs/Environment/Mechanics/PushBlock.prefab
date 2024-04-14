@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3065735247643943558}
   - component: {fileID: 7873684738988894556}
   - component: {fileID: 4848976212143582929}
+  - component: {fileID: 686014720776229464}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -107,6 +108,18 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &686014720776229464
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6885332758916947655}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e049b92091296648be1991eaf019b92, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7911707069537308427
 GameObject:
   m_ObjectHideFlags: 0
@@ -116,6 +129,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8964186715580348674}
+  - component: {fileID: 7982218204492752697}
   m_Layer: 0
   m_Name: PushBlock
   m_TagString: Untagged
@@ -139,3 +153,15 @@ Transform:
   - {fileID: 4808326829449941946}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7982218204492752697
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7911707069537308427}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbf11ee2454b54945af1e6092b095fd9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
