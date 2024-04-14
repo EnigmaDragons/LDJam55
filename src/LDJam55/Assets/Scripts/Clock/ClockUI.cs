@@ -4,11 +4,10 @@ using UnityEngine;
 
 public class ClockUI : MonoBehaviour
 {
-
-    [SerializeField]
+    [SerializeField] 
     private float defaultTimeInSeconds = default;
 
-    [SerializeField]
+    [SerializeField] 
     private TextMeshProUGUI clockText;
 
     private bool _hasLost;
