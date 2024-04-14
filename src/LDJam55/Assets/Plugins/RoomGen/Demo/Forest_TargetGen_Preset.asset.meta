@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 028816b93eee24cae926e70936ef0adb
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 215804
+  packageName: RoomGen - Procedural Generator
+  packageVersion: 2.6.4
+  assetPath: Assets/RoomGen/Demo/Forest_TargetGen_Preset.asset
+  uploadId: 636268

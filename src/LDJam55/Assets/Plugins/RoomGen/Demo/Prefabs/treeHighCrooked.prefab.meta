@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 72888c0752ac9469a90b80a11bfc271d
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 215804
+  packageName: RoomGen - Procedural Generator
+  packageVersion: 2.6.4
+  assetPath: Assets/RoomGen/Demo/Prefabs/treeHighCrooked.prefab
+  uploadId: 636268

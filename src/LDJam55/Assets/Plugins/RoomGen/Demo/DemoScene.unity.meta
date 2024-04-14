@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 10e8a654d31744bc2ac823110af9ba69
+DefaultImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 215804
+  packageName: RoomGen - Procedural Generator
+  packageVersion: 2.6.4
+  assetPath: Assets/RoomGen/Demo/DemoScene.unity
+  uploadId: 636268

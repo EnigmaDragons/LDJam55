@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 46b0499d117f74e37bd39ab239302dba
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 215804
+  packageName: RoomGen - Procedural Generator
+  packageVersion: 2.6.4
+  assetPath: Assets/RoomGen/Demo/Prefabs/tree.prefab
+  uploadId: 636268

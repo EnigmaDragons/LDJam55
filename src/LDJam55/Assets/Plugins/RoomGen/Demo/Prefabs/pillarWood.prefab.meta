@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 2432be40112e44a5d9715379f1afc334
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 215804
+  packageName: RoomGen - Procedural Generator
+  packageVersion: 2.6.4
+  assetPath: Assets/RoomGen/Demo/Prefabs/pillarWood.prefab
+  uploadId: 636268

@@ -41,6 +41,11 @@ public class PlayerController : OnMessage<ShowSummonMenu, HideSummonMenu>
         }
         movement = new Vector3(Input.GetAxisRaw(HorizontalInput), 0, Input.GetAxisRaw(VerticalInput));
         playerRigidBody.MovePosition(transform.position + movementSpeed * Time.deltaTime * movement);
+
+        if(movement ==  Vector3.zero)
+        {
+            playerRigidBody.velocity = Vector3.zero;
+        }
     }
 
     public void RotatePlayer(Quaternion quatty)
