@@ -707,6 +707,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 7787867331795645070}
+  doorCanBeClosedAgain: 1
   triggerables:
   - {fileID: 30215965597114535}
 --- !u!4 &6126508141161883708 stripped

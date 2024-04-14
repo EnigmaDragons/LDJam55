@@ -46,6 +46,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scaleWhenOpen: {x: 0, y: 2, z: 1}
+  scaleWhenClosed: {x: 1, y: 2, z: 1}
   isOpen: 0
   startsOpens: 0
   doorScaleTarget: {fileID: 1900459117246008065}
