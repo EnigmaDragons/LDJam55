@@ -1,4 +1,5 @@
 using System;
+using System.Linq;
 using UnityEngine;
 using FMODUnity;
 
@@ -12,6 +13,7 @@ public class Pushable : OnMessage<PushingObjectBegin, PushingObjectEnd>
     private Vector3 _start;
     private Vector3 _destination;
     private Vector3 _pushDirection;
+    private bool _canMoveThatDirection;
     private float _movingT;
     private float _contactT;
     private bool _isPlayerAdjacent;
@@ -38,6 +40,7 @@ public class Pushable : OnMessage<PushingObjectBegin, PushingObjectEnd>
                 _contactT = 0;
                 _isMoving = false;
                 transform.localPosition = _destination;
+                _isPlayerAdjacent = false;
                 Message.Publish(new PushingObjectEnd());
             }
             else
@@ -45,7 +48,7 @@ public class Pushable : OnMessage<PushingObjectBegin, PushingObjectEnd>
                 transform.localPosition = Vector3.Lerp(_start, _destination, _movingT / moveDurationSeconds);
             }
         }
-        else if(_canMove)
+        else if (_canMove && _canMoveThatDirection)
         {
             if (_isPlayerAdjacent)
                 _contactT += Time.deltaTime;
@@ -78,6 +81,7 @@ public class Pushable : OnMessage<PushingObjectBegin, PushingObjectEnd>
             _pushDirection = isMoreX
               ? new Vector3(Mathf.Round(direction.x), 0, 0)
               : new Vector3(0, 0, Mathf.Round(direction.z));
+            _canMoveThatDirection = !Physics.OverlapSphere( transform.TransformPoint(_pushDirection + new Vector3(0, 0.5f, 0)), 0.1f).Any(x => !x.isTrigger);
         }
     }
 
