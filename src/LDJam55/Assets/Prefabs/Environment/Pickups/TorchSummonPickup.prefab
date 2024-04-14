@@ -48,6 +48,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   summon: {fileID: 11400000, guid: 3076243629c3d01408f6f45dd9187d7d, type: 2}
   delayBeforeDisable: 1
+  cardViews:
+  - {fileID: 9201432486234709232}
+  - {fileID: 6003837369214356683}
 --- !u!135 &3379357454814101039
 SphereCollider:
   m_ObjectHideFlags: 0

@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9912793f47fb7b4d893b8be85b683bf, type: 3}
+  m_Name: PushBlock
+  m_EditorClassIdentifier: 
+  summonName: Block
+  keyCodes: 14010000130100001301000011010000
+  icon: {fileID: 21300000, guid: 345fb5b595db68f41bd1487c4eba26bb, type: 3}
+  summonPrefab: {fileID: 7911707069537308427, guid: ab97ed3fc2d816a47af058c2977227c9,
+    type: 3}
+  manaCost: 20
