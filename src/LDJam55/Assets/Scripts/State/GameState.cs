@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using UnityEngine;
 
 [Serializable]
 public sealed class GameState
@@ -15,4 +16,5 @@ public sealed class GameState
     public float CurrentGameTime;
     public int Mana;
     public List<string> SummonNames = new();
+    public HashSet<GameObject> Heavies = new();
 }

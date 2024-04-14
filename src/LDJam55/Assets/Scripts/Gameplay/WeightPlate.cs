@@ -1,53 +1,47 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
 public class WeightPlate : ConstraintBase
 {
-    private List<GameObject> _heavies = new List<GameObject>();
+    private HashSet<GameObject> _heavies = new HashSet<GameObject>();
     [SerializeField] private UnityEvent onPressed;
     [SerializeField] private UnityEvent onReleased;
     
     public override bool IsSatisfied => _heavies.Count > 0;
+    
+    private float checkInterval = 0.25f;
+    private float nextCheckTime = 0f;
+    private float logInterval = 2f;
+    private float nextLogTime = 0f;
 
-    private void Awake()
+    private void Update()
     {
-        Collider[] colliders = Physics.OverlapBox(transform.position, transform.localScale / 2, transform.rotation);
-        foreach (var collider in colliders)
+        if (Time.time >= nextLogTime)
         {
-            if (collider.gameObject.GetComponent<Heavy>() != null)
+            Log.Info($"Heavies present: {_heavies.Count}", this);
+            nextLogTime = Time.time + logInterval;
+        }
+
+        if (Time.time >= nextCheckTime)
+        {
+            var heavies = CurrentGameState.GameState.Heavies;
+            var wasSatisfied = IsSatisfied;
+            heavies.ForEach(h =>
             {
-                _heavies.Add(collider.gameObject);                
-            }
+                var isClose = Vector2.Distance(new Vector2(h.transform.position.x, h.transform.position.z), new Vector2(transform.position.x, transform.position.z)) <= 0.25f;
+                if (isClose)
+                {
+                    _heavies.Add(h.gameObject);
+                }
+                else
+                {
+                    _heavies.Remove(h.gameObject);
+                }
+            });
+            ProcessChanged(wasSatisfied);
+            nextCheckTime = Time.time + checkInterval;
         }
-        ProcessChanged(false);
-    }
-
-    private void OnCollisionEnter(Collision collision) => ObjEnter(collision.gameObject);
-    private void OnTriggerEnter(Collider other) => ObjEnter(other.gameObject);
-
-    private void OnCollisionExit(Collision collision) => ObjExit(collision.gameObject);
-    private void OnTriggerExit(Collider other) => ObjExit(other.gameObject);
-
-    private void ObjEnter(GameObject o)
-    {
-        var wasPressed = IsSatisfied;
-        if (o.GetComponentInChildren<Heavy>() != null)
-        {
-            _heavies.Add(o.gameObject);
-            ProcessChanged(wasPressed);
-        }
-    }
-
-    private void ObjExit(GameObject o)
-    {
-        var wasPressed = IsSatisfied;
-        if (o.GetComponentInChildren<Heavy>() != null)
-        {
-            _heavies.Remove(o.gameObject);
-            ProcessChanged(wasPressed);
-        } 
     }
 
     private void ProcessChanged(bool stateBefore)

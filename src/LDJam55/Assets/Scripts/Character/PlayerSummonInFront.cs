@@ -10,10 +10,10 @@ public class PlayerSummonInFront : OnMessage<SummonRequested>
     {
         var t = gameObject.transform;
         var summonPosition = t.position + new Vector3(0, yOffset, 0) + t.forward * inFrontOffset;
-        var snappedPos = new Vector3(
-            Mathf.Round(summonPosition.x / 2) * 2,
-            msg.Summon.SummonAtFixedYPosition ? msg.Summon.FixedYPosition : summonPosition.y,
-            (Mathf.Round(summonPosition.z / 2) * 2) + zOffset);
-        Instantiate(msg.Summon.SummonPrefab, snappedPos,  Quaternion.identity, transform.parent);
+        // var snappedPos = new Vector3(
+        //     Mathf.Round(summonPosition.x / 2) * 2,
+        //     msg.Summon.SummonAtFixedYPosition ? msg.Summon.FixedYPosition : summonPosition.y,
+        //     (Mathf.Round(summonPosition.z / 2) * 2) + zOffset);
+        Instantiate(msg.Summon.SummonPrefab, summonPosition,  Quaternion.identity, transform.parent);
     }
 }
