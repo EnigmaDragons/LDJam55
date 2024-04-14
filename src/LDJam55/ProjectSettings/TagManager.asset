@@ -10,6 +10,7 @@ TagManager:
   - AppManagers
   - Door
   - Flammable
+  - Water
   layers:
   - Default
   - TransparentFX
