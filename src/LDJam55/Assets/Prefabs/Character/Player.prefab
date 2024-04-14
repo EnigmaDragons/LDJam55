@@ -134,7 +134,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerRigidBody: {fileID: 2233961544105663511}
   movementSpeed: 10
-  rotationSpeed: 5
+  rotationSpeed: 10
 --- !u!54 &2233961544105663511
 Rigidbody:
   m_ObjectHideFlags: 0

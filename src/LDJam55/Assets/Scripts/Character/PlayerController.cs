@@ -18,21 +18,15 @@ public class PlayerController : OnMessage<ShowSummonMenu, HideSummonMenu>
 
     private void Update()
     {
-        if (!PlayerHasControl)
-        {
-            return;
+        if (!PlayerHasControl) {
+            movement = Vector3.zero;
+        } else {
+            movement = new Vector3(Input.GetAxisRaw(HorizontalInput), 0.0f, Input.GetAxisRaw(VerticalInput)).normalized;
         }
-
-        movement = new Vector3(Input.GetAxisRaw(HorizontalInput), 0.0f, Input.GetAxisRaw(VerticalInput)).normalized;
     }
 
     private void FixedUpdate()
     {
-        if (!PlayerHasControl)
-        {
-            return;
-        }
-        // playerRigidBody.MovePosition(transform.position + movementSpeed * Time.fixedDeltaTime * movement);
         Vector3 velocity = movement * movementSpeed;
         playerRigidBody.velocity = velocity;
 

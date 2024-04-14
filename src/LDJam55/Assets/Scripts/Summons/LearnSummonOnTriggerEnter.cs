@@ -4,7 +4,7 @@ using UnityEngine;
 public class LearnSummonOnTriggerEnter : MonoBehaviour
 {
     [SerializeField] private Summon summon;
-    [SerializeField] private float delayBeforeDisable = 1f;
+    [SerializeField] private float delayBeforeDisable = 0.5f;
     [SerializeField] private SpriteRenderer[] cardViews = Array.Empty<SpriteRenderer>();
 
     private void Awake()
