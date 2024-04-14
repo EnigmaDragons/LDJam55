@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 717e54298fb74496e9eda473c51e385b
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 215804
+  packageName: RoomGen - Procedural Generator
+  packageVersion: 2.6.4
+  assetPath: Assets/RoomGen/Demo/Prefabs/rockLarge.prefab
+  uploadId: 636268

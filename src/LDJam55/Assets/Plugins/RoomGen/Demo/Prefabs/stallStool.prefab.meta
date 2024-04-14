@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 2bb699bc599d149d7afbbb1835550dd1
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 215804
+  packageName: RoomGen - Procedural Generator
+  packageVersion: 2.6.4
+  assetPath: Assets/RoomGen/Demo/Prefabs/stallStool.prefab
+  uploadId: 636268

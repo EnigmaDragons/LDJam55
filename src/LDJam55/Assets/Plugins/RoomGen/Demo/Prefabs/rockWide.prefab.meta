@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: e75d27265a81d4a7fb69443004ea56be
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 215804
+  packageName: RoomGen - Procedural Generator
+  packageVersion: 2.6.4
+  assetPath: Assets/RoomGen/Demo/Prefabs/rockWide.prefab
+  uploadId: 636268

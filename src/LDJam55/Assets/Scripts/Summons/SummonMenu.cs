@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
-public class SummonMenu : OnMessage<GameStateChanged, HideSummonMenu, ShowSummonMenu>
+public class SummonMenu : OnMessage<SummonLearned, HideSummonMenu, ShowSummonMenu>
 {
     [SerializeField] private List<Summon> summons;
     [SerializeField] private SummonUI summonUIPrefab;
@@ -65,7 +65,7 @@ public class SummonMenu : OnMessage<GameStateChanged, HideSummonMenu, ShowSummon
     }
 
 
-    protected override void Execute(GameStateChanged msg)
+    protected override void Execute(SummonLearned msg)
     {
         if (_isActive)
         {
