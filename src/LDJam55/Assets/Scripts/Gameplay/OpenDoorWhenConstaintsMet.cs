@@ -6,6 +6,7 @@ public class OpenDoorWhenConditionsMet : MonoBehaviour
     [SerializeField] private Door target;
     [SerializeField] private bool doorCanBeClosedAgain = false;
     [SerializeField] private ConstraintBase[] triggerables = Array.Empty<ConstraintBase>();
+    [SerializeField] private bool invertCondition = false;
 
     private void Awake()
     {
@@ -20,13 +21,14 @@ public class OpenDoorWhenConditionsMet : MonoBehaviour
     private void Update()
     {
         var allSatisfied = triggerables.AllNonAlloc(t => t.IsSatisfied);
-        if (!target.IsOpen && allSatisfied)
+        var shouldBeOpen = invertCondition ? !allSatisfied : allSatisfied;
+        if (!target.IsOpen && shouldBeOpen)
         {
             Log.Info($"Door Opened - {triggerables.Length} Triggers were Activated", this);
             target.Open();
         }
 
-        if (target.IsOpen && doorCanBeClosedAgain && !allSatisfied)
+        if (target.IsOpen && doorCanBeClosedAgain && !shouldBeOpen)
         {
             Log.Info($"Door Closed - {triggerables.Length} Triggers were Not All Active", this);
             target.Close();

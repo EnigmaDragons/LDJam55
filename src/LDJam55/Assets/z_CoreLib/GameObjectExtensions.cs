@@ -25,4 +25,12 @@ public static class GameObjectExtensions
         foreach(Transform child in t)
             Object.Destroy(child.gameObject);
     }
+
+    public static T GetComponentInSelfOrChildren<T>(this GameObject o)
+    {
+        var c = o.GetComponent<T>();
+        if (c != null)
+            return c;
+        return o.GetComponentInChildren<T>();
+    }
 }

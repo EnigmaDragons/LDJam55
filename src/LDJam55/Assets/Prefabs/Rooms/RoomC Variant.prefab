@@ -573,6 +573,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: LockedDoor
       objectReference: {fileID: 0}
+    - target: {fileID: 8028465103308448561, guid: 2140105c8ed280444b3ad8907d0f9be5,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8317438051406090509, guid: 2140105c8ed280444b3ad8907d0f9be5,
         type: 3}
       propertyPath: m_Name
@@ -582,6 +587,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8906491054040759392, guid: 2140105c8ed280444b3ad8907d0f9be5,
+        type: 3}
+      propertyPath: m_text
+      value: Room C
       objectReference: {fileID: 0}
     - target: {fileID: 8942488770467533102, guid: 2140105c8ed280444b3ad8907d0f9be5,
         type: 3}
@@ -710,6 +720,7 @@ MonoBehaviour:
   doorCanBeClosedAgain: 1
   triggerables:
   - {fileID: 30215965597114535}
+  invertCondition: 0
 --- !u!4 &6126508141161883708 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4413149739691503753, guid: 2140105c8ed280444b3ad8907d0f9be5,
@@ -902,11 +913,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 6891614896712574004}
     m_Modifications:
-    - target: {fileID: 4808326829449941946, guid: ab97ed3fc2d816a47af058c2977227c9,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 7911707069537308427, guid: ab97ed3fc2d816a47af058c2977227c9,
         type: 3}
       propertyPath: m_Name
@@ -915,7 +921,7 @@ PrefabInstance:
     - target: {fileID: 8964186715580348674, guid: ab97ed3fc2d816a47af058c2977227c9,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4
+      value: -2
       objectReference: {fileID: 0}
     - target: {fileID: 8964186715580348674, guid: ab97ed3fc2d816a47af058c2977227c9,
         type: 3}
