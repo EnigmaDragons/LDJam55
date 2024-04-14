@@ -11,8 +11,11 @@ public class ClockUI : MonoBehaviour
     [SerializeField]
     private TextMeshProUGUI clockText;
 
+    private bool _hasLost;
 
-    private void Start(){
+    private void Start()
+    {
+        _hasLost = false;
         //Set clock to default time
         CurrentGameState.UpdateState(state => state.CurrentGameTime = defaultTimeInSeconds);
     }
@@ -23,7 +26,9 @@ public class ClockUI : MonoBehaviour
         clockText.text = string.Format("{0}:{1:00}", (int)CurrentGameState.GameState.CurrentGameTime / 60, (int)CurrentGameState.GameState.CurrentGameTime % 60);
         
         //check if 0, lose
-        if(CurrentGameState.GameState.CurrentGameTime <= 0){
+        if(!_hasLost && CurrentGameState.GameState.CurrentGameTime <= 0)
+        {
+            _hasLost = true;
             Message.Publish(new GameOver());
         }
     }
