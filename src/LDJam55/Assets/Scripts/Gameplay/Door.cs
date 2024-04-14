@@ -12,15 +12,17 @@ public class Door : MonoBehaviour
     [SerializeField] private bool startsOpens = false;
     [SerializeField] private Transform doorScaleTarget;
     [SerializeField] private float animDurationSeconds = 1.5f;
+    [SerializeField] private float delayOpeningSeconds = 1.0f;
     public EventReference doorSuccesSFXRef;
+
 
     public bool IsOpen => isOpen;
     private bool stopSoundAtStart;
-    
+
     private void Awake()
     {
         stopSoundAtStart = true;
-        if(startsOpens)
+        if (startsOpens)
             Open();
     }
 
@@ -34,17 +36,19 @@ public class Door : MonoBehaviour
     {
         if (isOpen)
             return;
-        
-        isOpen = true;
-        if (scaleForOpen)
-            doorScaleTarget.DOScale(scaleWhenOpen, animDurationSeconds);
-        doorScaleTarget.DOLocalMoveY(-0.1f, animDurationSeconds);
-        if(!stopSoundAtStart)
+        this.ExecuteAfterDelay(() =>
         {
-            RuntimeManager.PlayOneShot(doorSuccesSFXRef);
-            Debug.Log("sound should play");
-        }
-
+            isOpen = true;
+            if (scaleForOpen)
+                doorScaleTarget.DOScale(scaleWhenOpen, animDurationSeconds);
+            doorScaleTarget.DOLocalMoveY(-0.1f, animDurationSeconds);
+            if (!stopSoundAtStart)
+            {
+                RuntimeManager.PlayOneShot(doorSuccesSFXRef);
+                Debug.Log("sound should play");
+            }
+        },
+        delayOpeningSeconds);
     }
 
     public void Close()
