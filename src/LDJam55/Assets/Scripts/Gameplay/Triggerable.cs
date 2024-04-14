@@ -21,6 +21,7 @@ public class Triggerable : MonoBehaviour, Constraint
     {
         isTriggered = true;
         onTrigger.Invoke();
+        Message.Publish(new TriggerableChanged());
     }
 
     public void UnTrigger()
@@ -29,5 +30,6 @@ public class Triggerable : MonoBehaviour, Constraint
             return;
 
         isTriggered = false;
+        Message.Publish(new TriggerableChanged());
     }
 }

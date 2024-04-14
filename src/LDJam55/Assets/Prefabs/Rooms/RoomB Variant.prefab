@@ -13,6 +13,21 @@ PrefabInstance:
       propertyPath: startsOpens
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1294301149209877063, guid: 2140105c8ed280444b3ad8907d0f9be5,
+        type: 3}
+      propertyPath: triggerablesNeededToLightRoom.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1294301149209877063, guid: 2140105c8ed280444b3ad8907d0f9be5,
+        type: 3}
+      propertyPath: 'triggerablesNeededToLightRoom.Array.data[0]'
+      value: 
+      objectReference: {fileID: 6140662870728725266}
+    - target: {fileID: 1294301149209877063, guid: 2140105c8ed280444b3ad8907d0f9be5,
+        type: 3}
+      propertyPath: 'triggerablesNeededToLightRoom.Array.data[1]'
+      value: 
+      objectReference: {fileID: 4619923338606532912}
     - target: {fileID: 3137882351296328503, guid: 2140105c8ed280444b3ad8907d0f9be5,
         type: 3}
       propertyPath: m_Name
