@@ -116,6 +116,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8964186715580348674}
+  - component: {fileID: 7982218204492752697}
   m_Layer: 0
   m_Name: PushBlock
   m_TagString: Untagged
@@ -139,3 +140,15 @@ Transform:
   - {fileID: 4808326829449941946}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7982218204492752697
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7911707069537308427}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbf11ee2454b54945af1e6092b095fd9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
