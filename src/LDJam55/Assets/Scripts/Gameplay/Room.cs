@@ -1,10 +1,11 @@
-﻿using System.Linq;
+﻿using System;
+using System.Linq;
 using UnityEngine;
 
 public class Room : OnMessage<TriggerableChanged>
 {
     [SerializeField] private GameObject roof;
-    [SerializeField] private Triggerable[] triggerablesNeededToLightRoom;
+    [SerializeField] private Triggerable[] triggerablesNeededToLightRoom = Array.Empty<Triggerable>();
 
     private bool _isInThisRoom;
     
@@ -19,7 +20,7 @@ public class Room : OnMessage<TriggerableChanged>
         {
             _isInThisRoom = true;
             roof.gameObject.SetActive(false);
-            Message.Publish(new ChangeRoomLighting(triggerablesNeededToLightRoom != null && triggerablesNeededToLightRoom.Count(x => x.IsTriggered) < 2));
+            Message.Publish(new ChangeRoomLighting(triggerablesNeededToLightRoom.Count(x => x.IsTriggered)));
         }
     }
 
@@ -35,6 +36,6 @@ public class Room : OnMessage<TriggerableChanged>
     protected override void Execute(TriggerableChanged msg)
     {
         if (_isInThisRoom)
-            Message.Publish(new ChangeRoomLighting(triggerablesNeededToLightRoom != null && triggerablesNeededToLightRoom.Count(x => x.IsTriggered) < 2));
+            Message.Publish(new ChangeRoomLighting(triggerablesNeededToLightRoom.Count(x => x.IsTriggered)));
     }
 }

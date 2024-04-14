@@ -1,6 +1,6 @@
 ﻿public class ChangeRoomLighting
 {
-    public ChangeRoomLighting(bool isDark) => IsDark = isDark;
+    public ChangeRoomLighting(int numLights) => NumLights = numLights;
     
-    public bool IsDark { get; }
+    public int NumLights { get; }
 }
