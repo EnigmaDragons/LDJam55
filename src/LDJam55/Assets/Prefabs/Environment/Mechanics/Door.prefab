@@ -46,8 +46,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d912a55eae5441aa5610654a30ab9e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scaleWhenOpen: {x: 1, y: 0, z: 1}
-  scaleWhenClosed: {x: 1, y: 1, z: 1}
+  scaleWhenOpen: {x: 1, y: 0, z: 2}
+  scaleWhenClosed: {x: 1, y: 1, z: 2}
   scaleForOpen: 1
   isOpen: 0
   startsOpens: 0
