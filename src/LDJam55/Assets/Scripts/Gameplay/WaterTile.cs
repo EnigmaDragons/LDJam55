@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Events;
 
 public class WaterTile : MonoBehaviour
 {
@@ -8,6 +9,9 @@ public class WaterTile : MonoBehaviour
 
     private PlayerController playerController;
     private Transform objectInWater = null;
+
+    public UnityEvent soundEventsStart;
+    public UnityEvent soundEventsStop;
 
     public bool IsFastWater()
     {
@@ -62,6 +66,7 @@ public class WaterTile : MonoBehaviour
                 playerController = incomingPlayerController;
                 playerController.PlayerHasControl = false;
             }
+            soundEventsStart.Invoke();
         }
         else if (collider.CompareTag("Moveable"))
         {
@@ -76,6 +81,7 @@ public class WaterTile : MonoBehaviour
             playerController.transform.rotation = new Quaternion(0, playerController.transform.rotation.y, 0, 0);
             playerController.PlayerHasControl = true;
             playerController = null;
+            soundEventsStop.Invoke();
         }
         else if (collider.CompareTag("Moveable"))
         {
