@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 3bfba438ae9ab4c70b78436de976c646
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 215804
+  packageName: RoomGen - Procedural Generator
+  packageVersion: 2.6.4
+  assetPath: Assets/RoomGen/Demo/Prefabs/Banner_1.prefab
+  uploadId: 636268

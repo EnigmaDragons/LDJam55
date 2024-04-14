@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: a66ba237f4592405489745dbfcbae109
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 215804
+  packageName: RoomGen - Procedural Generator
+  packageVersion: 2.6.4
+  assetPath: Assets/RoomGen/Editor/TargetGeneratorEditor.cs
+  uploadId: 636268

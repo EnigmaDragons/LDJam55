@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 29eaadf94d7b3435490636ae3042632c
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 215804
+  packageName: RoomGen - Procedural Generator
+  packageVersion: 2.6.4
+  assetPath: Assets/RoomGen/Demo/Prefabs/treeCrooked.prefab
+  uploadId: 636268

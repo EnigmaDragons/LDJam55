@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 0479fc2ed1c4742e0b979ab2943ba0b2
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 215804
+  packageName: RoomGen - Procedural Generator
+  packageVersion: 2.6.4
+  assetPath: Assets/RoomGen/Demo/Prefabs/Wall_Window_Shutters.prefab
+  uploadId: 636268

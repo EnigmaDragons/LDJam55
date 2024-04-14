@@ -29,11 +29,11 @@ public class Pushable : MonoBehaviour
         // NOTE: Hacky fix to ensure the block always snaps to the tile grid.
         if (!_isMoving)
         {
-            float snappedX = Mathf.Round(transform.position.x / 2) * 2;
-            float snappedZ = Mathf.Round(transform.position.z / 2) * 2;
-            if (transform.position.x != snappedX || transform.position.z != snappedZ)
+            float snappedX = Mathf.Round(transform.localPosition.x / 2) * 2;
+            float snappedZ = Mathf.Round(transform.localPosition.z / 2) * 2;
+            if (transform.localPosition.x != snappedX || transform.localPosition.z != snappedZ)
             {
-                transform.position = new Vector3(snappedX, transform.position.y, snappedZ);
+                transform.localPosition = new Vector3(snappedX, transform.localPosition.y, snappedZ);
             }
         }        
     }
