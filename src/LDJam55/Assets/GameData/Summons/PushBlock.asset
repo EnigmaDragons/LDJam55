@@ -15,6 +15,7 @@ MonoBehaviour:
   summonName: Block
   keyCodes: 14010000130100001301000011010000
   icon: {fileID: 21300000, guid: 345fb5b595db68f41bd1487c4eba26bb, type: 3}
+  summonCardArt: {fileID: 21300000, guid: c5d6dd2e9c59b1243a73e2dd20fc5fce, type: 3}
   summonPrefab: {fileID: 7911707069537308427, guid: ab97ed3fc2d816a47af058c2977227c9,
     type: 3}
   manaCost: 20
