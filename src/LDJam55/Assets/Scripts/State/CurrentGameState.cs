@@ -3,10 +3,27 @@ using UnityEngine;
 
 public static class CurrentGameState
 {
-    [SerializeField] public static GameState GameState;
+    [SerializeField] private static GameState gameState;
 
-    public static void Init() => GameState = new GameState();
-    public static void Init(GameState initialState) => GameState = initialState;
+    public static GameState GameState
+    {
+        get
+        {
+            InitIfNeeded();
+            return gameState;
+        }
+    }
+    
+    public static void InitIfNeeded()
+    {
+        if (gameState == null)
+        {
+            Init();
+        }
+    }
+    
+    public static void Init() => gameState = new GameState();
+    public static void Init(GameState initialState) => gameState = initialState;
     public static void Subscribe(Action<GameStateChanged> onChange, object owner) => Message.Subscribe(onChange, owner);
     public static void Unsubscribe(object owner) => Message.Unsubscribe(owner);
     
@@ -14,14 +31,14 @@ public static class CurrentGameState
     {
         UpdateState(_ =>
         {
-            apply(GameState);
-            return GameState;
+            apply(gameState);
+            return gameState;
         });
     }
     
     public static void UpdateState(Func<GameState, GameState> apply)
     {
-        GameState = apply(GameState);
-        Message.Publish(new GameStateChanged(GameState));
+        gameState = apply(gameState);
+        Message.Publish(new GameStateChanged(gameState));
     }
 }
