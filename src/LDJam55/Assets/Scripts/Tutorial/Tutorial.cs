@@ -5,7 +5,7 @@ using System.Linq;
 using TMPro;
 using UnityEngine;
 
-public class Tutorial : OnMessage<SummonLearningDismissed, SummonRequested, ShowSummonMenu>
+public class Tutorial : OnMessage<SummonBegin, ShowSummonMenu, SummonLearningDismissed>
 {
     [SerializeField] private TextMeshProUGUI tutorialText;
     [SerializeField] private string ctrlTutorial;
@@ -54,7 +54,7 @@ public class Tutorial : OnMessage<SummonLearningDismissed, SummonRequested, Show
         SetTutorialState(true, keyCodeTutorial);
     }
 
-    protected override void Execute(SummonRequested msg)
+    protected override void Execute(SummonBegin msg)
     {
         if (_activeTutorial != _tutorialName.KeyCodeTutorial)
         {
