@@ -4,10 +4,13 @@ using UnityEngine;
 public class Door : MonoBehaviour
 {
     [SerializeField] private Vector3 scaleWhenOpen = new Vector3(0, 0, 0);
+    [SerializeField] private Vector3 scaleWhenClosed = Vector3.one;
     [SerializeField] private bool isOpen = false;
     [SerializeField] private bool startsOpens = false;
     [SerializeField] private Transform doorScaleTarget;
 
+    public bool IsOpen => isOpen;
+    
     private void Awake()
     {
         if(startsOpens)
@@ -29,7 +32,7 @@ public class Door : MonoBehaviour
             return;
 
         isOpen = false;
-        doorScaleTarget.DOScale(Vector3.one, 1.5f);
+        doorScaleTarget.DOScale(scaleWhenClosed, 1.5f);
     }
 }
 
