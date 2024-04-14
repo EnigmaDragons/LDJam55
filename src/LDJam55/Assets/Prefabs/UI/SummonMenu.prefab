@@ -600,7 +600,7 @@ MonoBehaviour:
   summonUIPrefab: {fileID: 3425548198175253414, guid: 5ed64558410fc8b49a9f8f8504374d94,
     type: 3}
   summonDaddy: {fileID: 3284791825536060262}
-  summonMommy: {fileID: 307344718102370235}
+  summonGlyph: {fileID: 307344718102370235}
   thingsToDisable:
   - {fileID: 8316227065662268984}
   - {fileID: 1656105133306761352}
