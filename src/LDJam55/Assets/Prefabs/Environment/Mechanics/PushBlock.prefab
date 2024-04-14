@@ -121,7 +121,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e049b92091296648be1991eaf019b92, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveDurationSeconds: 1.5
+  moveDurationSeconds: 1
+  requiredContactSeconds: 0.3
   pushBlockSFX:
     Guid:
       Data1: -1814119214
