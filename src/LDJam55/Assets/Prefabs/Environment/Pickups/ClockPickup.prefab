@@ -102,7 +102,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  delaySeconds: 0.5
+  delaySeconds: 0.25
   canRetrigger: 0
 --- !u!135 &8870866382430611579
 SphereCollider:
