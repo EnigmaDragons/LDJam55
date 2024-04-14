@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class PlayerController : OnMessage<ShowSummonMenu, HideSummonMenu>
+public class PlayerController : OnMessage<ShowSummonMenu, HideSummonMenu, PushingObjectBegin, PushingObjectEnd>
 {
     [SerializeField] private Rigidbody playerRigidBody;
     [SerializeField] private float movementSpeed = 8f;
@@ -19,9 +19,12 @@ public class PlayerController : OnMessage<ShowSummonMenu, HideSummonMenu>
 
     private void Update()
     {
-        if (!PlayerHasControl) {
+        if (!PlayerHasControl)
+        {
             movement = Vector3.zero;
-        } else {
+        }
+        else
+        {
             movement = new Vector3(Input.GetAxisRaw(HorizontalInput), 0.0f, Input.GetAxisRaw(VerticalInput)).normalized;
         }
     }
@@ -33,7 +36,7 @@ public class PlayerController : OnMessage<ShowSummonMenu, HideSummonMenu>
             playerRigidBody.velocity = Vector3.zero;
             return;
         }
-        
+
         Vector3 velocity = movement * movementSpeed;
         playerRigidBody.velocity = velocity;
 
@@ -44,7 +47,7 @@ public class PlayerController : OnMessage<ShowSummonMenu, HideSummonMenu>
             playerRigidBody.MoveRotation(smoothRotation);
         }
 
-        if(movement ==  Vector3.zero)
+        if (movement == Vector3.zero)
         {
             playerRigidBody.velocity = Vector3.zero;
         }
@@ -60,4 +63,10 @@ public class PlayerController : OnMessage<ShowSummonMenu, HideSummonMenu>
 
     protected override void Execute(HideSummonMenu msg)
         => PlayerHasControl = true;
+
+    protected override void Execute(PushingObjectBegin msg)
+        => PlayerHasControl = false;
+    protected override void Execute(PushingObjectEnd msg)
+        => PlayerHasControl = true;
+
 }
