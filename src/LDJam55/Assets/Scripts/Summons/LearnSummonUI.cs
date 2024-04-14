@@ -13,12 +13,13 @@ public class LearnSummonUI : OnMessage<SummonLearned>
     [SerializeField] private GameObject objectParent;
     [SerializeField] private GameObject vfx;
     [SerializeField] private Button buttonToDismiss;
+    [SerializeField] private Image summonCard;
     
     [SerializeField] private float _startY;
     [SerializeField] private float _endY;
     [SerializeField] private float _secondsToFlyIn;
 
-    private GameObject summonInstance;
+    private GameObject _summonInstance;
     private bool _showing;
     private float _t;
 
@@ -43,14 +44,15 @@ public class LearnSummonUI : OnMessage<SummonLearned>
     protected override void Execute(SummonLearned msg)
     {
         summonName.text = msg.Summon.SummonName;
-        cost.text = msg.Summon.ManaCost.ToString();
+        cost.text = "Mana Cost: " + msg.Summon.ManaCost.ToString();
         description.text = msg.Summon.Description;
         summonIcon.sprite = msg.Summon.Icon;
+        summonCard.sprite = msg.Summon.SummonCardArt;
         panel.anchoredPosition = new Vector3(panel.anchoredPosition.x, _startY);
         panel.gameObject.SetActive(true);
         vfx.SetActive(true);
-        summonInstance = Instantiate(msg.Summon.SummonPrefab, objectParent.transform);
-        SetGameLayerRecursive(summonInstance, 8);
+        _summonInstance = Instantiate(msg.Summon.SummonPrefab, objectParent.transform);
+        SetGameLayerRecursive(_summonInstance, 8);
         _showing = true;
         _t = 0;
     }
