@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 466572125017272643}
   - component: {fileID: 3836749835508872347}
+  - component: {fileID: 5449350625437727486}
   m_Layer: 0
   m_Name: MusicSoundController
   m_TagString: Untagged
@@ -65,3 +66,17 @@ MonoBehaviour:
       Data3: -983172420
       Data4: 1620864272
     Path: event:/MUSIC/UnderwaterTheme
+--- !u!114 &5449350625437727486
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7984553470293821593}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a3df9b096bcbd84a8f95dea9809a9d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  muteAll: 0
+  musicVol: 0.5

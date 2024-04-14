@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="MixerGroup" id="{aac20f68-7727-4058-a71d-6956b6326e0c}">
+		<property name="name">
+			<value>MST_BUS</value>
+		</property>
+		<relationship name="effectChain">
+			<destination>{e178ca7e-4d4a-4445-962a-e2b2f9b86e69}</destination>
+		</relationship>
+		<relationship name="panner">
+			<destination>{3c64a257-bed6-4b67-a6b5-a820809db991}</destination>
+		</relationship>
+		<relationship name="output">
+			<destination>{045ac4d1-d9e1-4c45-ac17-d14bcf51b2ef}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusEffectChain" id="{e178ca7e-4d4a-4445-962a-e2b2f9b86e69}">
+		<relationship name="effects">
+			<destination>{f3ebae6a-f813-47c0-8ecd-6e96067e7a35}</destination>
+			<destination>{a3bf0a6b-23f1-4e0b-8eec-097bc2caa322}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusPanner" id="{3c64a257-bed6-4b67-a6b5-a820809db991}" />
+	<object class="CompressorEffect" id="{f3ebae6a-f813-47c0-8ecd-6e96067e7a35}">
+		<property name="ratio">
+			<value>1.85000002</value>
+		</property>
+		<property name="releaseTime">
+			<value>26</value>
+		</property>
+	</object>
+	<object class="MixerBusFader" id="{a3bf0a6b-23f1-4e0b-8eec-097bc2caa322}" />
+</objects>
