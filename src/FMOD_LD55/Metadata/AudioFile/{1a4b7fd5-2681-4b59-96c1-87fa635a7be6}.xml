@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.02.00">
 	<object class="AudioFile" id="{1a4b7fd5-2681-4b59-96c1-87fa635a7be6}">
 		<property name="assetPath">
-			<value>WingFlaps.ogg</value>
+			<value>SFX/WingFlaps.ogg</value>
 		</property>
 		<property name="frequencyInKHz">
 			<value>48</value>

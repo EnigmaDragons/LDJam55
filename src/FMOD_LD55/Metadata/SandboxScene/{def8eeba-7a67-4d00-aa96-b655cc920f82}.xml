@@ -14,32 +14,44 @@
 			<destination>{5ba179f9-a85a-48c5-9ed4-6ef6f5063d87}</destination>
 		</relationship>
 		<relationship name="emitters">
-			<destination>{27d900e5-1a93-483d-8aa0-99a08fc8a5c2}</destination>
-			<destination>{9d515530-de1d-4914-8004-8c178930381b}</destination>
+			<destination>{d19397e7-db00-45d3-ae81-a73d468f99af}</destination>
+			<destination>{de88ac7a-a07d-4602-880f-986cda6a7128}</destination>
+			<destination>{7067c8a5-4329-428f-a0cc-51e967134c08}</destination>
 		</relationship>
 	</object>
 	<object class="MarkerTrack" id="{0fd16c9d-34e3-48f2-8f42-eaf072734a4b}" />
 	<object class="Timeline" id="{5ba179f9-a85a-48c5-9ed4-6ef6f5063d87}" />
-	<object class="SandboxEmitter" id="{27d900e5-1a93-483d-8aa0-99a08fc8a5c2}">
+	<object class="SandboxEmitter" id="{d19397e7-db00-45d3-ae81-a73d468f99af}">
 		<property name="positionX">
-			<value>-9.82499981</value>
+			<value>-13.8500004</value>
 		</property>
 		<property name="positionZ">
-			<value>5.9000001</value>
+			<value>5.92500019</value>
 		</property>
 		<relationship name="event">
 			<destination>{79b7f355-fecc-4f94-b3c1-dd8332763e99}</destination>
 		</relationship>
 	</object>
-	<object class="SandboxEmitter" id="{9d515530-de1d-4914-8004-8c178930381b}">
+	<object class="SandboxEmitter" id="{de88ac7a-a07d-4602-880f-986cda6a7128}">
 		<property name="positionX">
-			<value>-2.82500005</value>
+			<value>-8.94999981</value>
 		</property>
 		<property name="positionZ">
-			<value>5.75</value>
+			<value>6.0250001</value>
 		</property>
 		<relationship name="event">
-			<destination>{f1207758-fd8a-458f-8891-06e3b3a48386}</destination>
+			<destination>{3db0967a-e4e9-4bf0-9b3e-444f92d5079f}</destination>
+		</relationship>
+	</object>
+	<object class="SandboxEmitter" id="{7067c8a5-4329-428f-a0cc-51e967134c08}">
+		<property name="positionX">
+			<value>-5.05000019</value>
+		</property>
+		<property name="positionZ">
+			<value>5.875</value>
+		</property>
+		<relationship name="event">
+			<destination>{9ae9aa16-f932-4084-9072-5b93b53d0ff4}</destination>
 		</relationship>
 	</object>
 </objects>

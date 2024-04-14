@@ -1,12 +1,9 @@
-﻿using NUnit.Framework;
-using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class SummonUI : MonoBehaviour
+public class SummonUI : OnMessage<SummonBegin>
 {
     [SerializeField] private Image arrowsPrefab;
     [SerializeField] private Image icon;
@@ -22,12 +19,13 @@ public class SummonUI : MonoBehaviour
     [SerializeField] private GameObject ArrowDaddy;
     [SerializeField] private TextMeshProUGUI ManaCostText;
 
+    public bool IsActive;
+
     private KeyCode[] _summonCode;
     private int _keyIndex;
     private List<Image> _arrows = new();
-    private bool _isActive;
     private Summon _summon;
-
+    private bool isFrozen;
 
     public void SetSummon(Summon summon)
     {
@@ -62,16 +60,17 @@ public class SummonUI : MonoBehaviour
         }
     }
 
-    private void OnEnable()
+    protected override void AfterEnable()
     {
         var manaCost = _summon != null ? _summon.ManaCost : 10;
         SetActiveState(manaCost <= CurrentGameState.GameState.Mana);
         _keyIndex = 0;
+        isFrozen = false;
     }
 
     private void Update()
     {
-        if (!_isActive)
+        if (!IsActive || isFrozen)
             return;
 
         var key = KeyCode.None;
@@ -94,8 +93,7 @@ public class SummonUI : MonoBehaviour
             if (_keyIndex >= _summonCode.Length)
             {
                 CurrentGameState.UpdateState(x => x.Mana -= _summon.ManaCost);
-                Message.Publish(new SummonRequested(_summon));
-                Message.Publish(new HideSummonMenu());
+                Message.Publish(new SummonBegin(_summon));
             }
                
             return;
@@ -106,13 +104,16 @@ public class SummonUI : MonoBehaviour
 
     private void SetActiveState(bool isActive)
     {
-        _isActive = isActive;
+        IsActive = isActive;
         backdrop.color = isActive ? activeColor : inactiveColor;
         icon.color = isActive ? activeColor : inactiveColor;
         summonName.color = isActive ? activeColor : inactiveColor;
         foreach (Image arrow in _arrows)
             arrow.color = isActive ? activeColor : inactiveColor;
     }
+
+    protected override void Execute(SummonBegin msg)
+        => isFrozen = true;
 
 }
 

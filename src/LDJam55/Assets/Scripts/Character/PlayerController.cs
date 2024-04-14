@@ -3,8 +3,8 @@ using UnityEngine;
 public class PlayerController : OnMessage<ShowSummonMenu, HideSummonMenu>
 {
     [SerializeField] private Rigidbody playerRigidBody;
-    [SerializeField] private float movementSpeed = 8;
-    [SerializeField] private float rotationSpeed = 5;
+    [SerializeField] private float movementSpeed = 8f;
+    [SerializeField] private float rotationSpeed = 10f;
 
     private const string HorizontalInput = "Horizontal";
     private const string VerticalInput = "Vertical";
@@ -18,29 +18,24 @@ public class PlayerController : OnMessage<ShowSummonMenu, HideSummonMenu>
 
     private void Update()
     {
-        if (!PlayerHasControl)
-        {
-            return;
-        }
-        HandleRotation();
-    }
-
-    private void HandleRotation()
-    {
-        if (movement != Vector3.zero)
-        {
-            transform.forward = movement;
+        if (!PlayerHasControl) {
+            movement = Vector3.zero;
+        } else {
+            movement = new Vector3(Input.GetAxisRaw(HorizontalInput), 0.0f, Input.GetAxisRaw(VerticalInput)).normalized;
         }
     }
 
     private void FixedUpdate()
     {
-        if (!PlayerHasControl)
+        Vector3 velocity = movement * movementSpeed;
+        playerRigidBody.velocity = velocity;
+
+        if (movement != Vector3.zero)
         {
-            return;
+            Quaternion targetRotation = Quaternion.LookRotation(movement, Vector3.up);
+            Quaternion smoothRotation = Quaternion.Slerp(playerRigidBody.rotation, targetRotation, rotationSpeed * Time.fixedDeltaTime);
+            playerRigidBody.MoveRotation(smoothRotation);
         }
-        movement = new Vector3(Input.GetAxisRaw(HorizontalInput), 0, Input.GetAxisRaw(VerticalInput));
-        playerRigidBody.MovePosition(transform.position + movementSpeed * Time.deltaTime * movement);
 
         if(movement ==  Vector3.zero)
         {
