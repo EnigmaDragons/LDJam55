@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.02.00">
 	<object class="AudioFile" id="{d957dc38-8c97-42b6-9a1a-ca4f74d7be0f}">
 		<property name="assetPath">
-			<value>SummonDroneLoop.ogg</value>
+			<value>SFX/SummonDroneLoop.ogg</value>
 		</property>
 		<property name="isStreaming">
 			<value>true</value>
