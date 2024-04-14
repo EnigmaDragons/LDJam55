@@ -12,6 +12,8 @@ public class ClockUI : MonoBehaviour
     [SerializeField] private float endScale;
     [SerializeField] private AnimationCurve colorByTimeRemaining;
     [SerializeField] private Color endColor;
+    [SerializeField] private ParticleSystem angy;
+    [SerializeField] private AnimationCurve angySizeByTimeRemaining;
 
     [SerializeField] private float introScale;
     [SerializeField] private Vector2 introAnchoredPosition;
@@ -34,6 +36,8 @@ public class ClockUI : MonoBehaviour
         _hasLost = false;
         CurrentGameState.UpdateState(state => state.CurrentGameTime = defaultTimeInSeconds);
         clockText.text = $"{(int)CurrentGameState.GameState.CurrentGameTime / 60}:{(int)CurrentGameState.GameState.CurrentGameTime % 60:00}";
+        var main = angy.main;
+        main.startColor = new ParticleSystem.MinMaxGradient(new Color(main.startColor.color.r, main.startColor.color.g, main.startColor.color.b, 0));
         rect.localScale = new Vector3(introScale, introScale, introScale);
         rect.anchoredPosition = introAnchoredPosition;
     }
@@ -72,7 +76,9 @@ public class ClockUI : MonoBehaviour
             clockText.color = Color.Lerp(_startColor, endColor, colorByTimeRemaining.Evaluate(percent));
             var scale = Mathf.Lerp(_startScale, endScale, scaleByTimeRemaining.Evaluate(percent));
             rect.localScale = new Vector3(scale, scale, scale);
-        
+            var main = angy.main;
+            main.startColor = new ParticleSystem.MinMaxGradient(new Color(main.startColor.color.r, main.startColor.color.g, main.startColor.color.b, angySizeByTimeRemaining.Evaluate(percent)));
+
             if(!_hasLost && CurrentGameState.GameState.CurrentGameTime <= 0)
             {
                 _hasLost = true;
