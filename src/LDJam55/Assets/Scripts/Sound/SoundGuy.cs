@@ -5,10 +5,12 @@ using UnityEngine;
 public class SoundGuy : MonoBehaviour
 {
     public EventReference summonLoopSoundRef;
+    public EventReference summonFailedRef;
     public EventReference summonKeyPressedRef;
     EventInstance summonLoopInstance;
 
     private bool _isSummoning;
+    private bool playOnce;
     
     private void OnEnable()
     {
@@ -25,6 +27,7 @@ public class SoundGuy : MonoBehaviour
     private void OnSummonStarted()
     {
         _isSummoning = true;
+        playOnce = true;
         summonLoopInstance = RuntimeManager.CreateInstance(summonLoopSoundRef);
         summonLoopInstance.start();
 
@@ -39,7 +42,6 @@ public class SoundGuy : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.DownArrow))
             {
                 RuntimeManager.PlayOneShot(summonKeyPressedRef);
-                Debug.Log("KEYS PRESSED");
             }
         }
         
@@ -48,10 +50,16 @@ public class SoundGuy : MonoBehaviour
     {
         summonLoopInstance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
         summonLoopInstance.release();
+        _isSummoning = false;
     }
 
     private void OnSummonFailed()
     {
-       
+        if(playOnce)
+        {
+            RuntimeManager.PlayOneShot(summonFailedRef);
+            playOnce = false;
+        }
+        
     }
 }

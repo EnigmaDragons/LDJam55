@@ -51,6 +51,13 @@ MonoBehaviour:
       Data3: 850719930
       Data4: 1936652684
     Path: event:/SFX/SummonDrone
+  summonFailedRef:
+    Guid:
+      Data1: 1371176757
+      Data2: 1207693730
+      Data3: -122960253
+      Data4: -1030322682
+    Path: event:/SFX/SummonFailed
   summonKeyPressedRef:
     Guid:
       Data1: -1559521645
