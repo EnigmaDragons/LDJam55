@@ -30,6 +30,7 @@ public class LearnSummonUI : OnMessage<SummonLearned>
             panel.gameObject.SetActive(false);
             vfx.SetActive(false);
             _showing = false;
+            Message.Publish(new SummonLearningDismissed());
         });
     }
     
