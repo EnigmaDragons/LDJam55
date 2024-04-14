@@ -74,9 +74,9 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 4564127140061185030}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &5803814622805795713 stripped
+--- !u!114 &4806934266325201710 stripped
 MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8060392019414984583, guid: 1f7660cb766148a409600b187a8736aa,
+  m_CorrespondingSourceObject: {fileID: 9070988850035586856, guid: 1f7660cb766148a409600b187a8736aa,
     type: 3}
   m_PrefabInstance: {fileID: 4564127140061185030}
   m_PrefabAsset: {fileID: 0}
@@ -103,12 +103,12 @@ PrefabInstance:
         type: 3}
       propertyPath: 'triggerablesNeededToLightRoom.Array.data[0]'
       value: 
-      objectReference: {fileID: 1462164863554645758}
+      objectReference: {fileID: 465072163616112209}
     - target: {fileID: 1294301149209877063, guid: 2140105c8ed280444b3ad8907d0f9be5,
         type: 3}
       propertyPath: 'triggerablesNeededToLightRoom.Array.data[1]'
       value: 
-      objectReference: {fileID: 5803814622805795713}
+      objectReference: {fileID: 4806934266325201710}
     - target: {fileID: 3137882351296328503, guid: 2140105c8ed280444b3ad8907d0f9be5,
         type: 3}
       propertyPath: m_Name
@@ -350,9 +350,9 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1f7660cb766148a409600b187a8736aa, type: 3}
---- !u!114 &1462164863554645758 stripped
+--- !u!114 &465072163616112209 stripped
 MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8060392019414984583, guid: 1f7660cb766148a409600b187a8736aa,
+  m_CorrespondingSourceObject: {fileID: 9070988850035586856, guid: 1f7660cb766148a409600b187a8736aa,
     type: 3}
   m_PrefabInstance: {fileID: 8905556996991011193}
   m_PrefabAsset: {fileID: 0}

@@ -9,9 +9,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6805667336067049853}
+  - component: {fileID: 5000684219654638663}
+  - component: {fileID: 4605931710214844793}
   m_Layer: 0
   m_Name: Brazier
-  m_TagString: Untagged
+  m_TagString: Flammable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -33,6 +35,57 @@ Transform:
   - {fileID: 6684304657525964644}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &5000684219654638663
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7927948654153011600}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.1, y: 8, z: 1.1}
+  m_Center: {x: 0, y: 4, z: 0}
+--- !u!114 &4605931710214844793
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7927948654153011600}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 529c80c2c01b4393b8dbdcd7dcf70dcc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isTriggered: 0
+  canBeUntriggered: 1
+  startsTriggered: 0
+  onTrigger:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8130851738336360034}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!1 &8130851738336360034
 GameObject:
   m_ObjectHideFlags: 0
@@ -206,16 +259,12 @@ PrefabInstance:
     - target: {fileID: 8045461507557318945, guid: 2d24287ea01d41746a8a109ccc7efa2b,
         type: 3}
       propertyPath: m_TagString
-      value: Flammable
+      value: Untagged
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 8045461507557318945, guid: 2d24287ea01d41746a8a109ccc7efa2b,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 3302666735473779158}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2d24287ea01d41746a8a109ccc7efa2b, type: 3}
 --- !u!4 &2703451138610538775 stripped
 Transform:
@@ -223,39 +272,3 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 4713155880935854732}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &3372992505798849453 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8045461507557318945, guid: 2d24287ea01d41746a8a109ccc7efa2b,
-    type: 3}
-  m_PrefabInstance: {fileID: 4713155880935854732}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &3302666735473779158
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3372992505798849453}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 529c80c2c01b4393b8dbdcd7dcf70dcc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isTriggered: 0
-  canBeUntriggered: 1
-  startsTriggered: 0
-  onTrigger:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 8130851738336360034}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
