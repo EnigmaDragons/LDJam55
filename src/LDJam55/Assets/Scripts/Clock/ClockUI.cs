@@ -2,7 +2,7 @@ using System;
 using TMPro;
 using UnityEngine;
 
-public class ClockUI : MonoBehaviour
+public class ClockUI : OnMessage<SummonLearned, SummonLearningDismissed>
 {
     [SerializeField] private RectTransform rect;
     [SerializeField] private float defaultTimeInSeconds = default;
@@ -25,7 +25,9 @@ public class ClockUI : MonoBehaviour
     private Vector2 _startPosition;
     
     private bool _hasLost;
+    private bool _paused;
     private float _introT;
+
 
     private void Start()
     {
@@ -45,6 +47,9 @@ public class ClockUI : MonoBehaviour
     private void Update()
     {
         if (_hasLost)
+            return;
+
+        if (_paused)
             return;
         
         if (_introT < introSecondsBeforeMoving + introSecondsToMove)
@@ -86,5 +91,15 @@ public class ClockUI : MonoBehaviour
                 clockText.text = "0:000";
             }
         }
+    }
+
+    protected override void Execute(SummonLearned msg)
+    {
+        _paused = true;
+    }
+
+    protected override void Execute(SummonLearningDismissed msg)
+    {
+        _paused = false;
     }
 }
