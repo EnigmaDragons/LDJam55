@@ -2,17 +2,18 @@ using System;
 using UnityEngine;
 using FMODUnity;
 
-public class Pushable : MonoBehaviour
+public class Pushable : OnMessage<PushingObjectBegin, PushingObjectEnd>
 {
     [SerializeField] private float moveDurationSeconds = 1.5f;
     [SerializeField] private float requiredContactSeconds = 0.3f;
 
+    private bool _canMove = true;
     private bool _isMoving;
     private Vector3 _start;
     private Vector3 _destination;
     private Vector3 _pushDirection;
     private float _movingT;
-    private float _contactT; 
+    private float _contactT;
     private bool _isPlayerAdjacent;
     public EventReference pushBlockSFX;
 
@@ -25,7 +26,7 @@ public class Pushable : MonoBehaviour
         _contactT = 0;
         _isPlayerAdjacent = false;
     }
-    
+
     private void Update()
     {
         if (_isMoving)
@@ -37,23 +38,25 @@ public class Pushable : MonoBehaviour
                 _contactT = 0;
                 _isMoving = false;
                 transform.localPosition = _destination;
+                Message.Publish(new PushingObjectEnd());
             }
             else
             {
                 transform.localPosition = Vector3.Lerp(_start, _destination, _movingT / moveDurationSeconds);
             }
         }
-        else
+        else if(_canMove)
         {
             if (_isPlayerAdjacent)
                 _contactT += Time.deltaTime;
             if (_contactT >= requiredContactSeconds)
             {
                 _start = transform.localPosition;
-                _destination = new Vector3((float)(Math.Round((transform.localPosition.x + _pushDirection.x * 2f) / 2f)  * 2f), 0, (float)(Math.Round((transform.localPosition.z + _pushDirection.z * 2f) / 2f) * 2f));
+                _destination = new Vector3((float)(Math.Round((transform.localPosition.x + _pushDirection.x * 2f) / 2f) * 2f), 0, (float)(Math.Round((transform.localPosition.z + _pushDirection.z * 2f) / 2f) * 2f));
                 _movingT = 0;
                 _contactT = 0;
                 _isMoving = true;
+                Message.Publish(new PushingObjectBegin(this));
                 RuntimeManager.PlayOneShotAttached(pushBlockSFX, gameObject);
             }
         }
@@ -63,7 +66,7 @@ public class Pushable : MonoBehaviour
     private void OnTriggerEnter(Collider c) => ObjEnter(c.gameObject);
     private void OnCollisionExit(Collision c) => ObjExit(c.gameObject);
     private void OnTriggerExit(Collider c) => ObjExit(c.gameObject);
-    
+
     private void ObjEnter(GameObject o)
     {
         if (o.CompareTag("Player"))
@@ -72,8 +75,8 @@ public class Pushable : MonoBehaviour
             Log.Info("Player Adjacent", this);
             Vector3 direction = (transform.position - o.transform.position).normalized;
             var isMoreX = Mathf.Abs(direction.x) > Mathf.Abs(direction.z);
-            _pushDirection = isMoreX 
-              ? new Vector3(Mathf.Round(direction.x), 0, 0) 
+            _pushDirection = isMoreX
+              ? new Vector3(Mathf.Round(direction.x), 0, 0)
               : new Vector3(0, 0, Mathf.Round(direction.z));
         }
     }
@@ -86,10 +89,23 @@ public class Pushable : MonoBehaviour
             ResetPushMechanism();
         }
     }
-    
+
     private void ResetPushMechanism()
     {
-      _isPlayerAdjacent = false;
-      _contactT = 0f;
+        _isPlayerAdjacent = false;
+        _contactT = 0f;
+    }
+
+    protected override void Execute(PushingObjectBegin msg)
+    {
+        if (msg.BeingPushed != this)
+        {
+            _canMove = false;
+        }
+    }
+
+    protected override void Execute(PushingObjectEnd msg)
+    {
+        _canMove = true;
     }
 }
