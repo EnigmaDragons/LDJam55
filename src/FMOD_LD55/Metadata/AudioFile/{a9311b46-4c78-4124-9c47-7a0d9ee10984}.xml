@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.02.00">
 	<object class="AudioFile" id="{a9311b46-4c78-4124-9c47-7a0d9ee10984}">
 		<property name="assetPath">
-			<value>RockSlide.ogg</value>
+			<value>SFX/RockSlide.ogg</value>
 		</property>
 		<property name="frequencyInKHz">
 			<value>48</value>

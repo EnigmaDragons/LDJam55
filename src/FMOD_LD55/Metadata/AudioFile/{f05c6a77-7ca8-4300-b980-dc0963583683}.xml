@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.02.00">
 	<object class="AudioFile" id="{f05c6a77-7ca8-4300-b980-dc0963583683}">
 		<property name="assetPath">
-			<value>WeightSwitch.ogg</value>
+			<value>SFX/WeightSwitch.ogg</value>
 		</property>
 		<property name="frequencyInKHz">
 			<value>48</value>

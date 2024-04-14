@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.02.00">
 	<object class="AudioFile" id="{07884d75-e6db-45aa-9556-f182be135969}">
 		<property name="assetPath">
-			<value>Torch.ogg</value>
+			<value>SFX/Torch.ogg</value>
 		</property>
 		<property name="frequencyInKHz">
 			<value>48</value>

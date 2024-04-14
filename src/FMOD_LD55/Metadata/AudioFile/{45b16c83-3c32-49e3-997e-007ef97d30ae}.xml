@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.02.00">
-	<object class="AudioFile" id="{5c2cf429-df94-40d6-86ee-66620249d1d9}">
+	<object class="AudioFile" id="{45b16c83-3c32-49e3-997e-007ef97d30ae}">
 		<property name="assetPath">
-			<value>SFX/TorchMagic.ogg</value>
+			<value>SFX/ButtonUp.ogg</value>
 		</property>
 		<property name="frequencyInKHz">
 			<value>48</value>
@@ -11,7 +11,7 @@
 			<value>1</value>
 		</property>
 		<property name="length">
-			<value>2.9143333333333334</value>
+			<value>0.22162499999999999</value>
 		</property>
 		<relationship name="masterAssetFolder">
 			<destination>{df5182c8-be50-4e4a-913f-fc5f8a6ced71}</destination>
