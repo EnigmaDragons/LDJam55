@@ -57,7 +57,7 @@
 			<destination>{cf908e48-c99c-47d2-b0c4-b1cebbb19336}</destination>
 		</relationship>
 		<relationship name="output">
-			<destination>{978ea8cd-2682-4164-b135-1aaadafc6fd1}</destination>
+			<destination>{c46fe123-b592-4fe1-87a1-ded98380d0a1}</destination>
 		</relationship>
 	</object>
 	<object class="EventAutomatableProperties" id="{a141139a-5462-4c7f-a22e-4d4e896d5a2b}" />
@@ -214,7 +214,7 @@
 	</object>
 	<object class="DistortionEffect" id="{d341ee75-ada6-43e7-b3e5-f2939df0b95c}">
 		<property name="level">
-			<value>0.179999992</value>
+			<value>0.25999999</value>
 		</property>
 	</object>
 	<object class="MixerBusFader" id="{88cbf877-12e5-4429-a016-c8a67b76a2d4}" />
