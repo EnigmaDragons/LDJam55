@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 13e5487577a324bec8e1e97cb1208b45
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 215804
+  packageName: RoomGen - Procedural Generator
+  packageVersion: 2.6.4
+  assetPath: Assets/RoomGen/Scripts/RoomPreset.cs
+  uploadId: 636268

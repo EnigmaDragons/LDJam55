@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 4941f8e6f4d4b4328a04abd44e573ea7
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 215804
+  packageName: RoomGen - Procedural Generator
+  packageVersion: 2.6.4
+  assetPath: Assets/RoomGen/Demo/Prefabs/overhang.prefab
+  uploadId: 636268

@@ -1,0 +1,80 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13e5487577a324bec8e1e97cb1208b45, type: 3}
+  m_Name: FloorRoomPreset
+  m_EditorClassIdentifier: 
+  roofTiles: []
+  floorTiles:
+  - prefab: {fileID: 8953904396155572597, guid: 8202632082e5e094ea67452067cfeac6,
+      type: 3}
+    positionOffset: {x: 0, y: 0, z: 0}
+    rotationOffset: {x: 0, y: 0, z: 0}
+    weight: 100
+    alignToSurface: 0
+    tileLayer:
+      serializedVersion: 2
+      m_Bits: 0
+    isExpanded: 1
+    allowDecor: 1
+    randomRotation: 0
+  wallTiles:
+  - prefab: {fileID: 6827980748242819942, guid: 0f5cc22bfe8c7ad4ab1aadb769ea0424,
+      type: 3}
+    positionOffset: {x: 0, y: 0, z: 0}
+    rotationOffset: {x: 0, y: 0, z: 0}
+    weight: 0
+    alignToSurface: 0
+    tileLayer:
+      serializedVersion: 2
+      m_Bits: 0
+    isExpanded: 0
+    allowDecor: 0
+  wallCorners:
+  - prefab: {fileID: 6337331242435386637, guid: 0a52db9ed4da4d9479e4946c6a1340a5,
+      type: 3}
+    positionOffset: {x: 0, y: 0, z: 0}
+    rotationOffset: {x: 0, y: 0, z: 0}
+    weight: 0
+    alignToSurface: 0
+    tileLayer:
+      serializedVersion: 2
+      m_Bits: 0
+    isExpanded: 0
+    allowDecor: 0
+  - prefab: {fileID: 5695319015503728279, guid: 5b74c393ccf929648a4673643839d361,
+      type: 3}
+    positionOffset: {x: 0, y: 0, z: 0}
+    rotationOffset: {x: 0, y: 0, z: 0}
+    weight: 0
+    alignToSurface: 0
+    tileLayer:
+      serializedVersion: 2
+      m_Bits: 0
+    isExpanded: 0
+    allowDecor: 0
+  windowTiles: []
+  doorTiles:
+  - prefab: {fileID: 9217826807603502517, guid: 9252bb6603aa0234da406fd50b9d2b32,
+      type: 3}
+    positionOffset: {x: 0, y: 0, z: 0}
+    rotationOffset: {x: 0, y: 0, z: 0}
+    weight: 0
+    alignToSurface: 0
+    tileLayer:
+      serializedVersion: 2
+      m_Bits: 0
+    isExpanded: 0
+    allowDecor: 0
+  characters: []
+  roofDecorations: []
+  wallDecorations: []
+  floorDecorations: []

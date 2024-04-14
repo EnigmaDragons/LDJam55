@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 9325bb875fcfb40748b7fd4eeee6159f
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 215804
+  packageName: RoomGen - Procedural Generator
+  packageVersion: 2.6.4
+  assetPath: Assets/RoomGen/Scripts/Tile.cs
+  uploadId: 636268

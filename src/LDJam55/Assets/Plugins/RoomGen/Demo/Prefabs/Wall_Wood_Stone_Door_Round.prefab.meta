@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 71ec29972051d4370ac7fa10449f7786
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 215804
+  packageName: RoomGen - Procedural Generator
+  packageVersion: 2.6.4
+  assetPath: Assets/RoomGen/Demo/Prefabs/Wall_Wood_Stone_Door_Round.prefab
+  uploadId: 636268

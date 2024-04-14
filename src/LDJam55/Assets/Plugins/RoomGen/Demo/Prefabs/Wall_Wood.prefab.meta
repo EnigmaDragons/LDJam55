@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 8df7d2f7d13f6403f934344115f2a986
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 215804
+  packageName: RoomGen - Procedural Generator
+  packageVersion: 2.6.4
+  assetPath: Assets/RoomGen/Demo/Prefabs/Wall_Wood.prefab
+  uploadId: 636268

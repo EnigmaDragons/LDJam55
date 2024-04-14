@@ -1,0 +1,141 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13e5487577a324bec8e1e97cb1208b45, type: 3}
+  m_Name: Demo_Preset
+  m_EditorClassIdentifier: 
+  roofTiles: []
+  floorTiles:
+  - prefab: {fileID: 8882883675912095528, guid: ad57a30edf352405092cbb1b60da09b5,
+      type: 3}
+    positionOffset: {x: -0.5, y: 0, z: 0.5}
+    rotationOffset: {x: 0, y: 0, z: 0}
+    weight: 0
+    alignToSurface: 0
+    tileLayer:
+      serializedVersion: 2
+      m_Bits: 0
+    isExpanded: 1
+    allowDecor: 1
+    randomRotation: 2
+  wallTiles:
+  - prefab: {fileID: 4276313094110067368, guid: e8c1b39d59e154cdf9ef0333b7893cbe,
+      type: 3}
+    positionOffset: {x: -0.5, y: 0, z: 0}
+    rotationOffset: {x: 0, y: 0, z: 0}
+    weight: 0
+    alignToSurface: 0
+    tileLayer:
+      serializedVersion: 2
+      m_Bits: 0
+    isExpanded: 0
+    allowDecor: 1
+  - prefab: {fileID: 8965622437202433100, guid: 8df7d2f7d13f6403f934344115f2a986,
+      type: 3}
+    positionOffset: {x: -0.5, y: 0, z: 0}
+    rotationOffset: {x: 0, y: 0, z: 0}
+    weight: 0
+    alignToSurface: 0
+    tileLayer:
+      serializedVersion: 2
+      m_Bits: 0
+    isExpanded: 0
+    allowDecor: 1
+  wallCorners: []
+  windowTiles:
+  - prefab: {fileID: 5383809516569400002, guid: 0479fc2ed1c4742e0b979ab2943ba0b2,
+      type: 3}
+    positionOffset: {x: -0.5, y: 0, z: 0.1}
+    rotationOffset: {x: 0, y: 0, z: 0}
+    weight: 0
+    alignToSurface: 0
+    tileLayer:
+      serializedVersion: 2
+      m_Bits: 0
+    isExpanded: 0
+    allowDecor: 0
+  doorTiles:
+  - prefab: {fileID: 6533784680512033595, guid: 71ec29972051d4370ac7fa10449f7786,
+      type: 3}
+    positionOffset: {x: -0.5, y: 0, z: 0}
+    rotationOffset: {x: 0, y: 0, z: 0}
+    weight: 0
+    alignToSurface: 0
+    tileLayer:
+      serializedVersion: 2
+      m_Bits: 0
+    isExpanded: 0
+    allowDecor: 0
+  - prefab: {fileID: 6269170632556849295, guid: 9f00395305953420b82f900c13f9f529,
+      type: 3}
+    positionOffset: {x: -0.5, y: 0, z: 0}
+    rotationOffset: {x: 0, y: 0, z: 0}
+    weight: 0
+    alignToSurface: 0
+    tileLayer:
+      serializedVersion: 2
+      m_Bits: 0
+    isExpanded: 0
+    allowDecor: 0
+  characters: []
+  roofDecorations: []
+  wallDecorations:
+  - prefab: {fileID: 3290417156420812530, guid: 3bfba438ae9ab4c70b78436de976c646,
+      type: 3}
+    positionOffset: {x: 0, y: 0, z: -0.07}
+    rotationOffset: {x: 0, y: 0, z: 0}
+    spacingBuffer: 0
+    verticalRange: {x: 1, y: 2}
+    amountRange: {x: 0, y: 0}
+    randomRotation: 0
+    scaleRange: {x: 1, y: 1}
+    isExpanded: 1
+  - prefab: {fileID: 9138154093601693610, guid: 69736b7619c4f464085b215ef1e36d1b,
+      type: 3}
+    positionOffset: {x: 0, y: 0, z: 0.53}
+    rotationOffset: {x: 0, y: 0, z: 0}
+    spacingBuffer: 0
+    verticalRange: {x: 1, y: 1}
+    amountRange: {x: 0, y: 0}
+    randomRotation: 0
+    scaleRange: {x: 1, y: 1}
+    isExpanded: 1
+  floorDecorations:
+  - prefab: {fileID: 5942380144300272789, guid: 0df2e32abb2bd4e58932510a41b46dbb,
+      type: 3}
+    positionOffset: {x: 0, y: 0, z: 0}
+    rotationOffset: {x: 0, y: 0, z: 0}
+    spacingBuffer: 0
+    verticalRange: {x: 0, y: 100}
+    amountRange: {x: 0, y: 2}
+    randomRotation: 360
+    scaleRange: {x: 1, y: 1}
+    isExpanded: 1
+  - prefab: {fileID: 8399796154575330393, guid: 2bb699bc599d149d7afbbb1835550dd1,
+      type: 3}
+    positionOffset: {x: 0, y: 0, z: 0}
+    rotationOffset: {x: 0, y: 0, z: 0}
+    spacingBuffer: 0
+    verticalRange: {x: 0, y: 100}
+    amountRange: {x: 0, y: 5}
+    randomRotation: 360
+    scaleRange: {x: 1, y: 1}
+    isExpanded: 1
+  - prefab: {fileID: 4483645105185538454, guid: 2432be40112e44a5d9715379f1afc334,
+      type: 3}
+    positionOffset: {x: 0, y: 0, z: 0}
+    rotationOffset: {x: 0, y: 0, z: 0}
+    spacingBuffer: 0
+    verticalRange: {x: 0, y: 100}
+    amountRange: {x: 1, y: 2}
+    randomRotation: 0
+    scaleRange: {x: 2, y: 2}
+    isExpanded: 1
