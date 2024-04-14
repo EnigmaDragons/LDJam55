@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="ParameterPreset" id="{fde8f067-8b3f-4c2d-b1c6-cf50f7a5607a}">
+		<property name="name">
+			<value>PlaySummonsSuccess</value>
+		</property>
+		<relationship name="folder">
+			<destination>{f8ba242f-54ca-46f2-879e-3ba30151d4cc}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{c706add3-be03-4ee6-8ec9-02bcbea9de6f}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{c706add3-be03-4ee6-8ec9-02bcbea9de6f}">
+		<property name="parameterType">
+			<value>1</value>
+		</property>
+		<property name="maximum">
+			<value>2</value>
+		</property>
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+	</object>
+</objects>

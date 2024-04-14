@@ -89,7 +89,7 @@
 	</object>
 	<object class="EventMixerMaster" id="{bb0fd0bf-859d-430d-a84e-d4635ed34fa6}">
 		<property name="volume">
-			<value>-8</value>
+			<value>-6</value>
 		</property>
 		<relationship name="modulators">
 			<destination>{5e499a10-7aa4-40fb-93f7-e5350004f7fb}</destination>
@@ -115,7 +115,7 @@
 			<value>139.1304375</value>
 		</property>
 		<property name="quantizationInterval">
-			<value>3</value>
+			<value>2</value>
 		</property>
 		<relationship name="audioFile">
 			<destination>{64fe319a-e1e9-4461-9b7c-1cf75f7fbb25}</destination>
@@ -222,6 +222,9 @@
 	</object>
 	<object class="MixerBusPanner" id="{ff3e05bf-ff1b-44ab-90bc-c6e8796312af}" />
 	<object class="MultibandEqEffect" id="{337edbe8-bf4b-47ad-b158-a4f9fe181b3f}">
+		<property name="filterTypeA">
+			<value>2</value>
+		</property>
 		<property name="filterTypeB">
 			<value>4</value>
 		</property>
@@ -229,13 +232,13 @@
 			<value>21999.9902</value>
 		</property>
 		<property name="frequencyB">
-			<value>116.379707</value>
+			<value>172.521454</value>
 		</property>
 		<property name="qualityA">
 			<value>2.29999995</value>
 		</property>
 		<property name="qualityB">
-			<value>1.10827589</value>
+			<value>1.3757931</value>
 		</property>
 		<relationship name="automators">
 			<destination>{fd609d95-3a14-40a9-919a-7e0738635616}</destination>
