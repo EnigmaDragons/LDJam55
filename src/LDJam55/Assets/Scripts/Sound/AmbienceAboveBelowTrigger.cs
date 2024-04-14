@@ -7,19 +7,9 @@ using FMODUnity;
 public class AmbienceAboveBelowTrigger : MonoBehaviour
 {
 
-    public EventReference ambienceRef;
-    public EventReference musicUnderWaterRef;
-    public EventReference musicTempleRef;
-    EventInstance ambienceInstance;
-    EventInstance musicUnderWaterInstance;
-    EventInstance musicTempleInstance; 
-
     public MusicSoundController soundController;
 
-    private void Start()
-    {
 
-    }
 
     private void OnTriggerEnter(Collider other)
     {
