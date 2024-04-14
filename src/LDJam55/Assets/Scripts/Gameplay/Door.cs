@@ -5,6 +5,7 @@ public class Door : MonoBehaviour
 {
     [SerializeField] private Vector3 scaleWhenOpen = new Vector3(0, 0, 0);
     [SerializeField] private Vector3 scaleWhenClosed = Vector3.one;
+    [SerializeField] private bool scaleForOpen = true;
     [SerializeField] private bool isOpen = false;
     [SerializeField] private bool startsOpens = false;
     [SerializeField] private Transform doorScaleTarget;
@@ -23,7 +24,8 @@ public class Door : MonoBehaviour
             return;
         
         isOpen = true;
-        doorScaleTarget.DOScale(scaleWhenOpen, 1.5f);
+        if (scaleForOpen)
+            doorScaleTarget.DOScale(scaleWhenOpen, 1.5f);
     }
 
     public void Close()
@@ -32,7 +34,8 @@ public class Door : MonoBehaviour
             return;
 
         isOpen = false;
-        doorScaleTarget.DOScale(scaleWhenClosed, 1.5f);
+        if (scaleForOpen)
+            doorScaleTarget.DOScale(scaleWhenClosed, 1.5f);
     }
 }
 
