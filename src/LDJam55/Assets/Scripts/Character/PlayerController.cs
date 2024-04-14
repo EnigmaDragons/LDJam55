@@ -25,7 +25,6 @@ public class PlayerController : OnMessage<ShowSummonMenu, HideSummonMenu>
         HandleRotation();
     }
 
-
     private void HandleRotation()
     {
         if (movement != Vector3.zero)
@@ -33,6 +32,7 @@ public class PlayerController : OnMessage<ShowSummonMenu, HideSummonMenu>
             transform.forward = movement;
         }
     }
+
     private void FixedUpdate()
     {
         if (!PlayerHasControl)

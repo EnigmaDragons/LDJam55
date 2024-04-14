@@ -31,7 +31,6 @@ public class WaterTile : MonoBehaviour
         {
             ForceMoveObject();
         }
-
     }
 
     private void ForceMovePlayer()
@@ -62,6 +61,7 @@ public class WaterTile : MonoBehaviour
             {
                 playerController = incomingPlayerController;
                 playerController.PlayerHasControl = false;
+                print("Player Entered Trigger");
             }
         }
         else if (collider.CompareTag("Moveable"))
@@ -77,6 +77,7 @@ public class WaterTile : MonoBehaviour
             playerController.transform.rotation = new Quaternion(0, playerController.transform.rotation.y, 0, 0);
             playerController.PlayerHasControl = true;
             playerController = null;
+            print("Player Left Trigger");
         }
         else if (collider.CompareTag("Moveable"))
         {
