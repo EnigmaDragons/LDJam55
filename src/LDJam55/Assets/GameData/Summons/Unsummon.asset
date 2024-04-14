@@ -10,14 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e9912793f47fb7b4d893b8be85b683bf, type: 3}
-  m_Name: AncientBook
+  m_Name: Unsummon
   m_EditorClassIdentifier: 
-  summonName: Ancient Book
-  keyCodes: 110100001201000011010000130100001201000011010000
-  icon: {fileID: 21300000, guid: 10ccaa7e3539fcc4c98af192b40b31e1, type: 3}
-  summonCardArt: {fileID: 21300000, guid: 9865883a7c3a3f447bcb3781afe3a73c, type: 3}
-  summonPrefab: {fileID: 2203581594005229159, guid: 34878af5ff6455340bee6570dd3cc9eb,
+  summonName: Unsummon
+  keyCodes: 120100001201000014010000120100001201000013010000
+  icon: {fileID: 21300000, guid: 3bf20a773990b6e4d93a0f9c02a1cb46, type: 3}
+  summonCardArt: {fileID: 21300000, guid: 92f191b31c5dee04abb4b8d08fee5a74, type: 3}
+  summonPrefab: {fileID: 4457299885994847160, guid: 36cd3213bd343934fa7bb2d79a4462e7,
     type: 3}
-  description: Summon this to read ancient languages
+  description: Unsummons all summonable items in front of you
   fixedYPosition: 0
   summonAtFixedYPosition: 0
