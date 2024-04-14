@@ -4,11 +4,12 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
-public class SummonMenu : OnMessage<SummonLearned, HideSummonMenu, ShowSummonMenu>
+public class SummonMenu : OnMessage<SummonLearned, HideSummonMenu, ShowSummonMenu, SummonBegin, SummonRequested>
 {
     [SerializeField] private List<Summon> summons;
     [SerializeField] private SummonUI summonUIPrefab;
     [SerializeField] private GameObject summonDaddy;
+    [SerializeField] private GameObject summonMommy;
     [SerializeField] private GameObject[] thingsToDisable;
 
     private Dictionary<string, SummonUI> _summonDic = new();
@@ -24,6 +25,7 @@ public class SummonMenu : OnMessage<SummonLearned, HideSummonMenu, ShowSummonMen
             summonUI.SetSummon(summon);
             _summonDic.Add(summon.SummonName, summonUI);
         }
+        summonMommy.SetActive(false);
     }
 
     private void Start()
@@ -31,10 +33,11 @@ public class SummonMenu : OnMessage<SummonLearned, HideSummonMenu, ShowSummonMen
  
 
     private bool _isActive;
+    private bool _isFrozen;
 
     private void Update()
     {
-        if (_daddyDisabled)
+        if (_daddyDisabled || _isFrozen)
             return;
 
         if (Input.GetKeyDown(KeyCode.LeftControl) || Input.GetKeyDown(KeyCode.RightControl))
@@ -42,6 +45,10 @@ public class SummonMenu : OnMessage<SummonLearned, HideSummonMenu, ShowSummonMen
                 Message.Publish(new HideSummonMenu());
             else
                 Message.Publish(new ShowSummonMenu());
+
+        if (_isActive && !_summonDic.Any(x => x.Value.IsActive))
+            Message.Publish(new SummonFailed());
+
     }
 
     private void ShowActiveSummons()
@@ -50,6 +57,7 @@ public class SummonMenu : OnMessage<SummonLearned, HideSummonMenu, ShowSummonMen
             thing.SetActive(false);
         foreach (var summon in CurrentGameState.GameState.SummonNames.Where(x => _summonDic.ContainsKey(x)))
             _summonDic[summon].gameObject.SetActive(true);
+        summonMommy.SetActive(true);
 
         _isActive = true;
     }
@@ -60,6 +68,7 @@ public class SummonMenu : OnMessage<SummonLearned, HideSummonMenu, ShowSummonMen
             thing.SetActive(true);
         foreach (var summon in _summonDic)
             summon.Value.gameObject.SetActive(false);
+        summonMommy.SetActive(false);
 
         _isActive = false;
     }
@@ -96,4 +105,11 @@ public class SummonMenu : OnMessage<SummonLearned, HideSummonMenu, ShowSummonMen
 
     protected override void Execute(ShowSummonMenu msg)
         => ShowActiveSummons();
+
+    protected override void Execute(SummonBegin msg)
+        => _isFrozen = true;
+
+    protected override void Execute(SummonRequested msg)
+        => _isFrozen = false;
+
 }

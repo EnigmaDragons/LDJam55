@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &7904715943698901538
+--- !u!1 &7984553470293821593
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,58 +8,60 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 348176591218605460}
-  - component: {fileID: 2485361502683734601}
+  - component: {fileID: 466572125017272643}
+  - component: {fileID: 3836749835508872347}
   m_Layer: 0
-  m_Name: FMOD_Submerged
+  m_Name: MusicSoundController
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &348176591218605460
+--- !u!4 &466572125017272643
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7904715943698901538}
+  m_GameObject: {fileID: 7984553470293821593}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 14.194661, y: 12.663128, z: 13.647047}
+  m_LocalPosition: {x: 9.22774, y: 19.960167, z: -3.4772792}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2485361502683734601
+--- !u!114 &3836749835508872347
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7904715943698901538}
+  m_GameObject: {fileID: 7984553470293821593}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Script: {fileID: 11500000, guid: 84725ec0360aefc478fb835e318b3537, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CollisionTag: 
-  EventReference:
+  ambienceRef:
     Guid:
       Data1: -1117890765
       Data2: 1195817983
       Data3: 1476403085
       Data4: 1749958915
     Path: event:/ENV/Submerged
-  Event: 
-  PlayEvent: 1
-  StopEvent: 2
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  AllowNonRigidbodyDoppler: 0
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 1
-  OverrideMaxDistance: 20
+  musicTempleRef:
+    Guid:
+      Data1: 2042098517
+      Data2: 1335164620
+      Data3: -2082618957
+      Data4: -1723959758
+    Path: event:/MUSIC/TempleTheme
+  musicUnderWaterRef:
+    Guid:
+      Data1: -670049535
+      Data2: 1137989042
+      Data3: -983172420
+      Data4: 1620864272
+    Path: event:/MUSIC/UnderwaterTheme
