@@ -28,6 +28,12 @@ public class PlayerController : OnMessage<ShowSummonMenu, HideSummonMenu>
 
     private void FixedUpdate()
     {
+        if (!PlayerHasControl)
+        {
+            playerRigidBody.velocity = Vector3.zero;
+            return;
+        }
+        
         Vector3 velocity = movement * movementSpeed;
         playerRigidBody.velocity = velocity;
 
