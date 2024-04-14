@@ -6,7 +6,6 @@ using FMODUnity;
 
 public class SwitchWeigthSFX : MonoBehaviour
 {
-
     public void PlaySwitchSFX()
     {
         RuntimeManager.PlayOneShot("event:/SFX/WeightSwitch");
