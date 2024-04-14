@@ -75,6 +75,12 @@
 		</relationship>
 	</object>
 	<object class="EventMixerMaster" id="{bbc0526d-d880-4b03-8b19-cff5ff6831b0}">
+		<property name="volume">
+			<value>-2</value>
+		</property>
+		<relationship name="modulators">
+			<destination>{dd8e02a7-3290-4664-b3b0-c1505a73c149}</destination>
+		</relationship>
 		<relationship name="effectChain">
 			<destination>{c94fe8ea-f321-46d4-8d87-77b82fd3fe37}</destination>
 		</relationship>
@@ -94,6 +100,9 @@
 	<object class="SingleSound" id="{089b9b50-f59e-447f-a4f6-ec1d4e3ca06f}">
 		<property name="length">
 			<value>11.0785</value>
+		</property>
+		<property name="pitch">
+			<value>-1</value>
 		</property>
 		<relationship name="audioFile">
 			<destination>{d957dc38-8c97-42b6-9a1a-ca4f74d7be0f}</destination>
@@ -127,9 +136,28 @@
 			<destination>{3da6bd71-8093-4ad2-be81-0c41a9caa27a}</destination>
 		</relationship>
 	</object>
+	<object class="ADSRModulator" id="{dd8e02a7-3290-4664-b3b0-c1505a73c149}">
+		<property name="nameOfPropertyBeingModulated">
+			<value>volume</value>
+		</property>
+		<property name="initialValue">
+			<value>-80</value>
+		</property>
+		<property name="attackTime">
+			<value>700</value>
+		</property>
+		<property name="releaseTime">
+			<value>2400</value>
+		</property>
+		<property name="finalValue">
+			<value>-80</value>
+		</property>
+	</object>
 	<object class="MixerBusEffectChain" id="{c94fe8ea-f321-46d4-8d87-77b82fd3fe37}">
 		<relationship name="effects">
 			<destination>{8452d88a-a766-47a2-9ca3-708239d25f07}</destination>
+			<destination>{9845a6ca-fc68-4e4f-abaa-cc718a2ba875}</destination>
+			<destination>{0ebdd53f-a794-4c45-90ba-7837fbbef265}</destination>
 			<destination>{cb3b61b4-ace3-4f08-88a2-6a0799118244}</destination>
 		</relationship>
 	</object>
@@ -143,9 +171,54 @@
 	<object class="MixerBusPanner" id="{0d706017-06b0-407c-88d9-3e8f4270b6ad}" />
 	<object class="DistortionEffect" id="{8452d88a-a766-47a2-9ca3-708239d25f07}">
 		<property name="level">
-			<value>0.389999986</value>
+			<value>0.539999962</value>
+		</property>
+	</object>
+	<object class="MultibandEqEffect" id="{9845a6ca-fc68-4e4f-abaa-cc718a2ba875}">
+		<property name="filterTypeB">
+			<value>5</value>
+		</property>
+		<property name="frequencyA">
+			<value>3600</value>
+		</property>
+		<property name="frequencyB">
+			<value>65.1519775</value>
+		</property>
+		<property name="qualityA">
+			<value>3.70000005</value>
+		</property>
+		<property name="qualityB">
+			<value>2.10344815</value>
+		</property>
+		<relationship name="modulators">
+			<destination>{b360b594-95b3-455e-8f05-bc46745a7811}</destination>
+		</relationship>
+	</object>
+	<object class="FlangerEffect" id="{0ebdd53f-a794-4c45-90ba-7837fbbef265}">
+		<property name="rate">
+			<value>0.049999997</value>
+		</property>
+		<property name="delay">
+			<value>0.129999995</value>
 		</property>
 	</object>
 	<object class="MixerBusFader" id="{cb3b61b4-ace3-4f08-88a2-6a0799118244}" />
 	<object class="MixerBusFader" id="{c42e5cf9-c287-4070-b2f2-8ff33ec7223f}" />
+	<object class="LFOModulator" id="{b360b594-95b3-455e-8f05-bc46745a7811}">
+		<property name="nameOfPropertyBeingModulated">
+			<value>frequencyA</value>
+		</property>
+		<property name="shape">
+			<value>6</value>
+		</property>
+		<property name="rate">
+			<value>0.119999997</value>
+		</property>
+		<property name="depth">
+			<value>26</value>
+		</property>
+		<property name="direction">
+			<value>-18</value>
+		</property>
+	</object>
 </objects>

@@ -95,6 +95,10 @@
 	<object class="MixerBusPanner" id="{4568bede-6238-4874-a174-1831c6081f16}" />
 	<object class="MixerBusEffectChain" id="{0fb938c3-e1de-4352-9e63-11535f7ebbc9}">
 		<relationship name="effects">
+			<destination>{eb05b5ff-d452-4aa6-bbcf-98b4b7b8ccbb}</destination>
+			<destination>{f410f5c7-1bf5-4113-a782-56990acb37b2}</destination>
+			<destination>{7dd5a581-72f6-4d56-a1f4-ca0218b9abc4}</destination>
+			<destination>{26d96876-0e75-42a3-8023-d7b1a9614f20}</destination>
 			<destination>{22db4d72-03e1-47a5-9e5d-b4318d6333c3}</destination>
 		</relationship>
 	</object>
@@ -109,6 +113,53 @@
 		</relationship>
 	</object>
 	<object class="MixerBusFader" id="{ecdd8112-94eb-4693-8097-430624ef64fd}" />
+	<object class="DistortionEffect" id="{eb05b5ff-d452-4aa6-bbcf-98b4b7b8ccbb}">
+		<property name="level">
+			<value>0.299999982</value>
+		</property>
+	</object>
+	<object class="MultibandEqEffect" id="{f410f5c7-1bf5-4113-a782-56990acb37b2}">
+		<property name="filterTypeA">
+			<value>9</value>
+		</property>
+		<property name="filterTypeB">
+			<value>1</value>
+		</property>
+		<property name="frequencyA">
+			<value>720.641174</value>
+		</property>
+		<property name="frequencyB">
+			<value>5963.97363</value>
+		</property>
+		<property name="qualityB">
+			<value>1.15286207</value>
+		</property>
+		<property name="gainA">
+			<value>4.65517426</value>
+		</property>
+	</object>
+	<object class="MixerSend" id="{7dd5a581-72f6-4d56-a1f4-ca0218b9abc4}">
+		<property name="level">
+			<value>-5</value>
+		</property>
+		<property name="inputFormat">
+			<value>0</value>
+		</property>
+		<relationship name="mixerReturn">
+			<destination>{23c1f807-d2d8-4d87-9862-bbcaed4fa273}</destination>
+		</relationship>
+	</object>
+	<object class="DelayEffect" id="{26d96876-0e75-42a3-8023-d7b1a9614f20}">
+		<property name="delay">
+			<value>50</value>
+		</property>
+		<property name="feedback">
+			<value>58</value>
+		</property>
+		<property name="level">
+			<value>-14.5</value>
+		</property>
+	</object>
 	<object class="MixerBusFader" id="{22db4d72-03e1-47a5-9e5d-b4318d6333c3}" />
 	<object class="RandomizerModulator" id="{7d83ff54-ffa4-41aa-89d8-f85d6f1d9b85}">
 		<property name="nameOfPropertyBeingModulated">

@@ -13,6 +13,7 @@ public class SoundGuy : MonoBehaviour
     private void OnEnable()
     {
         Message.Subscribe<ShowSummonMenu>(_ => OnSummonStarted(), this);
+        Message.Subscribe<HideSummonMenu>(_ => OnSummonStopped(), this);
         Message.Subscribe<SummonFailed>(_ => OnSummonFailed(), this);
     }
 
@@ -26,13 +27,31 @@ public class SoundGuy : MonoBehaviour
         _isSummoning = true;
         summonLoopInstance = RuntimeManager.CreateInstance(summonLoopSoundRef);
         summonLoopInstance.start();
-        Debug.Log("SUMMON HAS STARTED");
+
         // Code to start the Summon Loop Sound
         // Code to trigger any Summon start oneshots
     }
 
+    private void Update()
+    {
+        if (_isSummoning) 
+        {
+            if (Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.DownArrow))
+            {
+                RuntimeManager.PlayOneShot(summonKeyPressedRef);
+                Debug.Log("KEYS PRESSED");
+            }
+        }
+        
+    }
+    private void OnSummonStopped()
+    {
+        summonLoopInstance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+        summonLoopInstance.release();
+    }
+
     private void OnSummonFailed()
     {
-        
+       
     }
 }
