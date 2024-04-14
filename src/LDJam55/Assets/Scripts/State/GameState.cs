@@ -16,4 +16,5 @@ public sealed class GameState
     public float CurrentGameTime;
     public List<string> SummonNames = new();
     public HashSet<GameObject> Heavies = new();
+    public HashSet<GameObject> WaterBlockers = new();
 }

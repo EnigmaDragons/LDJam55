@@ -147,7 +147,7 @@ Transform:
   m_GameObject: {fileID: 1109912121197860770}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1, y: 5.5, z: 0.39}
+  m_LocalPosition: {x: -2, y: 5.5, z: -3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -164,6 +164,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7547217042505272920}
+  - component: {fileID: 7239908766043807308}
   m_Layer: 0
   m_Name: Waterfall
   m_TagString: Untagged
@@ -187,6 +188,20 @@ Transform:
   - {fileID: 1374766008846177682}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7239908766043807308
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2525442474145157335}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71b613fe5a19445488cc2f3059a021a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isBlocked: 0
+  isPouring: 1
 --- !u!1 &3239860012143984569
 GameObject:
   m_ObjectHideFlags: 0
@@ -289,7 +304,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3

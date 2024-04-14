@@ -14,6 +14,8 @@ public class WaterTile : MonoBehaviour
     public UnityEvent soundEventsStart;
     public UnityEvent soundEventsStop;
 
+    public bool SetIsFast(bool isFast) => isFastWater = isFast;
+
     public bool IsFastWater()
     {
         return isFastWater;
