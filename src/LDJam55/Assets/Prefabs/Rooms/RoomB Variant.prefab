@@ -38,6 +38,21 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5653765371914750759, guid: 2140105c8ed280444b3ad8907d0f9be5,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -11
+      objectReference: {fileID: 0}
+    - target: {fileID: 6545110456861914360, guid: 2140105c8ed280444b3ad8907d0f9be5,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 6545110456861914360, guid: 2140105c8ed280444b3ad8907d0f9be5,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 7480385771278462674, guid: 2140105c8ed280444b3ad8907d0f9be5,
         type: 3}
       propertyPath: m_Name
@@ -145,9 +160,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 3523053736737179525}
+  doorCanBeClosedAgain: 0
   triggerables:
   - {fileID: 5118032846347207613}
   - {fileID: 5918750626309999007}
+  invertCondition: 0
 --- !u!114 &3523053736737179525 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 301462913633823291, guid: 2140105c8ed280444b3ad8907d0f9be5,
@@ -171,7 +188,7 @@ PrefabInstance:
     - target: {fileID: 6805667336067049853, guid: 018a05534faab4e4482394b33ce18944,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -6
+      value: -5
       objectReference: {fileID: 0}
     - target: {fileID: 6805667336067049853, guid: 018a05534faab4e4482394b33ce18944,
         type: 3}
@@ -257,7 +274,7 @@ PrefabInstance:
     - target: {fileID: 6805667336067049853, guid: 018a05534faab4e4482394b33ce18944,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6805667336067049853, guid: 018a05534faab4e4482394b33ce18944,
         type: 3}
