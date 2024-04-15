@@ -41,7 +41,7 @@ public class SummonMenu : OnMessage<SummonLearned, HideSummonMenu, ShowSummonMen
         if (_daddyDisabled || _isFrozen)
             return;
 
-        if (Input.GetKeyDown(KeyCode.LeftControl) || Input.GetKeyDown(KeyCode.RightControl))
+        if (Input.GetKeyDown(KeyCode.LeftShift) || Input.GetKeyDown(KeyCode.LeftShift))
             if (_isActive)
                 Message.Publish(new HideSummonMenu());
             else
