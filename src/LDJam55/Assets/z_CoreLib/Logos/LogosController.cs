@@ -77,7 +77,7 @@ public class LogosController : MonoBehaviour
     {
         _startedLoading = true;
         image.color = targetTransparent;
-        Invoke("NavigateToNextScene", 0.2f);
+        Invoke("NavigateToNextScene", 1f);
     }
 
     private void BeginAnim()
