@@ -23,6 +23,7 @@ public class PlayerController : OnMessage<SummonLearned, SummonLearningDismissed
 
     private void Update()
     {
+        transform.position = new Vector3(transform.position.x, 0, transform.position.z);
         if (_moveableObject.IsMoving)
         {
             var direction = new Vector3(

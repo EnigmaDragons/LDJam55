@@ -15,6 +15,7 @@ public class CutscenePlayer : OnMessage<PlayCutscene>
     [SerializeField] private TextMeshProUGUI caption;
     [SerializeField] private StoryCharacter[] allCharacters;
     [SerializeField] private float fmodPullingSeconds;
+    [SerializeField] private Button skip;
 
     private Cutscene _cutscene;
     private int _index;
@@ -31,6 +32,10 @@ public class CutscenePlayer : OnMessage<PlayCutscene>
         background.gameObject.SetActive(false);
         _isDelaying = false;
         _isPlaying = false;
+        skip.onClick.AddListener(() =>
+        {
+            _instance.stop(STOP_MODE.IMMEDIATE);
+        });
     }
 
     private void Update()
