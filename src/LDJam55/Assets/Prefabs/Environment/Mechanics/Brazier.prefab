@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 5000684219654638663}
   - component: {fileID: 4605931710214844793}
   - component: {fileID: 2528540798795046538}
+  - component: {fileID: 5175193480624565928}
   m_Layer: 0
   m_Name: Brazier
   m_TagString: Flammable
@@ -88,6 +89,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 5175193480624565928}
+        m_TargetAssemblyTypeName: ToggleEmission, Assembly-CSharp
+        m_MethodName: TurnOn
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &2528540798795046538
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -100,6 +113,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ecb434e85b7c4c369f7d134179ecb46b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &5175193480624565928
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7927948654153011600}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c75f0afa21f9836438a465ee87225135, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targets:
+  - {fileID: 9203299523807994227}
+  - {fileID: 5275593659435112122}
+  startsOn: 0
+  onMaterial: {fileID: 2100000, guid: f246042aaef169d44bc00109e2ba0699, type: 2}
+  offMaterial: {fileID: 2100000, guid: e35bf0c0b805aa942b41a2725a37cdf3, type: 2}
 --- !u!1 &8130851738336360034
 GameObject:
   m_ObjectHideFlags: 0
@@ -506,9 +537,21 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 49660f7312ff08744a6f5fa52ac20027, type: 3}
+--- !u!23 &5275593659435112122 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: -7511558181221131132, guid: 49660f7312ff08744a6f5fa52ac20027,
+    type: 3}
+  m_PrefabInstance: {fileID: 6843001770286533182}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &6448451699667447253 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 49660f7312ff08744a6f5fa52ac20027,
+    type: 3}
+  m_PrefabInstance: {fileID: 6843001770286533182}
+  m_PrefabAsset: {fileID: 0}
+--- !u!23 &9203299523807994227 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 2400288847965760333, guid: 49660f7312ff08744a6f5fa52ac20027,
     type: 3}
   m_PrefabInstance: {fileID: 6843001770286533182}
   m_PrefabAsset: {fileID: 0}
