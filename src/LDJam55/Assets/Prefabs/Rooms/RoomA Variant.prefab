@@ -99,6 +99,11 @@ PrefabInstance:
       propertyPath: startsOpens
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1192838186830255588, guid: 2140105c8ed280444b3ad8907d0f9be5,
+        type: 3}
+      propertyPath: startsOpens
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1294301149209877063, guid: 2140105c8ed280444b3ad8907d0f9be5,
         type: 3}
       propertyPath: triggerablesNeededToLightRoom.Array.size
