@@ -80,6 +80,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   signText: Summon 3 Ancient Books to unlock new knowledge
   isAncientLanguage: 1
+  triggerDistance: 1.5
+  maxBookDistance: 2.5
 --- !u!136 &7984867415737205839
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -166,6 +168,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Unreadable_Sign
       objectReference: {fileID: 0}
+    - target: {fileID: 3827044030738893984, guid: 388f7fa2ef8921f41abc52b51761ae82,
+        type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 236142e4348d0ec49b0d38f3bb07003a, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
