@@ -9,6 +9,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 759038740049805061}
+  - component: {fileID: 4781514176186306328}
+  - component: {fileID: 8856249496706167498}
   m_Layer: 0
   m_Name: Gear
   m_TagString: Untagged
@@ -25,13 +27,40 @@ Transform:
   m_GameObject: {fileID: 1126458494153019830}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2626079267694228274}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4781514176186306328
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1126458494153019830}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 268ddd8bf1f84cedac0938e00136bc3e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxGearDistance: 2.5
+  snapDuration: 0.4
+--- !u!114 &8856249496706167498
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1126458494153019830}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25d1984fe7ff6f542837db17ee67b0b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  summon: {fileID: 11400000, guid: 7a9fb62cbf1298d49a84921ae8deea65, type: 2}
 --- !u!1 &7434403245870225646
 GameObject:
   m_ObjectHideFlags: 0
@@ -89,7 +118,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 697756ff3bdc91f4dbc12f67a47676fb,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 697756ff3bdc91f4dbc12f67a47676fb,
         type: 3}
@@ -99,7 +128,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 697756ff3bdc91f4dbc12f67a47676fb,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 697756ff3bdc91f4dbc12f67a47676fb,
         type: 3}
