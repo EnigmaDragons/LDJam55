@@ -18,6 +18,11 @@ PrefabInstance:
       propertyPath: isTriggered
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5175193480624565928, guid: 018a05534faab4e4482394b33ce18944,
+        type: 3}
+      propertyPath: startsOn
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6805667336067049853, guid: 018a05534faab4e4482394b33ce18944,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -79,7 +84,8 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 3372992505798849453, guid: 018a05534faab4e4482394b33ce18944, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 018a05534faab4e4482394b33ce18944, type: 3}

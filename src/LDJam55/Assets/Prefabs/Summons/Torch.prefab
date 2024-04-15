@@ -43,8 +43,8 @@ Light:
   serializedVersion: 11
   m_Type: 2
   m_Color: {r: 0.9900321, g: 0.8333503, b: 0.5669159, a: 1}
-  m_Intensity: 0.6
-  m_Range: 8
+  m_Intensity: 1.5
+  m_Range: 7
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
@@ -93,6 +93,85 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!1001 &2081394304856498894
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 3959503364424513403}
+    m_Modifications:
+    - target: {fileID: 5151158176131261463, guid: f97c80f1d730aa14183fa56cc82ec4a9,
+        type: 3}
+      propertyPath: m_Name
+      value: TorchFire_Tweaked
+      objectReference: {fileID: 0}
+    - target: {fileID: 6242080688934495473, guid: f97c80f1d730aa14183fa56cc82ec4a9,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6242080688934495473, guid: f97c80f1d730aa14183fa56cc82ec4a9,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6242080688934495473, guid: f97c80f1d730aa14183fa56cc82ec4a9,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6242080688934495473, guid: f97c80f1d730aa14183fa56cc82ec4a9,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6242080688934495473, guid: f97c80f1d730aa14183fa56cc82ec4a9,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6242080688934495473, guid: f97c80f1d730aa14183fa56cc82ec4a9,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6242080688934495473, guid: f97c80f1d730aa14183fa56cc82ec4a9,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6242080688934495473, guid: f97c80f1d730aa14183fa56cc82ec4a9,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6242080688934495473, guid: f97c80f1d730aa14183fa56cc82ec4a9,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6242080688934495473, guid: f97c80f1d730aa14183fa56cc82ec4a9,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6659742473582833300, guid: f97c80f1d730aa14183fa56cc82ec4a9,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.378
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f97c80f1d730aa14183fa56cc82ec4a9, type: 3}
+--- !u!4 &5351061714521163327 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6242080688934495473, guid: f97c80f1d730aa14183fa56cc82ec4a9,
+    type: 3}
+  m_PrefabInstance: {fileID: 2081394304856498894}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &3564671851571564688
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -155,7 +234,7 @@ PrefabInstance:
         type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: c852af001dae0064e9acaa832f1dadb7, type: 2}
+      objectReference: {fileID: 2100000, guid: 173fd9d1825661e43a4b6acfe9f94f81, type: 2}
     - target: {fileID: 919132149155446097, guid: 5bec7860edf2ea440a2bfe31c78fba0a,
         type: 3}
       propertyPath: m_Name
@@ -168,6 +247,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 3561237139919210672}
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 5bec7860edf2ea440a2bfe31c78fba0a,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5351061714521163327}
     - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 5bec7860edf2ea440a2bfe31c78fba0a,
         type: 3}
       insertIndex: -1
@@ -295,6 +378,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TorchFire
+      objectReference: {fileID: 0}
+    - target: {fileID: 5151158176131261463, guid: a8a9609c26c23d946a5b22ac386f9a50,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6242080688934495473, guid: a8a9609c26c23d946a5b22ac386f9a50,
         type: 3}

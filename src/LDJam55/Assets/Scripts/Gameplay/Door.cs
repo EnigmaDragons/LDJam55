@@ -16,11 +16,17 @@ public class Door : MonoBehaviour
     public EventReference doorSuccesSFXRef;
     
     public bool IsOpen => isOpen;
+    private bool playonce;
 
     private void Awake()
     {
         if (startsOpens)
             Open(true);
+    }
+
+    private void Start()
+    {
+        playonce = false;
     }
 
     public void Open(bool isInitialState = false)
@@ -35,8 +41,11 @@ public class Door : MonoBehaviour
                 if (scaleForOpen)
                     doorScaleTarget.DOScale(scaleWhenOpen, animDurationSeconds);
                 doorScaleTarget.DOLocalMoveY(-0.1f, animDurationSeconds);
-                RuntimeManager.PlayOneShot(doorSuccesSFXRef);
-                Debug.Log("sound should play");
+                if(!playonce)
+                {
+                    RuntimeManager.PlayOneShot(doorSuccesSFXRef);
+                    playonce = true;
+                }
             }
             else
             {

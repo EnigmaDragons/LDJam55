@@ -77,7 +77,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 11400000, guid: 4f8e0494f59f2d242a5817634639af74, type: 2}
         m_TargetAssemblyTypeName: EventPublisher, Assembly-CSharp
-        m_MethodName: WinGame
+        m_MethodName: NotifyTreasureAcquired
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -153,7 +153,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 11400000, guid: 4f8e0494f59f2d242a5817634639af74, type: 2}
         m_TargetAssemblyTypeName: EventPublisher, Assembly-CSharp
-        m_MethodName: WinGame
+        m_MethodName: NotifyTreasureAcquired
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
