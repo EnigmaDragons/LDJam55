@@ -83,8 +83,8 @@ public class Pushable : OnMessage<PushingObjectBegin, PushingObjectEnd>
             _pushDirection = isMoreX
               ? new Vector3(Mathf.Round(direction.x), 0, 0)
               : new Vector3(0, 0, Mathf.Round(direction.z));
-            
-            _canMoveThatDirection = !Physics.OverlapSphere(transform.position + _pushDirection * 2 / transform.localScale.x, 0.1f).Any(x => !x.isTrigger);
+
+            _canMoveThatDirection = !Physics.OverlapSphere(transform.position + _pushDirection * 2, 0.1f).Any(x => !x.isTrigger);
         }
     }
 
