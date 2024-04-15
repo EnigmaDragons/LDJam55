@@ -108,5 +108,8 @@ MonoBehaviour:
   cameraYOffset: 17
   xMin: -9999999
   xMax: 9999999
+  yMin: 10
+  yMax: 30
   zMin: -9999999
   zMax: 9999999
+  zoomSpeed: 3
