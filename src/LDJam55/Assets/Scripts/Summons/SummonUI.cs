@@ -34,6 +34,7 @@ public class SummonUI : OnMessage<SummonBegin>
         summonName.text = summon.SummonName;
         _summonCode = summon.KeyCodes;
         ManaCostText.text = "";
+        IsActive = false;
 
         foreach (KeyCode keyCode in summon.KeyCodes)
         {
