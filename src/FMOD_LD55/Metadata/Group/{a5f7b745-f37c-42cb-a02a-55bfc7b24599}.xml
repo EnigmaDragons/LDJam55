@@ -4,9 +4,6 @@
 		<property name="color">
 			<value>Yellow</value>
 		</property>
-		<property name="volume">
-			<value>-80</value>
-		</property>
 		<property name="name">
 			<value>DX_MST</value>
 		</property>
@@ -23,8 +20,10 @@
 	<object class="MixerBusEffectChain" id="{180a67e4-bd04-4e8f-8c19-3cbe764130e7}">
 		<relationship name="effects">
 			<destination>{33e7b5d9-dafc-4110-a36e-e6d5af005ba2}</destination>
+			<destination>{9780d73b-6948-46db-a721-f25f9adf01d2}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{080e937e-12c6-4c20-b030-668d654e0c50}" />
 	<object class="MixerBusFader" id="{33e7b5d9-dafc-4110-a36e-e6d5af005ba2}" />
+	<object class="Sidechain" id="{9780d73b-6948-46db-a721-f25f9adf01d2}" />
 </objects>

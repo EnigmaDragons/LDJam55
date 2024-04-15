@@ -7,6 +7,9 @@
 		<property name="name">
 			<value>SFX_MST</value>
 		</property>
+		<relationship name="modulators">
+			<destination>{e51530de-d864-42cc-807f-d0dc27720ffd}</destination>
+		</relationship>
 		<relationship name="effectChain">
 			<destination>{18203851-e7bd-4071-804a-b80bbdfdfd4e}</destination>
 		</relationship>
@@ -15,6 +18,14 @@
 		</relationship>
 		<relationship name="output">
 			<destination>{aac20f68-7727-4058-a71d-6956b6326e0c}</destination>
+		</relationship>
+	</object>
+	<object class="SidechainModulator" id="{e51530de-d864-42cc-807f-d0dc27720ffd}">
+		<property name="nameOfPropertyBeingModulated">
+			<value>volume</value>
+		</property>
+		<relationship name="sidechains">
+			<destination>{9780d73b-6948-46db-a721-f25f9adf01d2}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusEffectChain" id="{18203851-e7bd-4071-804a-b80bbdfdfd4e}">
