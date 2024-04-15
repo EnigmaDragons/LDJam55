@@ -14,7 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cutsceneSegments:
   - Background: {fileID: 0}
-    Caption: 
+    Caption: Having failed to retrieve the Crown before her rival Pontus, Princess
+      Thalatta returns to her very disappointed father to be grounded indefinitely.
     VoiceLine:
       Guid:
         Data1: 278281704
@@ -23,3 +24,4 @@ MonoBehaviour:
         Data4: 376353989
       Path: event:/VOICELINES/6-End Game Narrations/FailurePreCrown
     Delay: 0
+  isVisualCutscene: 1

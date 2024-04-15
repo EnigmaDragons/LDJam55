@@ -14,7 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cutsceneSegments:
   - Background: {fileID: 0}
-    Caption: 
+    Caption: "Heading home after saving Pontus and recovering the Crown, Thalatta
+      returns to a hero\u2019s welcome hosted by Poseidon as her mother Nike smiles
+      down approvingly. She has proven herself worthy of being Queen of Atlantis!"
     VoiceLine:
       Guid:
         Data1: -1980207916
@@ -23,3 +25,4 @@ MonoBehaviour:
         Data4: 789588719
       Path: event:/VOICELINES/6-End Game Narrations/GameWon
     Delay: 0
+  isVisualCutscene: 1
