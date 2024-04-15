@@ -73,7 +73,7 @@
 	</object>
 	<object class="EventMixerMaster" id="{51729dae-a79c-417b-90ef-d722c5985acb}">
 		<property name="volume">
-			<value>-10.5</value>
+			<value>-15.5</value>
 		</property>
 		<relationship name="effectChain">
 			<destination>{b6eb3868-3574-4d2d-b7ac-51d8cc038d2a}</destination>
@@ -98,17 +98,32 @@
 	<object class="MixerBusPanner" id="{dd7fb35a-db66-4286-961e-8b451132bc23}" />
 	<object class="MixerBusEffectChain" id="{b6eb3868-3574-4d2d-b7ac-51d8cc038d2a}">
 		<relationship name="effects">
+			<destination>{42a40930-2a3a-494b-bbb7-bdeaa348dd9e}</destination>
 			<destination>{d5d418e1-2a20-468e-9ff1-c358f443fa80}</destination>
 			<destination>{e982c28b-2a9d-484e-b427-997eaec10ced}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{4db6ee8e-3423-4618-823b-d1ea329df845}" />
 	<object class="SingleSound" id="{6f6c6441-86a8-4671-8aac-5e044cba1004}">
+		<relationship name="modulators">
+			<destination>{bc94539f-9cbb-42b3-9251-e6041aa8f7cf}</destination>
+		</relationship>
 		<relationship name="audioFile">
 			<destination>{0e03e778-2f13-4b26-a48a-8ea8be87457c}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusFader" id="{54531847-09f6-47d8-a40f-b8a254bdf3e7}" />
+	<object class="DelayEffect" id="{42a40930-2a3a-494b-bbb7-bdeaa348dd9e}">
+		<property name="delay">
+			<value>96</value>
+		</property>
+		<property name="feedback">
+			<value>58</value>
+		</property>
+		<property name="level">
+			<value>-6.5</value>
+		</property>
+	</object>
 	<object class="MixerBusFader" id="{d5d418e1-2a20-468e-9ff1-c358f443fa80}" />
 	<object class="MixerSend" id="{e982c28b-2a9d-484e-b427-997eaec10ced}">
 		<property name="level">
@@ -120,5 +135,22 @@
 		<relationship name="mixerReturn">
 			<destination>{23c1f807-d2d8-4d87-9862-bbcaed4fa273}</destination>
 		</relationship>
+	</object>
+	<object class="LFOModulator" id="{bc94539f-9cbb-42b3-9251-e6041aa8f7cf}">
+		<property name="nameOfPropertyBeingModulated">
+			<value>pitch</value>
+		</property>
+		<property name="shape">
+			<value>6</value>
+		</property>
+		<property name="rate">
+			<value>0.114999995</value>
+		</property>
+		<property name="depth">
+			<value>13</value>
+		</property>
+		<property name="direction">
+			<value>100</value>
+		</property>
 	</object>
 </objects>
