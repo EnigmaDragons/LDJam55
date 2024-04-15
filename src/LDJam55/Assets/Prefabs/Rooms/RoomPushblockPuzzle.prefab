@@ -46,6 +46,7 @@ GameObject:
   - component: {fileID: 2855703510016278530}
   - component: {fileID: 1905530786282788886}
   - component: {fileID: 473776076781746914}
+  - component: {fileID: 5413247583195208768}
   m_Layer: 0
   m_Name: RoomPushblockPuzzle
   m_TagString: Untagged
@@ -102,6 +103,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   roof: {fileID: 8301137725463577311}
+  onEnter:
+    m_PersistentCalls:
+      m_Calls: []
+  enableOnOneLight: []
+  enableOnTwoLights: []
 --- !u!65 &473776076781746914
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -123,6 +129,19 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 44.7965, y: 8.563799, z: 49.655212}
   m_Center: {x: 8.636089, y: 3.7818995, z: 4.896282}
+--- !u!114 &5413247583195208768
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7467982682264700132}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c23bdb5c030417bb306de26e49653a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  seconds: 15
 --- !u!1 &8301137725463577311
 GameObject:
   m_ObjectHideFlags: 0
