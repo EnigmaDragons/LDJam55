@@ -45,6 +45,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 54c073a53ddc423f8d8b607187a25c45, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  win: {fileID: 11400000, guid: 613048a8be512c3499765706f0a2a8bc, type: 2}
+  lostBeforeTreasure: {fileID: 11400000, guid: e8dcc170a05a435469e5a90d0ad727b9, type: 2}
+  lostAfterTreasure: {fileID: 11400000, guid: fb6d3adcffed0834994d930e4cdefaff, type: 2}
 --- !u!114 &5143228106922206731
 MonoBehaviour:
   m_ObjectHideFlags: 0
