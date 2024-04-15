@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e44df5f074f4045a35c47706d1b54fa, type: 3}
   m_Name: Thot
   m_EditorClassIdentifier: 
-  characterPortrait: {fileID: 0}
+  characterPortrait: {fileID: 21300000, guid: 012183a8fdc20d24e811579660fc529e, type: 3}
   characterName: Thalatta
   isProtagonist: 1
   VoiceLines:

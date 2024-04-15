@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e44df5f074f4045a35c47706d1b54fa, type: 3}
   m_Name: Ceto
   m_EditorClassIdentifier: 
-  characterPortrait: {fileID: 0}
+  characterPortrait: {fileID: 21300000, guid: 316e3b24ffea8674a8a01b7a6d0427e0, type: 3}
   characterName: Ceto
   isProtagonist: 0
   VoiceLines:
