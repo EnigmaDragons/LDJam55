@@ -1,10 +1,12 @@
 ﻿using System;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class Room : OnMessage<TriggerableChanged>
 {
     [SerializeField] private GameObject roof;
+    [SerializeField] private UnityEvent onEnter;
     
     private Triggerable[] triggerablesNeededToLightRoom = Array.Empty<Triggerable>();
 
@@ -24,6 +26,7 @@ public class Room : OnMessage<TriggerableChanged>
     {
         if (other.gameObject.CompareTag("Player"))
         {
+            onEnter.Invoke();
             _isInThisRoom = true;
             roof.gameObject.SetActive(false);
             Message.Publish(new ChangeRoomLighting(triggerablesNeededToLightRoom.Count(x => x.IsTriggered)));
