@@ -5,7 +5,7 @@
 			<value>Cyan</value>
 		</property>
 		<property name="volume">
-			<value>-2.10000014</value>
+			<value>-0.900000036</value>
 		</property>
 		<property name="name">
 			<value>DX_Acting</value>
@@ -23,6 +23,7 @@
 	<object class="MixerBusEffectChain" id="{1c9496bc-0691-47c0-bc61-653f51423bd9}">
 		<relationship name="effects">
 			<destination>{90865207-539c-4c9d-99e0-e181a07adbfc}</destination>
+			<destination>{ad799343-fe8a-4c5d-bbe8-c3b1441ac38c}</destination>
 			<destination>{49abe66c-7bf8-4fa3-8154-de2f77c92890}</destination>
 			<destination>{da6a53ae-8a96-4f49-a5b1-c2d86f90a364}</destination>
 		</relationship>
@@ -30,19 +31,48 @@
 	<object class="MixerBusPanner" id="{a10ad023-b683-45c9-a052-16be81d14591}" />
 	<object class="DelayEffect" id="{90865207-539c-4c9d-99e0-e181a07adbfc}">
 		<property name="delay">
-			<value>125</value>
+			<value>160</value>
 		</property>
 		<property name="feedback">
 			<value>56</value>
 		</property>
 		<property name="level">
-			<value>-14.4000006</value>
+			<value>-18.1000004</value>
+		</property>
+	</object>
+	<object class="MultibandEqEffect" id="{ad799343-fe8a-4c5d-bbe8-c3b1441ac38c}">
+		<property name="filterTypeA">
+			<value>9</value>
+		</property>
+		<property name="filterTypeB">
+			<value>9</value>
+		</property>
+		<property name="filterTypeC">
+			<value>9</value>
+		</property>
+		<property name="frequencyA">
+			<value>677.211731</value>
+		</property>
+		<property name="frequencyB">
+			<value>69.3301544</value>
+		</property>
+		<property name="frequencyC">
+			<value>3859.8772</value>
+		</property>
+		<property name="gainA">
+			<value>-6.72413635</value>
+		</property>
+		<property name="gainB">
+			<value>1.55172586</value>
+		</property>
+		<property name="gainC">
+			<value>3.62068892</value>
 		</property>
 	</object>
 	<object class="MixerBusFader" id="{49abe66c-7bf8-4fa3-8154-de2f77c92890}" />
 	<object class="MixerSend" id="{da6a53ae-8a96-4f49-a5b1-c2d86f90a364}">
 		<property name="level">
-			<value>-19</value>
+			<value>-14</value>
 		</property>
 		<property name="inputFormat">
 			<value>1</value>
