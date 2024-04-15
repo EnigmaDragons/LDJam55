@@ -190,7 +190,11 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1704132244509486599, guid: 8e8f1f370d0d523468934606fe7e1ccf,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 678924547}
   m_SourcePrefab: {fileID: 100100000, guid: 8e8f1f370d0d523468934606fe7e1ccf, type: 3}
 --- !u!1001 &131190357
 PrefabInstance:
@@ -324,6 +328,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: GameHudUi
+      objectReference: {fileID: 0}
+    - target: {fileID: 8432649674330079438, guid: cc70ab1521fb70444b0b1c982562b26f,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2505,22 +2514,6 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 0}
-    - targetCorrespondingSourceObject: {fileID: 6006023666227936632, guid: 0b1de88ab5987bd418b7b235d199d6b6,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
-    - targetCorrespondingSourceObject: {fileID: 5550376070409467103, guid: 0b1de88ab5987bd418b7b235d199d6b6,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
-    - targetCorrespondingSourceObject: {fileID: 7209733586388179821, guid: 0b1de88ab5987bd418b7b235d199d6b6,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
-    - targetCorrespondingSourceObject: {fileID: 3737280616917335011, guid: 0b1de88ab5987bd418b7b235d199d6b6,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
     - targetCorrespondingSourceObject: {fileID: 8088804916685720057, guid: 0b1de88ab5987bd418b7b235d199d6b6,
         type: 3}
       insertIndex: -1
@@ -2610,6 +2603,78 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: 0b1de88ab5987bd418b7b235d199d6b6, type: 3}
+--- !u!1 &678924541 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1704132244509486599, guid: 8e8f1f370d0d523468934606fe7e1ccf,
+    type: 3}
+  m_PrefabInstance: {fileID: 60291564}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &678924546 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2614261064306860952, guid: 8e8f1f370d0d523468934606fe7e1ccf,
+    type: 3}
+  m_PrefabInstance: {fileID: 60291564}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &678924547
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 678924541}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 948f4100a11a5c24981795d21301da5c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  volumeTrigger: {fileID: 678924546}
+  volumeLayer:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  stopNaNPropagation: 1
+  finalBlitToCameraTarget: 0
+  antialiasingMode: 2
+  temporalAntialiasing:
+    jitterSpread: 0.75
+    sharpness: 0.25
+    stationaryBlending: 0.95
+    motionBlending: 0.85
+  subpixelMorphologicalAntialiasing:
+    quality: 2
+  fastApproximateAntialiasing:
+    fastMode: 0
+    keepAlpha: 0
+  fog:
+    enabled: 1
+    excludeSkybox: 1
+  debugLayer:
+    lightMeter:
+      width: 512
+      height: 256
+      showCurves: 1
+    histogram:
+      width: 512
+      height: 256
+      channel: 3
+    waveform:
+      exposure: 0.12
+      height: 256
+    vectorscope:
+      size: 256
+      exposure: 0.12
+    overlaySettings:
+      linearDepth: 0
+      motionColorIntensity: 4
+      motionGridSize: 64
+      colorBlindnessType: 0
+      colorBlindnessStrength: 1
+  m_Resources: {fileID: 11400000, guid: d82512f9c8e5d4a4d938b575d47f88d4, type: 2}
+  m_ShowToolkit: 0
+  m_ShowCustomSorter: 0
+  breakBeforeColorGrading: 0
+  m_BeforeTransparentBundles: []
+  m_BeforeStackBundles: []
+  m_AfterStackBundles: []
 --- !u!1001 &1914225474
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2693,6 +2758,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2599372820948853726, guid: 154c6384377241242a599da99374cbba,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2845771976610935481, guid: 154c6384377241242a599da99374cbba,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3808244563209312405, guid: 154c6384377241242a599da99374cbba,
         type: 3}
       propertyPath: m_Enabled
@@ -2717,6 +2792,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: AppManagers
+      objectReference: {fileID: 0}
+    - target: {fileID: 4434601779088953899, guid: 154c6384377241242a599da99374cbba,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5973022340150261820, guid: 154c6384377241242a599da99374cbba,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6353302652167338974, guid: 154c6384377241242a599da99374cbba,
+        type: 3}
+      propertyPath: m_BlockingMask.m_Bits
+      value: 8695
+      objectReference: {fileID: 0}
+    - target: {fileID: 7611178734175660816, guid: 154c6384377241242a599da99374cbba,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2821,6 +2916,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2362939959268555940, guid: 89cf978bee3a7214285bd298ea191013,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3233063832307622304, guid: 89cf978bee3a7214285bd298ea191013,
         type: 3}
       propertyPath: m_LocalPosition.x
