@@ -91,7 +91,7 @@ public class SummonMenu : OnMessage<SummonLearned, HideSummonMenu, ShowSummonMen
     }
 
     protected override void Execute(CheatHappened msg) => SetDaddyStatus();
-    protected override void Execute(PlayCutscene msg) => _isFrozen = true;
+    protected override void Execute(PlayCutscene msg) => _isFrozen = msg.Cutscene.IsVisualCutscene;
 
     protected override void Execute(CutsceneFinished msg) => _isFrozen = false;
 

@@ -82,7 +82,7 @@ public class PlayerController : OnMessage<SummonLearned, SummonLearningDismissed
         => PlayerHasControl = true;
 
     protected override void Execute(PlayCutscene msg)
-        => PlayerHasControl = false;
+        => PlayerHasControl = !msg.Cutscene.IsVisualCutscene;
 
     protected override void Execute(CutsceneFinished msg)
         => PlayerHasControl = true;
