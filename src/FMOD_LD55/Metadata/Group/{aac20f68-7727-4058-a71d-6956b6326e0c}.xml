@@ -22,11 +22,17 @@
 	</object>
 	<object class="MixerBusPanner" id="{3c64a257-bed6-4b67-a6b5-a820809db991}" />
 	<object class="CompressorEffect" id="{f3ebae6a-f813-47c0-8ecd-6e96067e7a35}">
+		<property name="threshold">
+			<value>-10</value>
+		</property>
 		<property name="ratio">
-			<value>1.85000002</value>
+			<value>1.60000002</value>
 		</property>
 		<property name="releaseTime">
 			<value>26</value>
+		</property>
+		<property name="gain">
+			<value>9</value>
 		</property>
 	</object>
 	<object class="MixerBusFader" id="{a3bf0a6b-23f1-4e0b-8eec-097bc2caa322}" />

@@ -87,6 +87,19 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 3166513548868023773, guid: 7af1d807be2ca5443af1f9c245d798a0,
+          type: 3}
+        m_TargetAssemblyTypeName: ClockPickupSFX, Assembly-CSharp
+        m_MethodName: PlayClockSFX
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   delayedEvent:
     m_PersistentCalls:
       m_Calls:
