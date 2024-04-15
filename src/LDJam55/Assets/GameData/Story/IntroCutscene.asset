@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: IntroCutscene
   m_EditorClassIdentifier: 
   cutsceneSegments:
-  - Background: {fileID: 0}
+  - Background: {fileID: 21300000, guid: 7361022735d843e4ca129a33d5545634, type: 3}
     Caption: "The wicked sea goddess has stolen Poseidon\u2019s magical crown of
       the tides! Furious, Poisedon has proclaimed anyone who brings the crown back
       shall be gifted Atlantis as thanks."
@@ -25,7 +25,7 @@ MonoBehaviour:
         Data4: -848306760
       Path: event:/VOICELINES/1. Intro Narration/1-Slide1
     Delay: 0
-  - Background: {fileID: 0}
+  - Background: {fileID: 21300000, guid: 53b39e7b21c99454f8a226b45d1f9af7, type: 3}
     Caption: In a bid to prove herself, the cunning and rebellious princess Thalatta,
       daughter of Poseidon and Nike, sneaks out of the palace to find the crown.
     VoiceLine:
@@ -36,7 +36,7 @@ MonoBehaviour:
         Data4: -62620600
       Path: event:/VOICELINES/1. Intro Narration/2-Slide2
     Delay: 0
-  - Background: {fileID: 0}
+  - Background: {fileID: 21300000, guid: 4f4dcc8aa9b9beb45a544b7c88cfad6e, type: 3}
     Caption: Venturing forth, Thalatta races towards the one place she knows Ceto
       almost surely went. The ominous Temple of the Abyss, where her destiny awaits!
     VoiceLine:
@@ -47,7 +47,7 @@ MonoBehaviour:
         Data4: -1154547221
       Path: event:/VOICELINES/1. Intro Narration/3-Slide3
     Delay: 0
-  - Background: {fileID: 0}
+  - Background: {fileID: 21300000, guid: f0b8b894c7e0ee240bb2a70b5e94f702, type: 3}
     Caption: "Oh I am going to be in so much trouble\u2026 No, no its too late to
       back out now. Alright creepy temple I came here for that crown and I am going
       to leave with it."
@@ -59,7 +59,7 @@ MonoBehaviour:
         Data4: 780329058
       Path: event:/VOICELINES/2. Into/1-Intro_Thot1
     Delay: 0
-  - Background: {fileID: 0}
+  - Background: {fileID: 21300000, guid: 45e2d88559f120443899a871c7c479d7, type: 3}
     Caption: Now this is a surprise! The princess left her palace to go dredge through
       a dreary temple.
     VoiceLine:
@@ -70,7 +70,7 @@ MonoBehaviour:
         Data4: -63920426
       Path: event:/VOICELINES/2. Into/2-Intro_Pont1
     Delay: 0
-  - Background: {fileID: 0}
+  - Background: {fileID: 21300000, guid: 45e2d88559f120443899a871c7c479d7, type: 3}
     Caption: Pontus, I should have known a scoundrel like you would be here.
     VoiceLine:
       Guid:
@@ -80,7 +80,7 @@ MonoBehaviour:
         Data4: -2085144261
       Path: event:/VOICELINES/2. Into/3-Intro_Thot2
     Delay: 0
-  - Background: {fileID: 0}
+  - Background: {fileID: 21300000, guid: 0f959eee3b1d83f43963c1f0aab1f561, type: 3}
     Caption: "Why of course! After all, I have a crown to steal back and a city to
       rule after that. You should probably swim on home princess, wouldn\u2019t want
       any kelp on your scales."
@@ -92,7 +92,7 @@ MonoBehaviour:
         Data4: 1530719503
       Path: event:/VOICELINES/2. Into/4-Intro_Pont2
     Delay: 0
-  - Background: {fileID: 0}
+  - Background: {fileID: 21300000, guid: 0f959eee3b1d83f43963c1f0aab1f561, type: 3}
     Caption: I am the princess of the sea! That crown rightfully belongs to my father,
       and I will be the one to hand it back to him!
     VoiceLine:
@@ -103,7 +103,7 @@ MonoBehaviour:
         Data4: 663169841
       Path: event:/VOICELINES/2. Into/5-Intro_Thot3
     Delay: 0
-  - Background: {fileID: 0}
+  - Background: {fileID: 21300000, guid: affe84a75e70c544b9eafd2b224b86f9, type: 3}
     Caption: "Sure, sure, look here\u2019s the rub. You will never beat me to the
       crown and I don\u2019t want you to get hurt, your father would kill me, so
       look if you head back right now I won\u2019t say anything to daddy dearest."
@@ -115,7 +115,7 @@ MonoBehaviour:
         Data4: 146036652
       Path: event:/VOICELINES/2. Into/6-Intro_Pont3.1
     Delay: 0
-  - Background: {fileID: 0}
+  - Background: {fileID: 21300000, guid: affe84a75e70c544b9eafd2b224b86f9, type: 3}
     Caption: Nope, not happening.
     VoiceLine:
       Guid:
@@ -125,7 +125,7 @@ MonoBehaviour:
         Data4: 1892919557
       Path: event:/VOICELINES/2. Into/7-Intro_Thot4
     Delay: 0
-  - Background: {fileID: 0}
+  - Background: {fileID: 21300000, guid: bdf5a36b476c042448b69adfbc465ca0, type: 3}
     Caption: "Fine, then I suppose its a race to the crown. And saying that, I must
       be off now. But just in case, there\u2019s this handy lever right here that
       I am 90% certain activates some sort of traps. Would you mind disarming those
@@ -138,7 +138,7 @@ MonoBehaviour:
         Data4: 125311568
       Path: event:/VOICELINES/2. Into/8-Intro_Pont4
     Delay: 0
-  - Background: {fileID: 0}
+  - Background: {fileID: 21300000, guid: bdf5a36b476c042448b69adfbc465ca0, type: 3}
     Caption: "Wait don\u2019t do that\u2026 When I get my hands on you, you smug
       slimy piece of\u2026 alright now how did that spell to summon go again?"
     VoiceLine:
