@@ -21,3 +21,4 @@ MonoBehaviour:
   description: Creates a heavy block
   fixedYPosition: 1
   summonAtFixedYPosition: 1
+  summonToSnappedPosition: 1
