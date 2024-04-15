@@ -39,11 +39,11 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5000962050159435754}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: db793887e75041609a80ceb2b8d1aa15, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fullyDark: {r: 0.05660379, g: 0.05660379, b: 0.05660379, a: 1}
-  partiallyLit: {r: 0.16981131, g: 0.16981131, b: 0.16981131, a: 1}
-  fullyLit: {r: 0.4339623, g: 0.4339623, b: 0.4339623, a: 1}
+  fullyDark: {r: 0, g: 0, b: 0, a: 1}
+  partiallyLit: {r: 0, g: 0, b: 0, a: 1}
+  fullyLit: {r: 0, g: 0, b: 0, a: 1}
