@@ -4985,7 +4985,7 @@ MonoBehaviour:
     m_RotationOrder: 4
   introScale: 3
   introAnchoredPosition: {x: 0, y: -500}
-  introSecondsBeforeMoving: 3
+  introSecondsBeforeMoving: 1
   introSecondsToMove: 1
 --- !u!1 &4475161234737300052
 GameObject:

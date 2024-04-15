@@ -45,7 +45,6 @@ public class Pushable : OnMessage<PushingObjectBegin, PushingObjectEnd>
                 _contactT = 0;
                 _isMoving = false;
                 transform.position = _destination;
-                _isPlayerAdjacent = false;
                 Message.Publish(new PushingObjectEnd());
             }
             else

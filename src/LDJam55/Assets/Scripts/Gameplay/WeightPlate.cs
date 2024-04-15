@@ -1,12 +1,19 @@
 ﻿using System.Collections.Generic;
+using System.Numerics;
 using UnityEngine;
 using UnityEngine.Events;
+using Vector2 = UnityEngine.Vector2;
+using Vector3 = UnityEngine.Vector3;
 
 public class WeightPlate : ConstraintBase
 {
     private HashSet<GameObject> _heavies = new HashSet<GameObject>();
     [SerializeField] private UnityEvent onPressed;
     [SerializeField] private UnityEvent onReleased;
+    [SerializeField] private Transform button;
+    [SerializeField] private float pressedY;
+    [SerializeField] private float releasedY;
+    [SerializeField] private float speed;
     
     public override bool IsSatisfied => _heavies.Count > 0;
     
@@ -17,16 +24,16 @@ public class WeightPlate : ConstraintBase
 
     private void Update()
     {
-        if (Time.time >= nextLogTime)
-        {
-            //Log.Info($"Heavies present: {_heavies.Count}", this);
-            nextLogTime = Time.time + logInterval;
-        }
-
+        if (IsSatisfied && button.localPosition.y != pressedY)
+            button.localPosition = Vector3.MoveTowards(button.localPosition, new Vector3(button.localPosition.x, pressedY, button.localPosition.z), speed * Time.deltaTime);
+        else if (!IsSatisfied && button.localPosition.y != releasedY)
+            button.localPosition = Vector3.MoveTowards(button.localPosition, new Vector3(button.localPosition.x, releasedY, button.localPosition.z), speed * Time.deltaTime);
+            
         if (Time.time >= nextCheckTime)
         {
             var heavies = CurrentGameState.GameState.Heavies;
             var wasSatisfied = IsSatisfied;
+            _heavies = new HashSet<GameObject>();
             heavies.ForEach(h =>
             {
                 var isClose = Vector2.Distance(new Vector2(h.transform.position.x, h.transform.position.z), new Vector2(transform.position.x, transform.position.z)) <= 0.25f;
