@@ -14,13 +14,13 @@ OcclusionCullingSettings:
 RenderSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 10
-  m_Fog: 0
-  m_FogColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  m_Fog: 1
+  m_FogColor: {r: 0.2433644, g: 0.29781178, b: 0.32360262, a: 1}
   m_FogMode: 3
   m_FogDensity: 0.01
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
-  m_AmbientSkyColor: {r: 1, g: 0.9761724, b: 0.9481132, a: 1}
+  m_AmbientSkyColor: {r: 0.05873972, g: 0.05873972, b: 0.05873972, a: 1}
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
   m_AmbientIntensity: 1
@@ -2482,6 +2482,82 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 0}
     - targetCorrespondingSourceObject: {fileID: 8088804916685720057, guid: 0b1de88ab5987bd418b7b235d199d6b6,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
+    - targetCorrespondingSourceObject: {fileID: 8428986964620954951, guid: 0b1de88ab5987bd418b7b235d199d6b6,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
+    - targetCorrespondingSourceObject: {fileID: 9160678628090728286, guid: 0b1de88ab5987bd418b7b235d199d6b6,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
+    - targetCorrespondingSourceObject: {fileID: 3335600178218651641, guid: 0b1de88ab5987bd418b7b235d199d6b6,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
+    - targetCorrespondingSourceObject: {fileID: 7952631826170293376, guid: 0b1de88ab5987bd418b7b235d199d6b6,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
+    - targetCorrespondingSourceObject: {fileID: 93221006998191613, guid: 0b1de88ab5987bd418b7b235d199d6b6,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
+    - targetCorrespondingSourceObject: {fileID: 2017355799071305885, guid: 0b1de88ab5987bd418b7b235d199d6b6,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
+    - targetCorrespondingSourceObject: {fileID: 2973234629188131135, guid: 0b1de88ab5987bd418b7b235d199d6b6,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
+    - targetCorrespondingSourceObject: {fileID: 1023321131658527349, guid: 0b1de88ab5987bd418b7b235d199d6b6,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
+    - targetCorrespondingSourceObject: {fileID: 9057004720658121179, guid: 0b1de88ab5987bd418b7b235d199d6b6,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
+    - targetCorrespondingSourceObject: {fileID: 3440625694580364864, guid: 0b1de88ab5987bd418b7b235d199d6b6,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
+    - targetCorrespondingSourceObject: {fileID: 1564357283396658709, guid: 0b1de88ab5987bd418b7b235d199d6b6,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
+    - targetCorrespondingSourceObject: {fileID: 4962576136535582386, guid: 0b1de88ab5987bd418b7b235d199d6b6,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
+    - targetCorrespondingSourceObject: {fileID: 344981147754939851, guid: 0b1de88ab5987bd418b7b235d199d6b6,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
+    - targetCorrespondingSourceObject: {fileID: 7773144819160863926, guid: 0b1de88ab5987bd418b7b235d199d6b6,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
+    - targetCorrespondingSourceObject: {fileID: 8172877107060496854, guid: 0b1de88ab5987bd418b7b235d199d6b6,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
+    - targetCorrespondingSourceObject: {fileID: 4888656433586729076, guid: 0b1de88ab5987bd418b7b235d199d6b6,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
+    - targetCorrespondingSourceObject: {fileID: 7252874721607494462, guid: 0b1de88ab5987bd418b7b235d199d6b6,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
+    - targetCorrespondingSourceObject: {fileID: 2647674351815239451, guid: 0b1de88ab5987bd418b7b235d199d6b6,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
+    - targetCorrespondingSourceObject: {fileID: 4984214660190322443, guid: 0b1de88ab5987bd418b7b235d199d6b6,
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 0}
