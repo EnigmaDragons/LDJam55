@@ -132,7 +132,7 @@ PrefabInstance:
     - target: {fileID: 6265216265962689070, guid: e5dfcacb0fea4854297f63cbbf59beea,
         type: 3}
       propertyPath: ctrlTutorial
-      value: Press CTRL to open the summoning Menu
+      value: Press Shift to open the summoning Menu
       objectReference: {fileID: 0}
     - target: {fileID: 6265216265962689070, guid: e5dfcacb0fea4854297f63cbbf59beea,
         type: 3}
