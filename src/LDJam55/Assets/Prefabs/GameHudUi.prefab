@@ -274,6 +274,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: SummonMenu
       objectReference: {fileID: 0}
+    - target: {fileID: 5772427700606131507, guid: b86e864d47c65f145acae4f7b6d13f52,
+        type: 3}
+      propertyPath: m_text
+      value: Shift
+      objectReference: {fileID: 0}
     - target: {fileID: 8100291382003086116, guid: b86e864d47c65f145acae4f7b6d13f52,
         type: 3}
       propertyPath: m_Pivot.x
