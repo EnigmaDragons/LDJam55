@@ -18,6 +18,7 @@ public class LoadingController : OnMessage<NavigateToSceneRequested, HideLoadUiR
     
     protected override void Execute(NavigateToSceneRequested msg)
     {
+        CurrentGameState.Init();
         _isLoading = true;
         onStartedLoading.Invoke();
         _startedTransitionAt = Time.timeSinceLevelLoad;
