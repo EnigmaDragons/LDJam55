@@ -207,6 +207,14 @@ MonoBehaviour:
   startsOpens: 0
   doorScaleTarget: {fileID: 6606312176517339579}
   animDurationSeconds: 1.5
+  delayOpeningSeconds: 1
+  doorSuccesSFXRef:
+    Guid:
+      Data1: -613292789
+      Data2: 1307370194
+      Data3: -1545129083
+      Data4: -1164977284
+    Path: event:/SFX/DoorSlide
 --- !u!1001 &1910579230563922791
 PrefabInstance:
   m_ObjectHideFlags: 0
