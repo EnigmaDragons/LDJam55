@@ -43,14 +43,11 @@
 	</object>
 	<object class="MixerBusPanner" id="{db7322ad-cfcd-477d-b711-08e9e3127199}" />
 	<object class="CompressorEffect" id="{3fbb8f62-375d-4fff-8cf0-2a2f76153226}">
-		<property name="bypass">
-			<value>true</value>
-		</property>
 		<property name="threshold">
-			<value>-11</value>
+			<value>-14</value>
 		</property>
 		<property name="gain">
-			<value>4.5</value>
+			<value>0.5</value>
 		</property>
 	</object>
 	<object class="GainEffect" id="{a911b6dc-e410-4370-969c-4efdc9edadda}">
@@ -64,10 +61,10 @@
 			<value>gain</value>
 		</property>
 		<property name="amount">
-			<value>14.5</value>
+			<value>10.5</value>
 		</property>
 		<property name="releaseTime">
-			<value>5000</value>
+			<value>2080</value>
 		</property>
 		<relationship name="sidechains">
 			<destination>{9780d73b-6948-46db-a721-f25f9adf01d2}</destination>

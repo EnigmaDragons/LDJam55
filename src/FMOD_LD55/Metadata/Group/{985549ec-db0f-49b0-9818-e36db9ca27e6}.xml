@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.02.00">
 	<object class="MixerGroup" id="{985549ec-db0f-49b0-9818-e36db9ca27e6}">
+		<property name="volume">
+			<value>-2</value>
+		</property>
 		<property name="name">
 			<value>IntroActingBUS</value>
 		</property>
@@ -24,13 +27,13 @@
 	<object class="MixerBusPanner" id="{28e89f54-58e2-4edb-a62a-664f945d6dce}" />
 	<object class="DelayEffect" id="{6806c268-1205-4d94-8c7c-4edd3bad2a97}">
 		<property name="delay">
-			<value>100</value>
+			<value>140</value>
 		</property>
 		<property name="feedback">
-			<value>45</value>
+			<value>51.6000023</value>
 		</property>
 		<property name="level">
-			<value>-9.60000038</value>
+			<value>-17.6000004</value>
 		</property>
 	</object>
 	<object class="MixerBusFader" id="{a1190307-b1df-494f-bea8-af841427f367}" />

@@ -5,7 +5,7 @@
 			<value>Cyan</value>
 		</property>
 		<property name="volume">
-			<value>-0.100000001</value>
+			<value>-2.10000014</value>
 		</property>
 		<property name="name">
 			<value>DX_Acting</value>
@@ -22,9 +22,33 @@
 	</object>
 	<object class="MixerBusEffectChain" id="{1c9496bc-0691-47c0-bc61-653f51423bd9}">
 		<relationship name="effects">
+			<destination>{90865207-539c-4c9d-99e0-e181a07adbfc}</destination>
 			<destination>{49abe66c-7bf8-4fa3-8154-de2f77c92890}</destination>
+			<destination>{da6a53ae-8a96-4f49-a5b1-c2d86f90a364}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{a10ad023-b683-45c9-a052-16be81d14591}" />
+	<object class="DelayEffect" id="{90865207-539c-4c9d-99e0-e181a07adbfc}">
+		<property name="delay">
+			<value>125</value>
+		</property>
+		<property name="feedback">
+			<value>56</value>
+		</property>
+		<property name="level">
+			<value>-14.4000006</value>
+		</property>
+	</object>
 	<object class="MixerBusFader" id="{49abe66c-7bf8-4fa3-8154-de2f77c92890}" />
+	<object class="MixerSend" id="{da6a53ae-8a96-4f49-a5b1-c2d86f90a364}">
+		<property name="level">
+			<value>-19</value>
+		</property>
+		<property name="inputFormat">
+			<value>1</value>
+		</property>
+		<relationship name="mixerReturn">
+			<destination>{23c1f807-d2d8-4d87-9862-bbcaed4fa273}</destination>
+		</relationship>
+	</object>
 </objects>

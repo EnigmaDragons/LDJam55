@@ -5,7 +5,7 @@
 			<value>Cyan</value>
 		</property>
 		<property name="volume">
-			<value>1.89999998</value>
+			<value>-1.80000007</value>
 		</property>
 		<property name="name">
 			<value>IntroNarrBUS</value>
@@ -37,13 +37,13 @@
 	</object>
 	<object class="DelayEffect" id="{a00f7461-178e-40a4-a351-e3e146059c43}">
 		<property name="delay">
-			<value>100</value>
+			<value>220</value>
 		</property>
 		<property name="feedback">
-			<value>45</value>
+			<value>58</value>
 		</property>
 		<property name="level">
-			<value>-9.60000038</value>
+			<value>-15.4000006</value>
 		</property>
 	</object>
 	<object class="ChorusEffect" id="{45b03aef-0c55-4ed9-ac7b-02f12139ecec}">
