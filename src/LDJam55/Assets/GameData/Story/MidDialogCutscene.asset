@@ -1,0 +1,86 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23210f5c965e47d080c66e08820325d0, type: 3}
+  m_Name: MidDialogCutscene
+  m_EditorClassIdentifier: 
+  cutsceneSegments:
+  - Background: {fileID: 0}
+    Caption: 
+    VoiceLine:
+      Guid:
+        Data1: -371422502
+        Data2: 1157857332
+        Data3: -1969833301
+        Data4: 684011060
+      Path: event:/VOICELINES/4. Middle Diag/1-pont1
+    Delay: 0
+  - Background: {fileID: 0}
+    Caption: 
+    VoiceLine:
+      Guid:
+        Data1: -1827063456
+        Data2: 1278857197
+        Data3: -2009822326
+        Data4: -414527328
+      Path: event:/VOICELINES/4. Middle Diag/2-Thot1
+    Delay: 0
+  - Background: {fileID: 0}
+    Caption: 
+    VoiceLine:
+      Guid:
+        Data1: -644974462
+        Data2: 1304498539
+        Data3: -1617182845
+        Data4: -1447303574
+      Path: event:/VOICELINES/4. Middle Diag/3-Pont2.2
+    Delay: 0
+  - Background: {fileID: 0}
+    Caption: 
+    VoiceLine:
+      Guid:
+        Data1: 125085298
+        Data2: 1271404325
+        Data3: -385275467
+        Data4: -1037843208
+      Path: event:/VOICELINES/4. Middle Diag/4-pont3
+    Delay: 0
+  - Background: {fileID: 0}
+    Caption: 
+    VoiceLine:
+      Guid:
+        Data1: 418104413
+        Data2: 1190078272
+        Data3: 1429929381
+        Data4: 2133801052
+      Path: event:/VOICELINES/4. Middle Diag/5-Thot2
+    Delay: 0
+  - Background: {fileID: 0}
+    Caption: 
+    VoiceLine:
+      Guid:
+        Data1: 1203347031
+        Data2: 1317403607
+        Data3: -524555596
+        Data4: 121395343
+      Path: event:/VOICELINES/4. Middle Diag/6-pont4
+    Delay: 0
+  - Background: {fileID: 0}
+    Caption: 
+    VoiceLine:
+      Guid:
+        Data1: -1075698354
+        Data2: 1321011765
+        Data3: -1775271767
+        Data4: -1864495909
+      Path: event:/VOICELINES/4. Middle Diag/7-Thot3
+    Delay: 0
+  isVisualCutscene: 0

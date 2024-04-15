@@ -78,7 +78,8 @@ public class CutscenePlayer : OnMessage<PlayCutscene>
     
     protected override void Execute(PlayCutscene msg)
     {
-        background.gameObject.SetActive(true);
+        if (msg.Cutscene.IsVisualCutscene)
+            background.gameObject.SetActive(true);
         _cutscene = msg.Cutscene;
         _index = 0;
         _segment = _cutscene.Segments[_index];

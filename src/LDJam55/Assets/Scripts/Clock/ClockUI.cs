@@ -113,7 +113,7 @@ public class ClockUI : OnMessage<SummonLearned, SummonLearningDismissed, GrantCl
 
     protected override void Execute(PlayCutscene msg)
     {
-        _paused = true;
+        _paused = msg.Cutscene.IsVisualCutscene;
     }
 
     protected override void Execute(CutsceneFinished msg)
