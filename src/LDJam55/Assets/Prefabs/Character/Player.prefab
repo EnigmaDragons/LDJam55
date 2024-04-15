@@ -326,7 +326,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1bd78b441ec0c40a3aba963f93f5d00e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementSpeed: 8
+  movementSpeed: 20
   epsilon: 0.01
   objectBase: {fileID: 846614854108720012}
   soundEventsStart:
