@@ -17,5 +17,7 @@ public sealed class GameState
     public List<string> SummonNames = new();
     public HashSet<GameObject> Heavies = new();
     public HashSet<GameObject> WaterBlockers = new();
+    public HashSet<GameObject> Books = new();
+    public HashSet<SummonInstance> SummonInstances = new();
     public GameObject Player;
 }
