@@ -69,7 +69,7 @@
 	</object>
 	<object class="GroupTrack" id="{e645f658-271e-4a4f-9578-e112b6b5c1fe}">
 		<relationship name="modules">
-			<destination>{882737c3-c534-4a4b-bebb-efade5dc5eee}</destination>
+			<destination>{86a2c595-d2d3-418f-b24e-c4dce7082697}</destination>
 		</relationship>
 		<relationship name="mixerGroup">
 			<destination>{b40be2e5-30c1-44f1-80f1-86c05fc6bd6f}</destination>
@@ -78,7 +78,7 @@
 	<object class="Timeline" id="{5f336ca7-3587-4eca-b352-80b6da02c8b9}">
 		<relationship name="modules">
 			<destination>{963109a0-fe41-4297-92bf-2fbc76c6b8de}</destination>
-			<destination>{882737c3-c534-4a4b-bebb-efade5dc5eee}</destination>
+			<destination>{86a2c595-d2d3-418f-b24e-c4dce7082697}</destination>
 		</relationship>
 	</object>
 	<object class="EventMixerMaster" id="{313141eb-bfa4-4db3-b736-31d8b5fbbdfa}">
@@ -129,15 +129,21 @@
 			<destination>{313141eb-bfa4-4db3-b736-31d8b5fbbdfa}</destination>
 		</relationship>
 	</object>
-	<object class="SingleSound" id="{882737c3-c534-4a4b-bebb-efade5dc5eee}">
+	<object class="MultiSound" id="{86a2c595-d2d3-418f-b24e-c4dce7082697}">
 		<property name="length">
-			<value>4.347833333333333</value>
+			<value>5.2185833333333331</value>
 		</property>
-		<relationship name="audioFile">
-			<destination>{e90a3db7-d1ee-40b2-9972-021748395581}</destination>
+		<relationship name="sounds">
+			<destination>{5bac7999-734f-48f4-b584-5764dcb3fa07}</destination>
+			<destination>{0ad84e35-394d-43a5-91bd-bbdf6a050c9a}</destination>
+			<destination>{ed1e8620-c8e6-4827-94d1-bdd78962d0fb}</destination>
+			<destination>{717cd0a5-fce4-40ee-a881-ad1a62a6b83e}</destination>
 		</relationship>
 	</object>
 	<object class="EventMixerGroup" id="{b40be2e5-30c1-44f1-80f1-86c05fc6bd6f}">
+		<property name="volume">
+			<value>-3.5</value>
+		</property>
 		<property name="name">
 			<value>Audio 2</value>
 		</property>
@@ -181,6 +187,26 @@
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{caed62f5-568c-460a-ab98-52757d6b8618}" />
+	<object class="SingleSound" id="{5bac7999-734f-48f4-b584-5764dcb3fa07}">
+		<relationship name="audioFile">
+			<destination>{000a0a6b-776f-4760-aa1c-40496540954c}</destination>
+		</relationship>
+	</object>
+	<object class="SingleSound" id="{0ad84e35-394d-43a5-91bd-bbdf6a050c9a}">
+		<relationship name="audioFile">
+			<destination>{e90a3db7-d1ee-40b2-9972-021748395581}</destination>
+		</relationship>
+	</object>
+	<object class="SingleSound" id="{ed1e8620-c8e6-4827-94d1-bdd78962d0fb}">
+		<relationship name="audioFile">
+			<destination>{54628be8-2f0e-4fd3-9142-3c3520b3d01c}</destination>
+		</relationship>
+	</object>
+	<object class="SingleSound" id="{717cd0a5-fce4-40ee-a881-ad1a62a6b83e}">
+		<relationship name="audioFile">
+			<destination>{8f5a5d70-9ff9-4fc9-9c95-77d91a6b9b97}</destination>
+		</relationship>
+	</object>
 	<object class="MixerBusEffectChain" id="{1ee2884c-3f84-4f67-b3ca-028ff970c4c9}">
 		<relationship name="effects">
 			<destination>{6f46da7a-2ac1-45cc-85c6-098724d6f9cb}</destination>
@@ -188,10 +214,17 @@
 	</object>
 	<object class="MixerBusPanner" id="{1d3a5e16-04f6-4cc1-9e4c-d887b393d63d}" />
 	<object class="MixerBusFader" id="{7636e93d-c3a9-4bcc-a7d9-2e8acbd99593}" />
-	<object class="SpatialiserEffect" id="{b66335ae-12be-410d-a19d-1302247015fb}" />
+	<object class="SpatialiserEffect" id="{b66335ae-12be-410d-a19d-1302247015fb}">
+		<property name="maximumDistance">
+			<value>50</value>
+		</property>
+		<property name="overrideRange">
+			<value>true</value>
+		</property>
+	</object>
 	<object class="AutomationPoint" id="{29eef19e-7d56-42aa-8cf1-5d3cc83ffbfe}">
 		<property name="position">
-			<value>5.176897577996705</value>
+			<value>5.1768975779967086</value>
 		</property>
 		<property name="value">
 			<value>1</value>
@@ -202,7 +235,7 @@
 	</object>
 	<object class="AutomationPoint" id="{a691d265-6ef9-4864-b2c1-e6b98c3625e8}">
 		<property name="position">
-			<value>5.817291666666657</value>
+			<value>5.8172916666666605</value>
 		</property>
 		<property name="value">
 			<value>0</value>
