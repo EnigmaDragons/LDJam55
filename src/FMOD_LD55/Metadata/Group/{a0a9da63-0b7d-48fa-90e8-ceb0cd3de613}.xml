@@ -7,6 +7,9 @@
 		<property name="name">
 			<value>ENV_MST</value>
 		</property>
+		<relationship name="modulators">
+			<destination>{38be5963-02a3-449d-8bec-d712c1b9ea85}</destination>
+		</relationship>
 		<relationship name="effectChain">
 			<destination>{4eecb758-4e60-43af-a922-3b66e23f62f6}</destination>
 		</relationship>
@@ -15,6 +18,20 @@
 		</relationship>
 		<relationship name="output">
 			<destination>{aac20f68-7727-4058-a71d-6956b6326e0c}</destination>
+		</relationship>
+	</object>
+	<object class="SidechainModulator" id="{38be5963-02a3-449d-8bec-d712c1b9ea85}">
+		<property name="nameOfPropertyBeingModulated">
+			<value>volume</value>
+		</property>
+		<property name="amount">
+			<value>8</value>
+		</property>
+		<property name="releaseTime">
+			<value>3000</value>
+		</property>
+		<relationship name="sidechains">
+			<destination>{9780d73b-6948-46db-a721-f25f9adf01d2}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusEffectChain" id="{4eecb758-4e60-43af-a922-3b66e23f62f6}">
