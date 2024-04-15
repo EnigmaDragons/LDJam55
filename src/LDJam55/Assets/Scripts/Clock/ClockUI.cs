@@ -2,6 +2,9 @@ using System;
 using Story;
 using TMPro;
 using UnityEngine;
+using FMOD.Studio;
+using FMODUnity;
+
 
 public class ClockUI : OnMessage<SummonLearned, SummonLearningDismissed, GrantClockSeconds, PlayCutscene, CutsceneFinished>
 {
@@ -91,6 +94,7 @@ public class ClockUI : OnMessage<SummonLearned, SummonLearningDismissed, GrantCl
                 _hasLost = true;
                 Message.Publish(new GameOver());
                 clockText.text = "0:000";
+                RuntimeManager.PlayOneShot("event:/MUSIC/GameOverMusic");
             }
         }
     }

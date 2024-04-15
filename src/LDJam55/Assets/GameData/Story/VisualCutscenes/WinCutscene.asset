@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: WinCutscene
   m_EditorClassIdentifier: 
   cutsceneSegments:
-  - Background: {fileID: 0}
+  - Background: {fileID: 21300000, guid: e8f360bdeb3e3f248972f15551209736, type: 3}
     Caption: "Heading home after saving Pontus and recovering the Crown, Thalatta
       returns to a hero\u2019s welcome hosted by Poseidon as her mother Nike smiles
       down approvingly. She has proven herself worthy of being Queen of Atlantis!"

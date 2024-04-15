@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: LoseAfterCrownCutscene
   m_EditorClassIdentifier: 
   cutsceneSegments:
-  - Background: {fileID: 0}
+  - Background: {fileID: 21300000, guid: 60490cb4f5117ea45b1fca848dd7a080, type: 3}
     Caption: "Turning tail and fleeing, Thalatta decided saving Pontus wasn\u2019t
       worth it. She leaves him to rot and flees across the Bosphorous to become a
       pirate queen of the Black Sea."
