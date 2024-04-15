@@ -18,6 +18,9 @@ public class SoundMixer : MonoBehaviour
         
         try
         {
+            if (!RuntimeManager.HaveMasterBanksLoaded)
+                return;
+            
             RuntimeManager.GetBus("bus:/MST_BUS/DX_MST").setVolume(PlayerPrefs.GetFloat("bus:/MST_BUS/DX_MST", 0.5f));
             RuntimeManager.GetBus("bus:/MST_BUS/ENV_MST").setVolume(PlayerPrefs.GetFloat("bus:/MST_BUS/ENV_MST", 0.5f));
             RuntimeManager.GetBus("bus:/MST_BUS/MUSIC_MST").setVolume(PlayerPrefs.GetFloat("bus:/MST_BUS/MUSIC_MST", 0.5f));
