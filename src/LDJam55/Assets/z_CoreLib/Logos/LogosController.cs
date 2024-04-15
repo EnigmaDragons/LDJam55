@@ -38,6 +38,8 @@ public class LogosController : MonoBehaviour
         
         UpdateCounters();
         UpdatePresentation();
+        if (!FMODUnity.RuntimeManager.HaveAllBanksLoaded)
+            return;
         if (AnyMouseButtonDown() || AnyRelevantButtonPress())
         {
             StartLoad();
