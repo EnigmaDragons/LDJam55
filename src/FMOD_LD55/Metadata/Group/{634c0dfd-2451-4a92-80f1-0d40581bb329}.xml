@@ -28,7 +28,7 @@
 			<value>volume</value>
 		</property>
 		<property name="amount">
-			<value>13.5</value>
+			<value>9</value>
 		</property>
 		<property name="releaseTime">
 			<value>800</value>
@@ -39,11 +39,20 @@
 	</object>
 	<object class="MixerBusEffectChain" id="{51f46629-e95b-4341-bc96-c5ff859c1a5a}">
 		<relationship name="effects">
+			<destination>{3fbb8f62-375d-4fff-8cf0-2a2f76153226}</destination>
 			<destination>{a911b6dc-e410-4370-969c-4efdc9edadda}</destination>
 			<destination>{593ffcff-2640-41f9-9b4b-ce76a88c6aa2}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{db7322ad-cfcd-477d-b711-08e9e3127199}" />
+	<object class="CompressorEffect" id="{3fbb8f62-375d-4fff-8cf0-2a2f76153226}">
+		<property name="threshold">
+			<value>-11</value>
+		</property>
+		<property name="gain">
+			<value>4.5</value>
+		</property>
+	</object>
 	<object class="GainEffect" id="{a911b6dc-e410-4370-969c-4efdc9edadda}">
 		<relationship name="modulators">
 			<destination>{6428c94e-db7f-42a4-acb9-4525a36ec47a}</destination>
@@ -55,7 +64,7 @@
 			<value>gain</value>
 		</property>
 		<property name="amount">
-			<value>17.5</value>
+			<value>14.5</value>
 		</property>
 		<property name="releaseTime">
 			<value>2800</value>

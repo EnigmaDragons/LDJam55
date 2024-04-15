@@ -24,6 +24,15 @@
 		<property name="nameOfPropertyBeingModulated">
 			<value>volume</value>
 		</property>
+		<property name="amount">
+			<value>13.5</value>
+		</property>
+		<property name="attackTime">
+			<value>69</value>
+		</property>
+		<property name="releaseTime">
+			<value>1300</value>
+		</property>
 		<relationship name="sidechains">
 			<destination>{9780d73b-6948-46db-a721-f25f9adf01d2}</destination>
 		</relationship>
