@@ -347,6 +347,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6366982818610138040, guid: 6240d389e6f92db46a5a995ab47735d9,
+        type: 3}
+      propertyPath: m_BlockingMask.m_Bits
+      value: 8695
+      objectReference: {fileID: 0}
+    - target: {fileID: 6366982818610138041, guid: 6240d389e6f92db46a5a995ab47735d9,
+        type: 3}
+      propertyPath: onFinished.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: NavigateToGameScene
+      objectReference: {fileID: 0}
+    - target: {fileID: 6366982818610138041, guid: 6240d389e6f92db46a5a995ab47735d9,
+        type: 3}
+      propertyPath: onFinished.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Navigator, Assembly-CSharp
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
