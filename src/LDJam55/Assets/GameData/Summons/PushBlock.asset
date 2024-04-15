@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: PushBlock
   m_EditorClassIdentifier: 
   summonName: Block
-  keyCodes: 14010000130100001301000011010000
+  keyCodes: 140100001101000012010000110100001301000011010000
   icon: {fileID: 21300000, guid: 345fb5b595db68f41bd1487c4eba26bb, type: 3}
   summonCardArt: {fileID: 21300000, guid: c5d6dd2e9c59b1243a73e2dd20fc5fce, type: 3}
   summonPrefab: {fileID: 7537745441074454098, guid: 93df8d13c6901024088d7a54ec1c0835,

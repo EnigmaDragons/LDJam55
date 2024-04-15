@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: AncientBook
   m_EditorClassIdentifier: 
   summonName: Ancient Book
-  keyCodes: 110100001201000011010000130100001201000011010000
+  keyCodes: 120100001401000014010000130100001301000012010000
   icon: {fileID: 21300000, guid: 10ccaa7e3539fcc4c98af192b40b31e1, type: 3}
   summonCardArt: {fileID: 21300000, guid: 9865883a7c3a3f447bcb3781afe3a73c, type: 3}
   summonPrefab: {fileID: 2203581594005229159, guid: 34878af5ff6455340bee6570dd3cc9eb,
@@ -21,3 +21,4 @@ MonoBehaviour:
   description: Summon this to read ancient languages
   fixedYPosition: 0
   summonAtFixedYPosition: 1
+  summonToSnappedPosition: 0

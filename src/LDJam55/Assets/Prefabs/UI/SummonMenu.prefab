@@ -71,7 +71,7 @@ MonoBehaviour:
   arrowLeft: {fileID: 21300000, guid: 562c24866afec6044b6ece031f4e8c55, type: 3}
   arrowRight: {fileID: 21300000, guid: ac0f4ab1e8948c041ad882f9aa163657, type: 3}
   failSprite: {fileID: 21300000, guid: 3ad5ec6f4e501d046bedbd22228d028d, type: 3}
-  summonDelay: 2.5
+  summonDelay: 1
   growingPower: {fileID: 3762939492656045289}
   sizePerArrow: 1
 --- !u!1 &560673715109587468
