@@ -497,6 +497,7 @@ GameObject:
   - component: {fileID: 8052469804800646175}
   - component: {fileID: 5797510393891454226}
   - component: {fileID: 3544339192731743386}
+  - component: {fileID: 2848313026865448569}
   m_Layer: 0
   m_Name: RoomL2
   m_TagString: Untagged
@@ -540,6 +541,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   roof: {fileID: 1172567653126476306}
+  onEnter:
+    m_PersistentCalls:
+      m_Calls: []
+  enableOnOneLight: []
+  enableOnTwoLights: []
 --- !u!114 &5797510393891454226
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -579,6 +585,19 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 32.44699, y: 1, z: 29.198917}
   m_Center: {x: 15.723494, y: 0, z: 5.1160374}
+--- !u!114 &2848313026865448569
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5903458800008953969}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c23bdb5c030417bb306de26e49653a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  seconds: 60
 --- !u!1 &6151165745126410263
 GameObject:
   m_ObjectHideFlags: 0
