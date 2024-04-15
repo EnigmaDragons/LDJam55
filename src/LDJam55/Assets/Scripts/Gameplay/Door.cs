@@ -22,11 +22,13 @@ public class Door : MonoBehaviour
     {
         if (startsOpens)
             Open(true);
+       
     }
 
     private void Start()
     {
-        playonce = false;
+        playonce = true;
+        Invoke("SetPlayBoolState", 5f);
     }
 
     public void Open(bool isInitialState = false)
@@ -45,6 +47,7 @@ public class Door : MonoBehaviour
                 {
                     RuntimeManager.PlayOneShot(doorSuccesSFXRef);
                     playonce = true;
+                    Debug.Log("Harp playing");
                 }
             }
             else
@@ -66,4 +69,7 @@ public class Door : MonoBehaviour
             doorScaleTarget.DOScale(scaleWhenClosed, animDurationSeconds);
         doorScaleTarget.DOLocalMoveY(0.1f, animDurationSeconds);
     }
+
+    private void SetPlayBoolState()
+    { playonce = false; }
 }
