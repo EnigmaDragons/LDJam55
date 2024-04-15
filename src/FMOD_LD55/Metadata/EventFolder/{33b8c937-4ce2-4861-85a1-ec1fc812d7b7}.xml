@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="EventFolder" id="{33b8c937-4ce2-4861-85a1-ec1fc812d7b7}">
+		<property name="name">
+			<value>6-End Game Narrations</value>
+		</property>
+		<relationship name="folder">
+			<destination>{f09ca27c-73ed-4a02-b74c-a0a7730a3747}</destination>
+		</relationship>
+	</object>
+</objects>
