@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 6805667336067049853}
   - component: {fileID: 5000684219654638663}
   - component: {fileID: 4605931710214844793}
+  - component: {fileID: 2528540798795046538}
   m_Layer: 0
   m_Name: Brazier
   m_TagString: Flammable
@@ -87,6 +88,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+--- !u!114 &2528540798795046538
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7927948654153011600}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ecb434e85b7c4c369f7d134179ecb46b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8130851738336360034
 GameObject:
   m_ObjectHideFlags: 0

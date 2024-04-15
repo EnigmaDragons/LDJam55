@@ -41,6 +41,7 @@ public class Door : MonoBehaviour
             else
             {
                 doorScaleTarget.transform.DOScale(scaleWhenOpen, 0.1f);
+                doorScaleTarget.DOLocalMoveY(-0.1f, 0.1f);
             }
         },
         delayOpeningSeconds);
