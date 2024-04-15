@@ -196,7 +196,7 @@
 	</object>
 	<object class="TransitionMarker" id="{db6671f6-ece7-4560-bdf3-56e05b0a1ef6}">
 		<property name="position">
-			<value>0.44642857142857145</value>
+			<value>0.21529420225085666</value>
 		</property>
 		<relationship name="timeline">
 			<destination>{cc96ec2b-c453-48a6-b109-4f7eb156741f}</destination>
@@ -282,13 +282,13 @@
 	<object class="MixerBusFader" id="{d770a2e6-6d8e-4776-bc16-95e677adae7a}" />
 	<object class="FlangerEffect" id="{f254dd9f-0ffa-4582-8246-5f9509bad831}">
 		<property name="rate">
-			<value>0.239999995</value>
+			<value>0.379999995</value>
 		</property>
 		<property name="delay">
-			<value>0.589999974</value>
+			<value>0.088000007</value>
 		</property>
 		<property name="mix">
-			<value>26</value>
+			<value>25</value>
 		</property>
 	</object>
 	<object class="MixerBusFader" id="{3a9ebe50-1ad5-41b8-9bed-2f2f9928c6b0}" />
