@@ -7,6 +7,8 @@ public class Room : OnMessage<TriggerableChanged>
 {
     [SerializeField] private GameObject roof;
     [SerializeField] private UnityEvent onEnter;
+    [SerializeField] private GameObject[] enableOnOneLight;
+    [SerializeField] private GameObject[] enableOnTwoLights;
     
     private Triggerable[] triggerablesNeededToLightRoom = Array.Empty<Triggerable>();
 
@@ -29,7 +31,7 @@ public class Room : OnMessage<TriggerableChanged>
             onEnter.Invoke();
             _isInThisRoom = true;
             roof.gameObject.SetActive(false);
-            Message.Publish(new ChangeRoomLighting(triggerablesNeededToLightRoom.Count(x => x.IsTriggered)));
+            UpdateLights();
         }
     }
 
@@ -45,6 +47,15 @@ public class Room : OnMessage<TriggerableChanged>
     protected override void Execute(TriggerableChanged msg)
     {
         if (_isInThisRoom)
-            Message.Publish(new ChangeRoomLighting(triggerablesNeededToLightRoom.Count(x => x.IsTriggered)));
+            UpdateLights();
+    }
+
+    private void UpdateLights()
+    {
+        var lightCount = triggerablesNeededToLightRoom.Count(x => x.IsTriggered);
+        foreach (var obj in enableOnOneLight)
+            obj.SetActive(lightCount > 0);
+        foreach (var obj in enableOnTwoLights)
+            obj.SetActive(lightCount > 1);
     }
 }
