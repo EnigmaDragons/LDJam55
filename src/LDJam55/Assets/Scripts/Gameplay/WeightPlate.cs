@@ -1,5 +1,4 @@
 ﻿using System.Collections.Generic;
-using System.Numerics;
 using UnityEngine;
 using UnityEngine.Events;
 using Vector2 = UnityEngine.Vector2;
@@ -14,6 +13,8 @@ public class WeightPlate : ConstraintBase
     [SerializeField] private float pressedY;
     [SerializeField] private float releasedY;
     [SerializeField] private float speed;
+
+    private bool _init;
     
     public override bool IsSatisfied => _heavies.Count > 0;
     
@@ -22,6 +23,8 @@ public class WeightPlate : ConstraintBase
     private float logInterval = 2f;
     private float nextLogTime = 0f;
 
+    private void Start() => _init = false;
+    
     private void Update()
     {
         if (IsSatisfied && button.localPosition.y != pressedY)
@@ -48,12 +51,13 @@ public class WeightPlate : ConstraintBase
             });
             ProcessChanged(wasSatisfied);
             nextCheckTime = Time.time + checkInterval;
+            _init = true;
         }
     }
 
     private void ProcessChanged(bool stateBefore)
     {
-        if (IsSatisfied == stateBefore)
+        if (IsSatisfied == stateBefore || !_init)
             return;
         
         Log.Info($"Is Pressed - {IsSatisfied}", this);
