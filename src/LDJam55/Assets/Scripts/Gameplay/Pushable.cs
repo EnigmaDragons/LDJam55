@@ -23,8 +23,8 @@ public class Pushable : OnMessage<PushingObjectBegin, PushingObjectEnd>
     private void Start()
     {
         _isMoving = true;
-        _start = transform.localPosition;
-        _destination = new Vector3((float)(Math.Round(transform.localPosition.x / 2f) * 2f), y, (float)(Math.Round(transform.localPosition.z / 2f) * 2f));
+        _start = transform.position;
+        _destination = new Vector3((float)(Math.Round(transform.position.x / 2f) * 2f), y, (float)(Math.Round(transform.position.z / 2f) * 2f));
         _movingT = 0;
         _contactT = 0;
         _isPlayerAdjacent = false;
@@ -40,13 +40,13 @@ public class Pushable : OnMessage<PushingObjectBegin, PushingObjectEnd>
                 _movingT = 0;
                 _contactT = 0;
                 _isMoving = false;
-                transform.localPosition = _destination;
+                transform.position = _destination;
                 _isPlayerAdjacent = false;
                 Message.Publish(new PushingObjectEnd());
             }
             else
             {
-                transform.localPosition = Vector3.Lerp(_start, _destination, _movingT / moveDurationSeconds);
+                transform.position = Vector3.Lerp(_start, _destination, _movingT / moveDurationSeconds);
             }
         }
         else if (_canMove && _canMoveThatDirection)
@@ -55,8 +55,8 @@ public class Pushable : OnMessage<PushingObjectBegin, PushingObjectEnd>
                 _contactT += Time.deltaTime;
             if (_contactT >= requiredContactSeconds)
             {
-                _start = transform.localPosition;
-                _destination = new Vector3((float)(Math.Round((transform.localPosition.x + _pushDirection.x * 2f) / 2f) * 2f), y, (float)(Math.Round((transform.localPosition.z + _pushDirection.z * 2f) / 2f) * 2f));
+                _start = transform.position;
+                _destination = new Vector3((float)(Math.Round((transform.position.x + _pushDirection.x * 2f) / 2f) * 2f), y, (float)(Math.Round((transform.position.z + _pushDirection.z * 2f) / 2f) * 2f));
                 _movingT = 0;
                 _contactT = 0; 
                 _isMoving = true;
@@ -84,7 +84,7 @@ public class Pushable : OnMessage<PushingObjectBegin, PushingObjectEnd>
               ? new Vector3(Mathf.Round(direction.x), 0, 0)
               : new Vector3(0, 0, Mathf.Round(direction.z));
             
-            _canMoveThatDirection = !Physics.OverlapSphere( transform.TransformPoint(_pushDirection * 2 / transform.localScale.x + new Vector3(0, 1, 0)), 0.1f).Any(x => !x.isTrigger);
+            _canMoveThatDirection = !Physics.OverlapSphere(transform.position + _pushDirection * 2 / transform.localScale.x, 0.1f).Any(x => !x.isTrigger);
         }
     }
 
