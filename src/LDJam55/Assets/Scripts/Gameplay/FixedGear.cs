@@ -36,7 +36,7 @@ public class FixedGear : ConstraintBase
         if (triggerOnCrank)
             isTriggered = true;
         if (rotateObjectOnCrank)
-            transform.DORotate(new Vector3(0, 0, 90), rotateDuration, RotateMode.LocalAxisAdd);
+            transform.DORotate(new Vector3(0, 90, 0), rotateDuration, RotateMode.LocalAxisAdd);
         this.ExecuteAfterDelay(() =>
         {
             Log.Info("Gear - Finished Spin", this);
