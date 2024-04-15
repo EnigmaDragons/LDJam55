@@ -22,6 +22,8 @@ public class Pushable : OnMessage<PushingObjectBegin, PushingObjectEnd>
 
     private void Start()
     {
+        if (gameObject.layer == 8)
+            return; 
         _isMoving = true;
         _start = transform.position;
         _destination = new Vector3((float)(Math.Round(transform.position.x / 2f) * 2f), y, (float)(Math.Round(transform.position.z / 2f) * 2f));
@@ -32,6 +34,8 @@ public class Pushable : OnMessage<PushingObjectBegin, PushingObjectEnd>
 
     private void Update()
     {
+        if (gameObject.layer == 8)
+            return; 
         if (_isMoving)
         {
             _movingT += Time.deltaTime;
