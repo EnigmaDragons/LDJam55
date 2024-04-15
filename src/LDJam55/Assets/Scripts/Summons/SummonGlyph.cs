@@ -13,6 +13,8 @@ internal class SummonGlyph : OnMessage<SummonBegin, SummonFailed>
     [SerializeField] private Sprite arrowRight;
     [SerializeField] private Sprite failSprite;
     [SerializeField] private float summonDelay;
+    [SerializeField] private GameObject growingPower;
+    [SerializeField] private float sizePerArrow;
 
     private int _keyIndex;
     private bool _isFrozen;
@@ -26,7 +28,8 @@ internal class SummonGlyph : OnMessage<SummonBegin, SummonFailed>
         }
         summonImage.gameObject.SetActive(false);
         _isFrozen = false;
-
+        var main = growingPower.GetComponent<ParticleSystem>().main;
+        main.startSize = new ParticleSystem.MinMaxCurve(0);
     }
 
     private void Update()
@@ -50,8 +53,8 @@ internal class SummonGlyph : OnMessage<SummonBegin, SummonFailed>
         arrows[_keyIndex].gameObject.SetActive(true);
         arrows[_keyIndex].sprite = arrowSprite;
         _keyIndex++;
-
-       
+        var main = growingPower.GetComponent<ParticleSystem>().main;
+        main.startSize = new ParticleSystem.MinMaxCurve(_keyIndex * sizePerArrow);
     }
 
     protected override void Execute(SummonBegin msg)

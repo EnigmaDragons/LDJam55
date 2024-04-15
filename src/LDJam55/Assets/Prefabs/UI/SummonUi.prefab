@@ -237,7 +237,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 400, y: 100}
+  m_SizeDelta: {x: 500, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7094551906576882619
 CanvasRenderer:
@@ -303,6 +303,7 @@ MonoBehaviour:
   pressedArrowColor: {r: 0.7075472, g: 0.7042097, b: 0.7042097, a: 0.9137255}
   ArrowDaddy: {fileID: 3867265419715613992}
   ManaCostText: {fileID: 8713698291890519209}
+  IsActive: 0
 --- !u!1 &6020103788603962964
 GameObject:
   m_ObjectHideFlags: 0

@@ -13,6 +13,8 @@ public class Unsummon : MonoBehaviour
 
     private void OnEnable()
     {
+        if (gameObject.layer == 8)
+            return;
         Collider[] hitColliders = Physics.OverlapSphere(transform.position, range);
         var SummonColliders = hitColliders;
         foreach (var collider in SummonColliders)

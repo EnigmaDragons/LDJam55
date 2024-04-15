@@ -126,9 +126,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tutorialText: {fileID: 1802801742767936742}
-  ctrlTutorialContext: Press CTRL to open the summoning Menu
-  keyCodeTutorialContent: Follow the Pattern to Summon the object. Up (W), Left (A),
-    Down (S), Right (D).
+  ctrlTutorial: Press Shift to open the summoning Menu
+  keyCodeTutorial: Follow the Pattern to Summon the object. Up (W), Left (A), Down
+    (S), Right (D).
   thingsToDisable:
   - {fileID: 534485410497745437}
 --- !u!1 &6425757627308194035
