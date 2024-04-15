@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1590812198278049419}
   - component: {fileID: 3573745240713169503}
   - component: {fileID: 3379357454814101039}
+  - component: {fileID: 514364998539413859}
   m_Layer: 0
   m_Name: TorchSummonPickup
   m_TagString: Untagged
@@ -72,6 +73,25 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 1
   m_Center: {x: 0, y: 2, z: 0}
+--- !u!114 &514364998539413859
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1174364296123389774}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8f0a953f0cc8944490b1d87a1532fef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  summonsSFXRef:
+    Guid:
+      Data1: 1034983034
+      Data2: 1274078441
+      Data3: 1329872539
+      Data4: -1626876526
+    Path: event:/SFX/IntroSummonDrone
 --- !u!1 &2658482204104723122
 GameObject:
   m_ObjectHideFlags: 0
