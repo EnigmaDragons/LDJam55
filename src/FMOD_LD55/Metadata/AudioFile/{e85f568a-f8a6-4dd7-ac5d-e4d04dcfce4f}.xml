@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.02.00">
 	<object class="AudioFile" id="{e85f568a-f8a6-4dd7-ac5d-e4d04dcfce4f}">
 		<property name="assetPath">
-			<value>Underwater__Theme_01__High_Intensity.ogg</value>
+			<value>Music/Underwater__Theme_01__High_Intensity.ogg</value>
 		</property>
 		<property name="isStreaming">
 			<value>true</value>
