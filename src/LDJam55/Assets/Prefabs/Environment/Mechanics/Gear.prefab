@@ -46,7 +46,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 268ddd8bf1f84cedac0938e00136bc3e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxGearDistance: 2.5
+  maxGearDistance: 3.5
   snapDuration: 0.4
 --- !u!114 &8856249496706167498
 MonoBehaviour:
