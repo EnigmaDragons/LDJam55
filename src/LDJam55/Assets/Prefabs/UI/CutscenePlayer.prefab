@@ -820,5 +820,5 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 99438fd6861d4124dac2ce2a95a53929, type: 2}
   - {fileID: 11400000, guid: b9f8036df89aa8c4ba6397f22b149ec0, type: 2}
   - {fileID: 11400000, guid: f5b24a120ffcabf449da49491d0ae87f, type: 2}
-  fmodPullingSeconds: 1
+  fmodPullingSeconds: 0.1
   skip: {fileID: 4029902177602750005}
