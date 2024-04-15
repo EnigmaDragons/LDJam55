@@ -31,9 +31,6 @@
 		<property name="releaseTime">
 			<value>26</value>
 		</property>
-		<property name="gain">
-			<value>9</value>
-		</property>
 	</object>
 	<object class="MixerBusFader" id="{a3bf0a6b-23f1-4e0b-8eec-097bc2caa322}" />
 </objects>
