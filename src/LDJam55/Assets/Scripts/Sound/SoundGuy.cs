@@ -51,6 +51,7 @@ public class SoundGuy : MonoBehaviour
         summonLoopInstance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
         summonLoopInstance.release();
         _isSummoning = false;
+
     }
 
     private void OnSummonFailed()

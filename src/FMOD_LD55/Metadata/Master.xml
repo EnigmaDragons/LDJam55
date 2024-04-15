@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.02.00">
 	<object class="MixerMaster" id="{045ac4d1-d9e1-4c45-ac17-d14bcf51b2ef}">
-		<property name="volume">
-			<value>-5</value>
-		</property>
 		<property name="name">
 			<value>Master Bus</value>
 		</property>
@@ -51,9 +48,6 @@
 		</property>
 	</object>
 	<object class="LimiterEffect" id="{57a6db15-9de2-42d9-886b-b79b1eaf6285}">
-		<property name="boost">
-			<value>2.60000014</value>
-		</property>
 		<property name="ceiling">
 			<value>-0.400000006</value>
 		</property>
