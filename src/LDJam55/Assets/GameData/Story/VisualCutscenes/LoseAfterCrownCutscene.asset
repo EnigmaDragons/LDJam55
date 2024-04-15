@@ -14,7 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cutsceneSegments:
   - Background: {fileID: 0}
-    Caption: 
+    Caption: "Turning tail and fleeing, Thalatta decided saving Pontus wasn\u2019t
+      worth it. She leaves him to rot and flees across the Bosphorous to become a
+      pirate queen of the Black Sea."
     VoiceLine:
       Guid:
         Data1: 1121371108
@@ -23,3 +25,4 @@ MonoBehaviour:
         Data4: 928818910
       Path: event:/VOICELINES/6-End Game Narrations/FailurePostCrown
     Delay: 0
+  isVisualCutscene: 1
