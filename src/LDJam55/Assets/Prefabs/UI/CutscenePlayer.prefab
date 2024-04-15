@@ -772,6 +772,7 @@ GameObject:
   - component: {fileID: 615814424724334955}
   - component: {fileID: 7640933130521541130}
   - component: {fileID: 8662200873250237293}
+  - component: {fileID: 4603123188869744997}
   m_Layer: 5
   m_Name: CutscenePlayer
   m_TagString: Untagged
@@ -836,3 +837,72 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cutscene: {fileID: 11400000, guid: 974d1c6c88cd0b44db651b63cf0f0d4c, type: 2}
+--- !u!114 &4603123188869744997
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8939356948096319800}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84617d556c154457bb8ca71c31a0fafe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pontQuips:
+  - Guid:
+      Data1: -1724232577
+      Data2: 1095795691
+      Data3: 712794301
+      Data4: 2016739072
+    Path: event:/VOICELINES/Quips/Pont/Carp
+  - Guid:
+      Data1: -1929649355
+      Data2: 1094458767
+      Data3: -1332363613
+      Data4: 1708973571
+    Path: event:/VOICELINES/Quips/Pont/Clamming
+  - Guid:
+      Data1: -709057685
+      Data2: 1235973559
+      Data3: -996210303
+      Data4: -387926033
+    Path: event:/VOICELINES/Quips/Pont/Narc
+  - Guid:
+      Data1: -1621979543
+      Data2: 1312877226
+      Data3: 1059658671
+      Data4: -43916836
+    Path: event:/VOICELINES/Quips/Pont/Squidding
+  cetoQuips:
+  - Guid:
+      Data1: 1241758660
+      Data2: 1143183963
+      Data3: -574497361
+      Data4: -298702311
+    Path: event:/VOICELINES/Quips/Sedo/tentacle
+  - Guid:
+      Data1: 1468833044
+      Data2: 1075415590
+      Data3: -872052585
+      Data4: 1796759846
+    Path: event:/VOICELINES/Quips/Sedo/your Looks
+  thotResponses:
+  - Guid:
+      Data1: 2142948606
+      Data2: 1284598276
+      Data3: -1952043094
+      Data4: 684051018
+    Path: event:/VOICELINES/Quips/Thot/Bucket
+  - Guid:
+      Data1: 1214058139
+      Data2: 1104935295
+      Data3: -1912028496
+      Data4: -655042103
+    Path: event:/VOICELINES/Quips/Thot/rude
+  - Guid:
+      Data1: -1634996433
+      Data2: 1213791755
+      Data3: 1226276491
+      Data4: -22971894
+    Path: event:/VOICELINES/Quips/Thot/WhatAJerk

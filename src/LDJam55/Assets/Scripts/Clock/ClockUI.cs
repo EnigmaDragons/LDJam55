@@ -33,6 +33,7 @@ public class ClockUI : OnMessage<SummonLearned, SummonLearningDismissed, GrantCl
     private bool _paused;
     private float _introT;
 
+    private bool playOnce;
 
     private void Start()
     {
@@ -47,6 +48,7 @@ public class ClockUI : OnMessage<SummonLearned, SummonLearningDismissed, GrantCl
         main.startColor = new ParticleSystem.MinMaxGradient(new Color(main.startColor.color.r, main.startColor.color.g, main.startColor.color.b, 0));
         rect.localScale = new Vector3(introScale, introScale, introScale);
         rect.anchoredPosition = introAnchoredPosition;
+        playOnce = false; 
     }
 
     private void Update()
@@ -88,6 +90,15 @@ public class ClockUI : OnMessage<SummonLearned, SummonLearningDismissed, GrantCl
             rect.localScale = new Vector3(scale, scale, scale);
             var main = angy.main;
             main.startColor = new ParticleSystem.MinMaxGradient(new Color(main.startColor.color.r, main.startColor.color.g, main.startColor.color.b, angySizeByTimeRemaining.Evaluate(percent)));
+
+            if(CurrentGameState.GameState.CurrentGameTime <= 60)
+            {
+                if (!playOnce)
+                {
+                    RuntimeManager.PlayOneShot("event:/MUSIC/HighIntenseMusic");
+                    playOnce = true;
+                }
+            }
 
             if(!_hasLost && CurrentGameState.GameState.CurrentGameTime <= 0)
             {
