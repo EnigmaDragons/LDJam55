@@ -14,6 +14,7 @@ public class Wateranim : MonoBehaviour
     void Start()
 	{
 		projector = GetComponent<Projector>();
+		projector.material = new Material(projector.material);
 		NextFrame();
 		InvokeRepeating("NextFrame", 1 / fps, 1 / fps);
 	}
