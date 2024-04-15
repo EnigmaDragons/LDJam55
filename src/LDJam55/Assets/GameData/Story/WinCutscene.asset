@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23210f5c965e47d080c66e08820325d0, type: 3}
+  m_Name: WinCutscene
+  m_EditorClassIdentifier: 
+  cutsceneSegments:
+  - Background: {fileID: 0}
+    Caption: 
+    VoiceLine:
+      Guid:
+        Data1: -1980207916
+        Data2: 1280294507
+        Data3: 712477580
+        Data4: 789588719
+      Path: event:/VOICELINES/6-End Game Narrations/GameWon
+    Delay: 0
