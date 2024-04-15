@@ -62,6 +62,7 @@ public class CutscenePlayer : OnMessage<PlayCutscene>
             _index++;
             if (_cutscene.Segments.Length == _index)
             {
+                _isPlaying = false;
                 _cutscene = null;
                 background.gameObject.SetActive(false);
                 Message.Publish(new CutsceneFinished());
@@ -78,6 +79,8 @@ public class CutscenePlayer : OnMessage<PlayCutscene>
     
     protected override void Execute(PlayCutscene msg)
     {
+        if (_isPlaying)
+            _instance.stop(STOP_MODE.IMMEDIATE);
         if (msg.Cutscene.IsVisualCutscene)
             background.gameObject.SetActive(true);
         _cutscene = msg.Cutscene;
