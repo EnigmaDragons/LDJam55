@@ -37,13 +37,26 @@ public class GameOverHandler : OnMessage<GameWon, GameOver, CutsceneFinished, Tr
     protected override void Execute(CutsceneFinished msg)
     {
         if (_navigateToCredits)
+        {
             Message.Publish(new NavigateToSceneRequested("CreditsScene"));
-        if (_navigateToGameOver) 
+            Reset();
+        }
+        if (_navigateToGameOver)
+        {
             Message.Publish(new NavigateToSceneRequested("GameOverScene"));
+            Reset();
+        }
     }
 
     protected override void Execute(TreasureAcquired msg)
     {
         _treasureAquired = true;
+    }
+
+    private void Reset()
+    {
+        _treasureAquired = false;
+        _navigateToCredits = false;
+        _navigateToGameOver = false;
     }
 }
