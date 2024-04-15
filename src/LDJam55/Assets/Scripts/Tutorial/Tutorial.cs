@@ -22,8 +22,6 @@ public class Tutorial : OnMessage<SummonBegin, ShowSummonMenu, SummonLearningDis
         KeyCodeTutorial
     }
 
-
-
     private void Start()
     {
         _learnedTutorial = new();
@@ -62,12 +60,10 @@ public class Tutorial : OnMessage<SummonBegin, ShowSummonMenu, SummonLearningDis
         }
     }
 
-
     private void SetTutorialState(bool isActive, string activeText)
     {
         tutorialText.text = activeText;
         foreach (var thing in thingsToDisable)
             thing.SetActive(isActive);
     }
-
 }
