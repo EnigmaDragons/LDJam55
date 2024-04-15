@@ -2,7 +2,7 @@ using System;
 using TMPro;
 using UnityEngine;
 
-public class ClockUI : OnMessage<SummonLearned, SummonLearningDismissed>
+public class ClockUI : OnMessage<SummonLearned, SummonLearningDismissed, GrantClockSeconds>
 {
     [SerializeField] private RectTransform rect;
     [SerializeField] private float defaultTimeInSeconds = default;
@@ -14,6 +14,7 @@ public class ClockUI : OnMessage<SummonLearned, SummonLearningDismissed>
     [SerializeField] private Color endColor;
     [SerializeField] private ParticleSystem angy;
     [SerializeField] private AnimationCurve angySizeByTimeRemaining;
+    [SerializeField] private TextMeshProUGUI gainedTimePrefab;
 
     [SerializeField] private float introScale;
     [SerializeField] private Vector2 introAnchoredPosition;
@@ -101,5 +102,11 @@ public class ClockUI : OnMessage<SummonLearned, SummonLearningDismissed>
     protected override void Execute(SummonLearningDismissed msg)
     {
         _paused = false;
+    }
+
+    protected override void Execute(GrantClockSeconds msg)
+    {
+        var gainedTime = Instantiate(gainedTimePrefab, transform.parent);
+        gainedTime.text = $"+{msg.NumSeconds} Seconds";
     }
 }

@@ -4983,6 +4983,8 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+  gainedTimePrefab: {fileID: 3561475989452902323, guid: c230b4e3572c90f46a2bfae248758ab3,
+    type: 3}
   introScale: 3
   introAnchoredPosition: {x: 0, y: -500}
   introSecondsBeforeMoving: 1
