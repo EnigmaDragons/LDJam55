@@ -2,9 +2,10 @@
 using Sirenix.Utilities;
 using System.Collections.Generic;
 using System.Linq;
+using Story;
 using UnityEngine;
 
-public class SummonMenu : OnMessage<SummonLearned, HideSummonMenu, ShowSummonMenu, SummonBegin, SummonRequested, SummonLearningDismissed, CheatHappened>
+public class SummonMenu : OnMessage<SummonLearned, HideSummonMenu, ShowSummonMenu, SummonBegin, SummonRequested, SummonLearningDismissed, CheatHappened, PlayCutscene, CutsceneFinished>
 {
     [SerializeField] private List<Summon> summons;
     [SerializeField] private SummonUI summonUIPrefab;
@@ -90,6 +91,9 @@ public class SummonMenu : OnMessage<SummonLearned, HideSummonMenu, ShowSummonMen
     }
 
     protected override void Execute(CheatHappened msg) => SetDaddyStatus();
+    protected override void Execute(PlayCutscene msg) => _isFrozen = true;
+
+    protected override void Execute(CutsceneFinished msg) => _isFrozen = false;
 
     private void SetDaddyStatus()
     {

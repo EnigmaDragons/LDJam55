@@ -1,0 +1,114 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e44df5f074f4045a35c47706d1b54fa, type: 3}
+  m_Name: Thot
+  m_EditorClassIdentifier: 
+  characterPortrait: {fileID: 0}
+  characterName: Thalatta
+  isProtagonist: 1
+  VoiceLines:
+  - Guid:
+      Data1: -1227527229
+      Data2: 1075132639
+      Data3: -429346638
+      Data4: 780329058
+    Path: event:/VOICELINES/2. Into/1-Intro_Thot1
+  - Guid:
+      Data1: -439020039
+      Data2: 1250909476
+      Data3: -1976753731
+      Data4: -2085144261
+    Path: event:/VOICELINES/2. Into/3-Intro_Thot2
+  - Guid:
+      Data1: -1314292058
+      Data2: 1256425007
+      Data3: 458518172
+      Data4: 663169841
+    Path: event:/VOICELINES/2. Into/5-Intro_Thot3
+  - Guid:
+      Data1: 2097049606
+      Data2: 1186183401
+      Data3: 769679019
+      Data4: 1892919557
+    Path: event:/VOICELINES/2. Into/7-Intro_Thot4
+  - Guid:
+      Data1: 925760309
+      Data2: 1190848084
+      Data3: 196052361
+      Data4: 1335227549
+    Path: event:/VOICELINES/2. Into/9-Intro_Thot5
+  - Guid:
+      Data1: 351266462
+      Data2: 1126565926
+      Data3: 1587541649
+      Data4: -720590323
+    Path: event:/VOICELINES/3. Sedo Intro/1-Thot1
+  - Guid:
+      Data1: -31284289
+      Data2: 1333491471
+      Data3: -1277928261
+      Data4: -1494155262
+    Path: event:/VOICELINES/3. Sedo Intro/3-Thot2
+  - Guid:
+      Data1: -1827063456
+      Data2: 1278857197
+      Data3: -2009822326
+      Data4: -414527328
+    Path: event:/VOICELINES/4. Middle Diag/2-Thot1
+  - Guid:
+      Data1: 418104413
+      Data2: 1190078272
+      Data3: 1429929381
+      Data4: 2133801052
+    Path: event:/VOICELINES/4. Middle Diag/5-Thot2
+  - Guid:
+      Data1: -1075698354
+      Data2: 1321011765
+      Data3: -1775271767
+      Data4: -1864495909
+    Path: event:/VOICELINES/4. Middle Diag/7-Thot3
+  - Guid:
+      Data1: -1470859843
+      Data2: 1234585148
+      Data3: 1714860716
+      Data4: 1900825385
+    Path: event:/VOICELINES/5. Crown/1-Thot1
+  - Guid:
+      Data1: -2112309245
+      Data2: 1269978968
+      Data3: 159939734
+      Data4: -1161867999
+    Path: event:/VOICELINES/5. Crown/6-thot2
+  - Guid:
+      Data1: -1958118222
+      Data2: 1182717137
+      Data3: 1334430878
+      Data4: -889792444
+    Path: event:/VOICELINES/5. Crown/7-thot3
+  - Guid:
+      Data1: 2142948606
+      Data2: 1284598276
+      Data3: -1952043094
+      Data4: 684051018
+    Path: event:/VOICELINES/Quips/Thot/Bucket
+  - Guid:
+      Data1: 1214058139
+      Data2: 1104935295
+      Data3: -1912028496
+      Data4: -655042103
+    Path: event:/VOICELINES/Quips/Thot/rude
+  - Guid:
+      Data1: -1634996433
+      Data2: 1213791755
+      Data3: 1226276491
+      Data4: -22971894
+    Path: event:/VOICELINES/Quips/Thot/WhatAJerk

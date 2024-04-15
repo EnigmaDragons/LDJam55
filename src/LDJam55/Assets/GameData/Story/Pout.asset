@@ -1,0 +1,102 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e44df5f074f4045a35c47706d1b54fa, type: 3}
+  m_Name: Pout
+  m_EditorClassIdentifier: 
+  characterPortrait: {fileID: 0}
+  characterName: Pontus
+  isProtagonist: 0
+  VoiceLines:
+  - Guid:
+      Data1: -11421629
+      Data2: 1146550941
+      Data3: 1930959262
+      Data4: -63920426
+    Path: event:/VOICELINES/2. Into/2-Intro_Pont1
+  - Guid:
+      Data1: -572330331
+      Data2: 1132999718
+      Data3: -889220942
+      Data4: 1530719503
+    Path: event:/VOICELINES/2. Into/4-Intro_Pont2
+  - Guid:
+      Data1: -916327513
+      Data2: 1326782220
+      Data3: 2108329400
+      Data4: 146036652
+    Path: event:/VOICELINES/2. Into/6-Intro_Pont3.1
+  - Guid:
+      Data1: -360216237
+      Data2: 1209700834
+      Data3: 491173
+      Data4: 125311568
+    Path: event:/VOICELINES/2. Into/8-Intro_Pont4
+  - Guid:
+      Data1: -371422502
+      Data2: 1157857332
+      Data3: -1969833301
+      Data4: 684011060
+    Path: event:/VOICELINES/4. Middle Diag/1-pont1
+  - Guid:
+      Data1: -644974462
+      Data2: 1304498539
+      Data3: -1617182845
+      Data4: -1447303574
+    Path: event:/VOICELINES/4. Middle Diag/3-Pont2.2
+  - Guid:
+      Data1: 125085298
+      Data2: 1271404325
+      Data3: -385275467
+      Data4: -1037843208
+    Path: event:/VOICELINES/4. Middle Diag/4-pont3
+  - Guid:
+      Data1: 1203347031
+      Data2: 1317403607
+      Data3: -524555596
+      Data4: 121395343
+    Path: event:/VOICELINES/4. Middle Diag/6-pont4
+  - Guid:
+      Data1: 30384118
+      Data2: 1256628199
+      Data3: -1325716094
+      Data4: -34500273
+    Path: event:/VOICELINES/5. Crown/2-Pont1
+  - Guid:
+      Data1: 700212637
+      Data2: 1154674492
+      Data3: -1976677981
+      Data4: -713138122
+    Path: event:/VOICELINES/5. Crown/4-Pont2
+  - Guid:
+      Data1: -1724232577
+      Data2: 1095795691
+      Data3: 712794301
+      Data4: 2016739072
+    Path: event:/VOICELINES/Quips/Pont/Carp
+  - Guid:
+      Data1: -1929649355
+      Data2: 1094458767
+      Data3: -1332363613
+      Data4: 1708973571
+    Path: event:/VOICELINES/Quips/Pont/Clamming
+  - Guid:
+      Data1: -709057685
+      Data2: 1235973559
+      Data3: -996210303
+      Data4: -387926033
+    Path: event:/VOICELINES/Quips/Pont/Narc
+  - Guid:
+      Data1: -1621979543
+      Data2: 1312877226
+      Data3: 1059658671
+      Data4: -43916836
+    Path: event:/VOICELINES/Quips/Pont/Squidding

@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7079403944578189827}
   - component: {fileID: 4297156291724304685}
+  - component: {fileID: 8756886975664598888}
   m_Layer: 0
   m_Name: GameSceneInit
   m_TagString: Untagged
@@ -44,3 +45,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d2df190033f40eb8b28f4493b852b05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &8756886975664598888
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8803261492915513488}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb7cc2a14ab648d7b8e154412bb3b0c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cutscene: {fileID: 11400000, guid: 128a9261621416949b914fe1115a1772, type: 2}

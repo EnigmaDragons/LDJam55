@@ -419,6 +419,7 @@ MonoBehaviour:
   - ENV_Bank
   - MUSIC_Bank
   - SFX_Bank
+  - VOICELINES_Bank
   BanksToLoad: []
   LiveUpdatePort: 9264
   EnableMemoryTracking: 0

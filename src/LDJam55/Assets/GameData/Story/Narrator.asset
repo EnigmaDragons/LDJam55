@@ -1,0 +1,54 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e44df5f074f4045a35c47706d1b54fa, type: 3}
+  m_Name: Narrator
+  m_EditorClassIdentifier: 
+  characterPortrait: {fileID: 0}
+  characterName: 
+  isProtagonist: 0
+  VoiceLines:
+  - Guid:
+      Data1: 574863448
+      Data2: 1334476629
+      Data3: 1869137854
+      Data4: -848306760
+    Path: event:/VOICELINES/1. Intro Narration/1-Slide1
+  - Guid:
+      Data1: 1190951880
+      Data2: 1311390847
+      Data3: -1177467998
+      Data4: -62620600
+    Path: event:/VOICELINES/1. Intro Narration/2-Slide2
+  - Guid:
+      Data1: 49565231
+      Data2: 1144340293
+      Data3: -235181426
+      Data4: -1154547221
+    Path: event:/VOICELINES/1. Intro Narration/3-Slide3
+  - Guid:
+      Data1: 1121371108
+      Data2: 1294334559
+      Data3: -1609164409
+      Data4: 928818910
+    Path: event:/VOICELINES/6-End Game Narrations/FailurePostCrown
+  - Guid:
+      Data1: 278281704
+      Data2: 1231154942
+      Data3: -822112584
+      Data4: 376353989
+    Path: event:/VOICELINES/6-End Game Narrations/FailurePreCrown
+  - Guid:
+      Data1: -1980207916
+      Data2: 1280294507
+      Data3: 712477580
+      Data4: 789588719
+    Path: event:/VOICELINES/6-End Game Narrations/GameWon

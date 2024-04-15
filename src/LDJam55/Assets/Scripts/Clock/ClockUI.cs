@@ -1,8 +1,9 @@
 using System;
+using Story;
 using TMPro;
 using UnityEngine;
 
-public class ClockUI : OnMessage<SummonLearned, SummonLearningDismissed, GrantClockSeconds>
+public class ClockUI : OnMessage<SummonLearned, SummonLearningDismissed, GrantClockSeconds, PlayCutscene, CutsceneFinished>
 {
     [SerializeField] private RectTransform rect;
     [SerializeField] private float defaultTimeInSeconds = default;
@@ -108,5 +109,15 @@ public class ClockUI : OnMessage<SummonLearned, SummonLearningDismissed, GrantCl
     {
         var gainedTime = Instantiate(gainedTimePrefab, transform.parent);
         gainedTime.text = $"+{msg.NumSeconds} Seconds";
+    }
+
+    protected override void Execute(PlayCutscene msg)
+    {
+        _paused = true;
+    }
+
+    protected override void Execute(CutsceneFinished msg)
+    {
+        _paused = false;
     }
 }

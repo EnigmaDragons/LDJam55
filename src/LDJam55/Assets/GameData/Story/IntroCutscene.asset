@@ -1,0 +1,151 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23210f5c965e47d080c66e08820325d0, type: 3}
+  m_Name: IntroCutscene
+  m_EditorClassIdentifier: 
+  cutsceneSegments:
+  - Background: {fileID: 0}
+    Caption: "The wicked sea goddess has stolen Poseidon\u2019s magical crown of
+      the tides! Furious, Poisedon has proclaimed anyone who brings the crown back
+      shall be gifted Atlantis as thanks."
+    VoiceLine:
+      Guid:
+        Data1: 574863448
+        Data2: 1334476629
+        Data3: 1869137854
+        Data4: -848306760
+      Path: event:/VOICELINES/1. Intro Narration/1-Slide1
+    Delay: 0
+  - Background: {fileID: 0}
+    Caption: In a bid to prove herself, the cunning and rebellious princess Thalatta,
+      daughter of Poseidon and Nike, sneaks out of the palace to find the crown.
+    VoiceLine:
+      Guid:
+        Data1: 1190951880
+        Data2: 1311390847
+        Data3: -1177467998
+        Data4: -62620600
+      Path: event:/VOICELINES/1. Intro Narration/2-Slide2
+    Delay: 0
+  - Background: {fileID: 0}
+    Caption: Venturing forth, Thalatta races towards the one place she knows Ceto
+      almost surely went. The ominous Temple of the Abyss, where her destiny awaits!
+    VoiceLine:
+      Guid:
+        Data1: 49565231
+        Data2: 1144340293
+        Data3: -235181426
+        Data4: -1154547221
+      Path: event:/VOICELINES/1. Intro Narration/3-Slide3
+    Delay: 0
+  - Background: {fileID: 0}
+    Caption: "Oh I am going to be in so much trouble\u2026 No, no its too late to
+      back out now. Alright creepy temple I came here for that crown and I am going
+      to leave with it."
+    VoiceLine:
+      Guid:
+        Data1: -1227527229
+        Data2: 1075132639
+        Data3: -429346638
+        Data4: 780329058
+      Path: event:/VOICELINES/2. Into/1-Intro_Thot1
+    Delay: 0
+  - Background: {fileID: 0}
+    Caption: Now this is a surprise! The princess left her palace to go dredge through
+      a dreary temple.
+    VoiceLine:
+      Guid:
+        Data1: -11421629
+        Data2: 1146550941
+        Data3: 1930959262
+        Data4: -63920426
+      Path: event:/VOICELINES/2. Into/2-Intro_Pont1
+    Delay: 0
+  - Background: {fileID: 0}
+    Caption: Pontus, I should have known a scoundrel like you would be here.
+    VoiceLine:
+      Guid:
+        Data1: -439020039
+        Data2: 1250909476
+        Data3: -1976753731
+        Data4: -2085144261
+      Path: event:/VOICELINES/2. Into/3-Intro_Thot2
+    Delay: 0
+  - Background: {fileID: 0}
+    Caption: "Why of course! After all, I have a crown to steal back and a city to
+      rule after that. You should probably swim on home princess, wouldn\u2019t want
+      any kelp on your scales."
+    VoiceLine:
+      Guid:
+        Data1: -572330331
+        Data2: 1132999718
+        Data3: -889220942
+        Data4: 1530719503
+      Path: event:/VOICELINES/2. Into/4-Intro_Pont2
+    Delay: 0
+  - Background: {fileID: 0}
+    Caption: I am the princess of the sea! That crown rightfully belongs to my father,
+      and I will be the one to hand it back to him!
+    VoiceLine:
+      Guid:
+        Data1: -1314292058
+        Data2: 1256425007
+        Data3: 458518172
+        Data4: 663169841
+      Path: event:/VOICELINES/2. Into/5-Intro_Thot3
+    Delay: 0
+  - Background: {fileID: 0}
+    Caption: "Sure, sure, look here\u2019s the rub. You will never beat me to the
+      crown and I don\u2019t want you to get hurt, your father would kill me, so
+      look if you head back right now I won\u2019t say anything to daddy dearest."
+    VoiceLine:
+      Guid:
+        Data1: -916327513
+        Data2: 1326782220
+        Data3: 2108329400
+        Data4: 146036652
+      Path: event:/VOICELINES/2. Into/6-Intro_Pont3.1
+    Delay: 0
+  - Background: {fileID: 0}
+    Caption: Nope, not happening.
+    VoiceLine:
+      Guid:
+        Data1: 2097049606
+        Data2: 1186183401
+        Data3: 769679019
+        Data4: 1892919557
+      Path: event:/VOICELINES/2. Into/7-Intro_Thot4
+    Delay: 0
+  - Background: {fileID: 0}
+    Caption: "Fine, then I suppose its a race to the crown. And saying that, I must
+      be off now. But just in case, there\u2019s this handy lever right here that
+      I am 90% certain activates some sort of traps. Would you mind disarming those
+      for me before I come back with the crown? Thanks your royal fishness!"
+    VoiceLine:
+      Guid:
+        Data1: -360216237
+        Data2: 1209700834
+        Data3: 491173
+        Data4: 125311568
+      Path: event:/VOICELINES/2. Into/8-Intro_Pont4
+    Delay: 0
+  - Background: {fileID: 0}
+    Caption: "Wait don\u2019t do that\u2026 When I get my hands on you, you smug
+      slimy piece of\u2026 alright now how did that spell to summon go again?"
+    VoiceLine:
+      Guid:
+        Data1: 925760309
+        Data2: 1190848084
+        Data3: 196052361
+        Data4: 1335227549
+      Path: event:/VOICELINES/2. Into/9-Intro_Thot5
+    Delay: 0

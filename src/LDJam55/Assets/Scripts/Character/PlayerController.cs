@@ -1,6 +1,7 @@
+using Story;
 using UnityEngine;
 
-public class PlayerController : OnMessage<SummonLearned, SummonLearningDismissed, ShowSummonMenu, HideSummonMenu>
+public class PlayerController : OnMessage<SummonLearned, SummonLearningDismissed, ShowSummonMenu, HideSummonMenu, PlayCutscene, CutsceneFinished>
 {
     [SerializeField] private Rigidbody playerRigidBody;
     [SerializeField] private float movementSpeed = 8f;
@@ -76,6 +77,12 @@ public class PlayerController : OnMessage<SummonLearned, SummonLearningDismissed
         => PlayerHasControl = false;
 
     protected override void Execute(HideSummonMenu msg)
+        => PlayerHasControl = true;
+
+    protected override void Execute(PlayCutscene msg)
+        => PlayerHasControl = false;
+
+    protected override void Execute(CutsceneFinished msg)
         => PlayerHasControl = true;
 
     protected override void Execute(SummonLearned msg)

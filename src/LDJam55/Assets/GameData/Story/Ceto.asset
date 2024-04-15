@@ -1,0 +1,54 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e44df5f074f4045a35c47706d1b54fa, type: 3}
+  m_Name: Ceto
+  m_EditorClassIdentifier: 
+  characterPortrait: {fileID: 0}
+  characterName: Ceto
+  isProtagonist: 0
+  VoiceLines:
+  - Guid:
+      Data1: -402877917
+      Data2: 1296447099
+      Data3: -986018688
+      Data4: -232820871
+    Path: event:/VOICELINES/3. Sedo Intro/2-Ceto1
+  - Guid:
+      Data1: 1210394385
+      Data2: 1236632065
+      Data3: 2006302346
+      Data4: 1980581288
+    Path: event:/VOICELINES/3. Sedo Intro/4-Ceto2
+  - Guid:
+      Data1: -620637350
+      Data2: 1130074836
+      Data3: 527567532
+      Data4: -889651183
+    Path: event:/VOICELINES/5. Crown/3-Sedo1
+  - Guid:
+      Data1: 1541010445
+      Data2: 1200412127
+      Data3: 1927077272
+      Data4: 1431459528
+    Path: event:/VOICELINES/5. Crown/5-Sedo2
+  - Guid:
+      Data1: 1241758660
+      Data2: 1143183963
+      Data3: -574497361
+      Data4: -298702311
+    Path: event:/VOICELINES/Quips/Sedo/tentacle
+  - Guid:
+      Data1: 1468833044
+      Data2: 1075415590
+      Data3: -872052585
+      Data4: 1796759846
+    Path: event:/VOICELINES/Quips/Sedo/your Looks
