@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{62dc75a4-5b0b-4c78-8419-2f2cffd45570}">
+		<property name="assetPath">
+			<value>Dx new/EndGame/FailurePostCrown.ogg</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>9.6966458333333332</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{df5182c8-be50-4e4a-913f-fc5f8a6ced71}</destination>
+		</relationship>
+	</object>
+</objects>

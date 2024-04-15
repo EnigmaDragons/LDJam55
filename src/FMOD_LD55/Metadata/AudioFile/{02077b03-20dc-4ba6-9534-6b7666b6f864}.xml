@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{02077b03-20dc-4ba6-9534-6b7666b6f864}">
+		<property name="assetPath">
+			<value>Dx new/Crown/7-thot3.ogg</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>8.1966458333333332</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{df5182c8-be50-4e4a-913f-fc5f8a6ced71}</destination>
+		</relationship>
+	</object>
+</objects>
