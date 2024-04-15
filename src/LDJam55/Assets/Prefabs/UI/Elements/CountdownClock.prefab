@@ -4889,7 +4889,7 @@ MonoBehaviour:
   rect: {fileID: 8147248017288307067}
   defaultTimeInSeconds: 300
   clockText: {fileID: 1931359171249635369}
-  maxSecondsForPurposesOfCurves: 300
+  maxSecondsForPurposesOfCurves: 10
   scaleByTimeRemaining:
     serializedVersion: 2
     m_Curve:
