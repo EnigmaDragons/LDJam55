@@ -68,6 +68,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall_Corner_3X
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 48c333034aea1714abaa2eae7ba542fe,
+        type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

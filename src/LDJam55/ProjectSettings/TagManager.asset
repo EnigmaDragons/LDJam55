@@ -12,6 +12,7 @@ TagManager:
   - Flammable
   - Water
   - Moveable
+  - Wall
   layers:
   - Default
   - TransparentFX
