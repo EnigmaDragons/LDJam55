@@ -38,7 +38,7 @@ public class GameOverHandler : OnMessage<GameWon, GameOver, CutsceneFinished, Tr
     {
         if (_navigateToCredits)
             Message.Publish(new NavigateToSceneRequested("CreditsScene"));
-        else 
+        if (_navigateToGameOver) 
             Message.Publish(new NavigateToSceneRequested("GameOverScene"));
     }
 
