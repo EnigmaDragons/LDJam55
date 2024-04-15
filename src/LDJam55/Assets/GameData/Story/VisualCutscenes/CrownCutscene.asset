@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: CrownCutscene
   m_EditorClassIdentifier: 
   cutsceneSegments:
-  - Background: {fileID: 0}
+  - Background: {fileID: 21300000, guid: 7b4c3620387752b41933b0b00cd54d19, type: 3}
     Caption: Finally, it looks like Ceto kept the crown in this chest!
     VoiceLine:
       Guid:
@@ -23,7 +23,7 @@ MonoBehaviour:
         Data4: 1900825385
       Path: event:/VOICELINES/5. Crown/1-Thot1
     Delay: 0
-  - Background: {fileID: 0}
+  - Background: {fileID: 21300000, guid: 7b4c3620387752b41933b0b00cd54d19, type: 3}
     Caption: Good show princess, jolly good show! Bravo and congratulations. Turns
       out perhaps I should have figured your beauty was only matched by your cunning.
     VoiceLine:
@@ -34,7 +34,7 @@ MonoBehaviour:
         Data4: -34500273
       Path: event:/VOICELINES/5. Crown/2-Pont1
     Delay: 0
-  - Background: {fileID: 0}
+  - Background: {fileID: 21300000, guid: f5682f37e1d7e7a4192fa6ce224f017c, type: 3}
     Caption: "There you are pirate princeling! Pontus the Ponce they\u2019ll call
       you."
     VoiceLine:
@@ -45,7 +45,7 @@ MonoBehaviour:
         Data4: -889651183
       Path: event:/VOICELINES/5. Crown/3-Sedo1
     Delay: 0
-  - Background: {fileID: 0}
+  - Background: {fileID: 21300000, guid: f5682f37e1d7e7a4192fa6ce224f017c, type: 3}
     Caption: Ahhhh!
     VoiceLine:
       Guid:
@@ -55,7 +55,7 @@ MonoBehaviour:
         Data4: -713138122
       Path: event:/VOICELINES/5. Crown/4-Pont2
     Delay: 0
-  - Background: {fileID: 0}
+  - Background: {fileID: 21300000, guid: f5682f37e1d7e7a4192fa6ce224f017c, type: 3}
     Caption: "I might have lost the crown, but at least I\u2019ll have a fine addition
       to my collection. You\u2019ll be quite a fun wallpiece mounted in my dungeon.
       Oh how I\u2019ll enjoy your screams!"
@@ -67,7 +67,7 @@ MonoBehaviour:
         Data4: 1431459528
       Path: event:/VOICELINES/5. Crown/5-Sedo2
     Delay: 0
-  - Background: {fileID: 0}
+  - Background: {fileID: 21300000, guid: 8c8962e18a7a47243837d4b8961b4b3e, type: 3}
     Caption: "By Olympus why is he such a fool? \u2026I could leave him to his fate.
       It\u2019s what he would do to me I\u2019m sure."
     VoiceLine:
@@ -78,7 +78,7 @@ MonoBehaviour:
         Data4: -1161867999
       Path: event:/VOICELINES/5. Crown/6-thot2
     Delay: 0
-  - Background: {fileID: 0}
+  - Background: {fileID: 21300000, guid: 8c8962e18a7a47243837d4b8961b4b3e, type: 3}
     Caption: "No, if I am to be a proper queen, even the most surly of subjects deserve
       my protection. \u2026Even if freedom is right around the corner\u2026"
     VoiceLine:
@@ -89,3 +89,4 @@ MonoBehaviour:
         Data4: -889792444
       Path: event:/VOICELINES/5. Crown/7-thot3
     Delay: 0
+  isVisualCutscene: 1
