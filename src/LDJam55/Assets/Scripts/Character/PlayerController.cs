@@ -15,7 +15,10 @@ public class PlayerController : OnMessage<SummonLearned, SummonLearningDismissed
     public Transform ForceMover { get; set; } = null;
 
     private void Start()
-       => PlayerHasControl = true;
+    {
+        PlayerHasControl = true;
+        CurrentGameState.UpdateState(gs => gs.Player = gameObject);
+    }
 
     private void Update()
     {

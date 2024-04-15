@@ -4,28 +4,35 @@ public class InfoSign : MonoBehaviour
 {
     [SerializeField] private string signText = null;
     [SerializeField] private bool isAncientLanguage = false;
+    [SerializeField] private float triggerDistance = 1.5f;
     
     private bool isPlayerInRange = false;
 
-    private void Update() {
-        if (this.isPlayerInRange && InteractButton.IsDown()) {
-            ShowInfo();
+    private void Update()
+    {
+        var player = CurrentGameState.GameState.Player;
+        if (player == null)
+        {
+            Log.Warn("Player is Null");
+            return;
+        }
+
+        var beforeState = isPlayerInRange;
+        var objLoc = new Vector2(player.transform.position.x, player.transform.position.z);
+        var selfLoc = new Vector2(transform.position.x, transform.position.z);
+        var distance = Vector2.Distance(objLoc, selfLoc);
+        var isClose = distance  <= triggerDistance;
+        // Log.Info($"InfoSign Player: {objLoc}. Sign: {selfLoc}. Distance: ${distance}");
+        isPlayerInRange = isClose;
+        if (beforeState != isClose)
+        {
+            if (isPlayerInRange)
+                ShowInfo();
+            else
+                HideInfo();
         }
     }
-
-    private void OnTriggerEnter(Collider other) {
-        if (other.gameObject.CompareTag("Player")) {
-            this.isPlayerInRange = true;
-        }
-    }
-
-    private void OnTriggerExit(Collider other) {
-        if (other.gameObject.CompareTag("Player")) {
-            this.isPlayerInRange = false;
-            HideInfo();
-        }
-    }
-
+    
     public void ShowInfo() {
         if (isAncientLanguage) {
             Debug.Log("Showing Ancient Language Sign Text");
@@ -40,5 +47,4 @@ public class InfoSign : MonoBehaviour
         Debug.Log("Hiding Sign Info");
         Message.Publish(new HideInfoSignDialog());
     }
-
 }
