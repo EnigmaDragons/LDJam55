@@ -15,7 +15,10 @@ public class PlayerController : OnMessage<SummonLearned, SummonLearningDismissed
     public bool PlayerHasControl { get; set; } = true;
 
     private void Start()
-       => PlayerHasControl = true;
+    {
+        PlayerHasControl = true;
+        CurrentGameState.UpdateState(gs => gs.Player = gameObject);
+    }
 
     private void Update()
     {

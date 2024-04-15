@@ -15,13 +15,13 @@ public class Waterfall : MonoBehaviour
         if (Time.time >= nextCheckTime)
         {
             var blockers = CurrentGameState.GameState.WaterBlockers;
-            Log.Info($"Waterfall - Check Num Possible Blockers {blockers.Count}");
+            // Log.Info($"Waterfall - Check Num Possible Blockers {blockers.Count}");
             var wasBlocked = isBlocked;
             isBlocked = blockers.AnyNonAlloc(h =>
             {
                 var objLoc = new Vector2(h.transform.position.x, h.transform.position.z);
                 var waterFallLoc = new Vector2(transform.position.x, transform.position.z);
-                Log.Info($"Waterfall Loc: {waterFallLoc} - Blocker Loc: {objLoc}");
+                // Log.Info($"Waterfall Loc: {waterFallLoc} - Blocker Loc: {objLoc}");
                 var isClose = Vector2.Distance(objLoc, waterFallLoc) <= 0.25f;
                 return isClose;
             });

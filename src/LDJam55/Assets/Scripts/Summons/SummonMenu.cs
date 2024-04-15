@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
-public class SummonMenu : OnMessage<SummonLearned, HideSummonMenu, ShowSummonMenu, SummonBegin, SummonRequested, SummonLearningDismissed>
+public class SummonMenu : OnMessage<SummonLearned, HideSummonMenu, ShowSummonMenu, SummonBegin, SummonRequested, SummonLearningDismissed, CheatHappened>
 {
     [SerializeField] private List<Summon> summons;
     [SerializeField] private SummonUI summonUIPrefab;
@@ -88,6 +88,8 @@ public class SummonMenu : OnMessage<SummonLearned, HideSummonMenu, ShowSummonMen
         SetDaddyStatus();
         _isFrozen = false;
     }
+
+    protected override void Execute(CheatHappened msg) => SetDaddyStatus();
 
     private void SetDaddyStatus()
     {

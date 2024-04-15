@@ -9,6 +9,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1609705287798069118}
+  - component: {fileID: 6615557798486143474}
+  - component: {fileID: 4957131917565613333}
   m_Layer: 0
   m_Name: AncientBook
   m_TagString: Untagged
@@ -32,6 +34,31 @@ Transform:
   - {fileID: 1296274514185802219}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6615557798486143474
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2203581594005229159}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 421674eb9a50481a94e87e406d4989f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &4957131917565613333
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2203581594005229159}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25d1984fe7ff6f542837db17ee67b0b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  summon: {fileID: 11400000, guid: 168c89e9ebe81a947a90a499ae6d5e3b, type: 2}
 --- !u!1 &8927388244830071586
 GameObject:
   m_ObjectHideFlags: 0

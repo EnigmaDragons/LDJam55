@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 5585499936801048432}
   - component: {fileID: 1145600053764573611}
   - component: {fileID: 5959497119713722001}
+  - component: {fileID: 8688720713135744704}
   m_Layer: 0
   m_Name: CheatCodes
   m_TagString: Untagged
@@ -59,3 +60,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d393daa67ed41c29595b40b1ff060fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &8688720713135744704
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8008156581479149850}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1836938d321d40fbae6c0a2fb8d05a3e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  summons:
+  - {fileID: 11400000, guid: 168c89e9ebe81a947a90a499ae6d5e3b, type: 2}
+  - {fileID: 11400000, guid: 3a92c6687d9263f419734f0af732761a, type: 2}
+  - {fileID: 11400000, guid: 3076243629c3d01408f6f45dd9187d7d, type: 2}
+  - {fileID: 11400000, guid: 691647f7171a91b4ab28c98a38b42b32, type: 2}
