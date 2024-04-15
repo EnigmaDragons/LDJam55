@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using TMPro;
+using UnityEngine;
 using UnityEngine.UI;
 
 public class LogosController : MonoBehaviour
@@ -7,6 +8,8 @@ public class LogosController : MonoBehaviour
     [SerializeField] private Sprite secondSprite;
     [SerializeField] private float showDuration = 2f;
     [SerializeField] private float transitionDuration = 0.75f;
+    [SerializeField] private Button[] buttons;
+    [SerializeField] private TextMeshProUGUI clickText;
 
     private Color targetColor;
     private Color targetTransparent;
@@ -17,9 +20,16 @@ public class LogosController : MonoBehaviour
     private float _finishInSeconds;
     private bool _finishedCurrent;
     private bool _startedLoading;
+    private bool _playerHasClicked;
 
     private void Awake()
     {
+        _playerHasClicked = false;
+        buttons.ForEach(x => x.onClick.AddListener(() =>
+        {
+            _playerHasClicked = true;
+            clickText.gameObject.SetActive(false);
+        }));
         targetColor = image.color;
         targetTransparent = new Color(targetColor.r, targetColor.g, targetColor.b, 0f);
         image.color = targetTransparent;
@@ -38,7 +48,7 @@ public class LogosController : MonoBehaviour
         
         UpdateCounters();
         UpdatePresentation();
-        if (!FMODUnity.RuntimeManager.HaveAllBanksLoaded)
+        if (!FMODUnity.RuntimeManager.HaveAllBanksLoaded || !_playerHasClicked)
             return;
         if (AnyMouseButtonDown() || AnyRelevantButtonPress())
         {

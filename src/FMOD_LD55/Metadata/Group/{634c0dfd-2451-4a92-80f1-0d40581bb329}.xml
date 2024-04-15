@@ -4,9 +4,6 @@
 		<property name="color">
 			<value>Blue</value>
 		</property>
-		<property name="volume">
-			<value>0.5</value>
-		</property>
 		<property name="name">
 			<value>MUSIC_MST</value>
 		</property>
@@ -46,6 +43,9 @@
 	</object>
 	<object class="MixerBusPanner" id="{db7322ad-cfcd-477d-b711-08e9e3127199}" />
 	<object class="CompressorEffect" id="{3fbb8f62-375d-4fff-8cf0-2a2f76153226}">
+		<property name="bypass">
+			<value>true</value>
+		</property>
 		<property name="threshold">
 			<value>-11</value>
 		</property>
@@ -67,7 +67,7 @@
 			<value>14.5</value>
 		</property>
 		<property name="releaseTime">
-			<value>2800</value>
+			<value>5000</value>
 		</property>
 		<relationship name="sidechains">
 			<destination>{9780d73b-6948-46db-a721-f25f9adf01d2}</destination>
