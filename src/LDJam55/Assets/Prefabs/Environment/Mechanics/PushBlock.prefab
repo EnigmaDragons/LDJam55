@@ -125,6 +125,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveDurationSeconds: 1
   requiredContactSeconds: 0.3
+  y: 1
   pushBlockSFX:
     Guid:
       Data1: -1814119214

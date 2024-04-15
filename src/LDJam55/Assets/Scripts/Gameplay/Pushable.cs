@@ -7,6 +7,7 @@ public class Pushable : OnMessage<PushingObjectBegin, PushingObjectEnd>
 {
     [SerializeField] private float moveDurationSeconds = 1.5f;
     [SerializeField] private float requiredContactSeconds = 0.3f;
+    [SerializeField] private float y;
 
     private bool _canMove = true;
     private bool _isMoving;
@@ -23,7 +24,7 @@ public class Pushable : OnMessage<PushingObjectBegin, PushingObjectEnd>
     {
         _isMoving = true;
         _start = transform.localPosition;
-        _destination = new Vector3((float)(Math.Round((transform.localPosition.x) / 2f) * 2f), 0, (float)(Math.Round(transform.localPosition.z / 2f) * 2f));
+        _destination = new Vector3((float)(Math.Round((transform.localPosition.x + 1) / 2f) * 2f - 1), y, (float)(Math.Round(transform.localPosition.z / 2f) * 2f));
         _movingT = 0;
         _contactT = 0;
         _isPlayerAdjacent = false;
@@ -55,7 +56,7 @@ public class Pushable : OnMessage<PushingObjectBegin, PushingObjectEnd>
             if (_contactT >= requiredContactSeconds)
             {
                 _start = transform.localPosition;
-                _destination = new Vector3((float)(Math.Round((transform.localPosition.x + _pushDirection.x * 2f) / 2f) * 2f), 0, (float)(Math.Round((transform.localPosition.z + _pushDirection.z * 2f) / 2f) * 2f));
+                _destination = new Vector3((float)(Math.Round((transform.localPosition.x + _pushDirection.x * 2f + 1) / 2f) * 2f - 1), y, (float)(Math.Round((transform.localPosition.z + _pushDirection.z * 2f) / 2f) * 2f));
                 _movingT = 0;
                 _contactT = 0;
                 _isMoving = true;
@@ -81,7 +82,7 @@ public class Pushable : OnMessage<PushingObjectBegin, PushingObjectEnd>
             _pushDirection = isMoreX
               ? new Vector3(Mathf.Round(direction.x), 0, 0)
               : new Vector3(0, 0, Mathf.Round(direction.z));
-            _canMoveThatDirection = !Physics.OverlapSphere( transform.TransformPoint(_pushDirection * 2 / transform.localScale.x + new Vector3(0, 0.5f, 0)), 0.1f).Any(x => !x.isTrigger);
+            _canMoveThatDirection = !Physics.OverlapSphere( transform.TransformPoint(_pushDirection * 2 / transform.localScale.x + new Vector3(0, y, 0)), 0.1f).Any(x => !x.isTrigger);
         }
     }
 
