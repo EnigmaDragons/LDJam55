@@ -23,18 +23,19 @@ public class PlayerController : OnMessage<SummonLearned, SummonLearningDismissed
 
     private void Update()
     {
-        transform.position = new Vector3(transform.position.x, 0.2f, transform.position.z);
         if (_moveableObject.IsMoving)
         {
             var direction = new Vector3(
                 _moveableObject.targetPosition.position.x - transform.position.x,
-                0.2f,
+                0,
                _moveableObject.targetPosition.position.z - transform.position.z
             ).normalized;
             Quaternion targetRotation = Quaternion.LookRotation(direction, Vector3.up);
             Quaternion smoothRotation = Quaternion.Slerp(playerRigidBody.rotation, targetRotation, rotationSpeed * Time.deltaTime);
             playerRigidBody.MoveRotation(smoothRotation);
         }
+        else 
+            transform.position = new Vector3(transform.position.x, 0.2f, transform.position.z);
         if (!PlayerHasControl || _moveableObject.IsMoving)
         {
             movement = Vector3.zero;
