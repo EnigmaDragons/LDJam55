@@ -16,9 +16,9 @@ MonoBehaviour:
   keyCodes: 140100001201000013010000140100001201000013010000
   icon: {fileID: 21300000, guid: 3bf20a773990b6e4d93a0f9c02a1cb46, type: 3}
   summonCardArt: {fileID: 21300000, guid: 92f191b31c5dee04abb4b8d08fee5a74, type: 3}
-  summonPrefab: {fileID: 4457299885994847160, guid: 36cd3213bd343934fa7bb2d79a4462e7,
+  summonPrefab: {fileID: 8584268271996343400, guid: 36cd3213bd343934fa7bb2d79a4462e7,
     type: 3}
-  description: Unsummons all summonable items in front of you
+  description: Unsummons all objects that you know how to summon in front of you
   fixedYPosition: 0
   summonAtFixedYPosition: 0
   summonToSnappedPosition: 0

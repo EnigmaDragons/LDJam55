@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 using UnityEngine;
 
 
@@ -10,11 +6,20 @@ public class Unsummon : MonoBehaviour
 {
 
     [SerializeField] private float range;
+    [SerializeField] private float secondsToDestroy;
+    [SerializeField] private float secondsTilGone;
+
+    private List<GameObject> _toDestroy;
+    private float _t;
+    private bool _hasDestroyed;
 
     private void OnEnable()
     {
         if (gameObject.layer == 8)
             return;
+        _toDestroy = new List<GameObject>();
+        _t = 0;
+        
         Collider[] hitColliders = Physics.OverlapSphere(transform.position, range);
         var SummonColliders = hitColliders;
         foreach (var collider in SummonColliders)
@@ -23,9 +28,22 @@ public class Unsummon : MonoBehaviour
             if (summon == null)
                 continue;
             if (CurrentGameState.GameState.SummonNames.Contains(summon.summon.SummonName))
-                Destroy(collider.gameObject);
+                _toDestroy.Add(collider.gameObject);
         }
-                
-        Destroy(gameObject);
+    }
+
+    private void Update()
+    {
+        if (gameObject.layer == 8)
+            return;
+        _t += Time.deltaTime;
+        if (!_hasDestroyed && _t >= secondsToDestroy)
+        {
+            foreach (var destroyable in _toDestroy)
+                Destroy(destroyable);
+            _hasDestroyed = true;
+        }
+        else if (_t >= secondsTilGone)
+            Destroy(gameObject);
     }
 }
