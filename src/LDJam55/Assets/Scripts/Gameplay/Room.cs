@@ -5,13 +5,19 @@ using UnityEngine;
 public class Room : OnMessage<TriggerableChanged>
 {
     [SerializeField] private GameObject roof;
-    [SerializeField] private Triggerable[] triggerablesNeededToLightRoom = Array.Empty<Triggerable>();
+    
+    private Triggerable[] triggerablesNeededToLightRoom = Array.Empty<Triggerable>();
 
     private bool _isInThisRoom;
     
     private void Start()
     {
         roof.SetActive(true);
+        triggerablesNeededToLightRoom = GetComponentsInChildren<Transform>()
+            .Where(child => child.CompareTag("Flammable"))
+            .Select(child => child.GetComponent<Triggerable>())
+            .Where(triggerable => triggerable != null && triggerable.gameObject.GetComponent<Light>() != null)
+            .ToArray();
     }
     
     private void OnTriggerEnter(Collider other)

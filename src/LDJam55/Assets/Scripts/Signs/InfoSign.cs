@@ -1,10 +1,11 @@
 using UnityEngine;
 
-public class InfoSign : MonoBehaviour
+public class InfoSign : OnMessage<GameStateChanged>
 {
     [SerializeField] private string signText = null;
     [SerializeField] private bool isAncientLanguage = false;
     [SerializeField] private float triggerDistance = 1.5f;
+    [SerializeField] private float maxBookDistance = 2.5f;
     
     private bool isPlayerInRange = false;
 
@@ -17,24 +18,21 @@ public class InfoSign : MonoBehaviour
             return;
         }
 
-        var beforeState = isPlayerInRange;
-        var objLoc = new Vector2(player.transform.position.x, player.transform.position.z);
-        var selfLoc = new Vector2(transform.position.x, transform.position.z);
-        var distance = Vector2.Distance(objLoc, selfLoc);
-        var isClose = distance  <= triggerDistance;
-        // Log.Info($"InfoSign Player: {objLoc}. Sign: {selfLoc}. Distance: ${distance}");
-        isPlayerInRange = isClose;
-        if (beforeState != isClose)
+        var isClose = transform.XzDistanceFromSelf(player.transform)  <= triggerDistance;
+        if (isPlayerInRange != isClose)
         {
-            if (isPlayerInRange)
+            if (isClose)
                 ShowInfo();
             else
                 HideInfo();
         }
+        isPlayerInRange = isClose;
     }
     
-    public void ShowInfo() {
-        if (isAncientLanguage) {
+    public void ShowInfo()
+    {
+        var anyBooksInRange = CurrentGameState.GameState.Books.AnyNonAlloc(b => transform.XzDistanceFromSelf(b.transform) < maxBookDistance);
+        if (isAncientLanguage && !anyBooksInRange) {
             Debug.Log("Showing Ancient Language Sign Text");
             Message.Publish(new ShowInfoSignDialog("This sign bears inscriptions in an ancient, mystical language. Its meaning eludes you."));
         } else {
@@ -46,5 +44,14 @@ public class InfoSign : MonoBehaviour
     public void HideInfo() {
         Debug.Log("Hiding Sign Info");
         Message.Publish(new HideInfoSignDialog());
+    }
+
+    protected override void Execute(GameStateChanged msg)
+    {
+        if (isAncientLanguage && isPlayerInRange)
+        {
+            HideInfo();
+            ShowInfo();
+        }
     }
 }

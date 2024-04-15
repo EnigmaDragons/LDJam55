@@ -136,6 +136,7 @@ MonoBehaviour:
   playerRigidBody: {fileID: 2233961544105663511}
   movementSpeed: 10
   rotationSpeed: 10
+  _moveableObject: {fileID: 341689175813721601}
 --- !u!54 &2233961544105663511
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -204,6 +205,7 @@ GameObject:
   - component: {fileID: 4782850829551757131}
   - component: {fileID: 6002657309112203817}
   - component: {fileID: 1477408294359961997}
+  - component: {fileID: 341689175813721601}
   m_Layer: 0
   m_Name: Capsule
   m_TagString: Player
@@ -313,6 +315,53 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bbf11ee2454b54945af1e6092b095fd9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &341689175813721601
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2109015358556306536}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1bd78b441ec0c40a3aba963f93f5d00e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  movementSpeed: 8
+  epsilon: 0.01
+  objectBase: {fileID: 846614854108720012}
+  soundEventsStart:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8856054366474534231, guid: 0fa8a257cd28e2e4daa5ced102b77cc8,
+          type: 3}
+        m_TargetAssemblyTypeName: FastWaterSound, Assembly-CSharp
+        m_MethodName: PlayFastWater
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  soundEventsStop:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8856054366474534231, guid: 0fa8a257cd28e2e4daa5ced102b77cc8,
+          type: 3}
+        m_TargetAssemblyTypeName: FastWaterSound, Assembly-CSharp
+        m_MethodName: StopFastWater
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &2161209310082311144
 GameObject:
   m_ObjectHideFlags: 0

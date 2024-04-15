@@ -20,4 +20,4 @@ MonoBehaviour:
     type: 3}
   description: Summon this to read ancient languages
   fixedYPosition: 0
-  summonAtFixedYPosition: 0
+  summonAtFixedYPosition: 1

@@ -5,6 +5,7 @@ public class PlayerController : OnMessage<SummonLearned, SummonLearningDismissed
     [SerializeField] private Rigidbody playerRigidBody;
     [SerializeField] private float movementSpeed = 8f;
     [SerializeField] private float rotationSpeed = 10f;
+    [SerializeField] private MoveableObject _moveableObject;
 
     private const string HorizontalInput = "Horizontal";
     private const string VerticalInput = "Vertical";
@@ -12,7 +13,6 @@ public class PlayerController : OnMessage<SummonLearned, SummonLearningDismissed
     private Vector3 movement;
 
     public bool PlayerHasControl { get; set; } = true;
-    public Transform ForceMover { get; set; } = null;
 
     private void Start()
     {
@@ -22,7 +22,18 @@ public class PlayerController : OnMessage<SummonLearned, SummonLearningDismissed
 
     private void Update()
     {
-        if (!PlayerHasControl)
+        if (_moveableObject.IsMoving)
+        {
+            var direction = new Vector3(
+                _moveableObject.targetPosition.position.x - transform.position.x,
+                0,
+               _moveableObject.targetPosition.position.z - transform.position.z
+            ).normalized;
+            Quaternion targetRotation = Quaternion.LookRotation(direction, Vector3.up);
+            Quaternion smoothRotation = Quaternion.Slerp(playerRigidBody.rotation, targetRotation, rotationSpeed * Time.deltaTime);
+            playerRigidBody.MoveRotation(smoothRotation);
+        }
+        if (!PlayerHasControl || _moveableObject.IsMoving)
         {
             movement = Vector3.zero;
         }
@@ -34,7 +45,7 @@ public class PlayerController : OnMessage<SummonLearned, SummonLearningDismissed
 
     private void FixedUpdate()
     {
-        if (!PlayerHasControl)
+        if (!PlayerHasControl || _moveableObject.IsMoving)
         {
             playerRigidBody.velocity = Vector3.zero;
             return;
