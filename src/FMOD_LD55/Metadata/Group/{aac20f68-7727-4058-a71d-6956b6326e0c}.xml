@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.02.00">
 	<object class="MixerGroup" id="{aac20f68-7727-4058-a71d-6956b6326e0c}">
+		<property name="volume">
+			<value>-9</value>
+		</property>
 		<property name="name">
 			<value>MST_BUS</value>
 		</property>
