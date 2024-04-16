@@ -1,19 +1,19 @@
 using FMOD.Studio;
 using FMODUnity;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class MusicSoundController : MonoBehaviour
 {
-
     public EventReference ambienceRef;
     public EventReference musicTempleRef;
     public EventReference musicUnderWaterRef;
+    public EventReference musicCreditsRef;
+    public bool playMusicOnStart = true;
+    
     EventInstance ambienceInstance;
     EventInstance musicUnderWaterInstance;
     EventInstance musicTempleInstance;
-
+    EventInstance musicCreditsInstance;
 
     private void Start()
     {
@@ -21,14 +21,16 @@ public class MusicSoundController : MonoBehaviour
         ambienceInstance.start();
         ambienceInstance.setParameterByName("AboveBelowWaterVol", 0);
 
-        musicTempleInstance = RuntimeManager.CreateInstance(musicTempleRef);
-        musicTempleInstance.start();
+        if (playMusicOnStart)
+        {
+            musicTempleInstance = RuntimeManager.CreateInstance(musicTempleRef);
+            musicTempleInstance.start();
+        }
     }
 
     public void PlayUnderWater()
     {
-        musicTempleInstance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
-        musicTempleInstance.release();
+        StopAllMusic();
         musicUnderWaterInstance = RuntimeManager.CreateInstance(musicUnderWaterRef);
         musicUnderWaterInstance.start();
         ambienceInstance.setParameterByName("AboveBelowWaterVol", 1);
@@ -36,13 +38,18 @@ public class MusicSoundController : MonoBehaviour
 
     public void PlayTemple()
     {
+        StopAllMusic();
         musicTempleInstance = RuntimeManager.CreateInstance(musicTempleRef);
         musicTempleInstance.start();
-        musicUnderWaterInstance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
-        musicUnderWaterInstance.release();
-        musicUnderWaterInstance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
         //reset ambience param 
         ambienceInstance.setParameterByName("AboveBelowWaterVol", 0);
+    }
+
+    public void PlayCreditsMusic()
+    {
+        StopAllMusic();
+        musicCreditsInstance = RuntimeManager.CreateInstance(musicCreditsRef);
+        musicCreditsInstance.start();
     }
 
     private void OnDisable()
@@ -50,6 +57,19 @@ public class MusicSoundController : MonoBehaviour
         ambienceInstance.release();
         musicUnderWaterInstance.release();
         musicTempleInstance.release();
+        musicCreditsInstance.release();
+    }
+    
+    private void StopAllMusic()
+    {
+        StopInstance(musicUnderWaterInstance);
+        StopInstance(musicTempleInstance);
+        StopInstance(musicCreditsInstance);
     }
 
+    private void StopInstance(EventInstance e)
+    {
+        e.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+        e.release();
+    }
 }

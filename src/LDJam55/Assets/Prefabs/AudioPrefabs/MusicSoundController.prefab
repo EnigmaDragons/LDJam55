@@ -66,6 +66,13 @@ MonoBehaviour:
       Data3: -983172420
       Data4: 1620864272
     Path: event:/MUSIC/UnderwaterTheme
+  musicCreditsRef:
+    Guid:
+      Data1: -1188641138
+      Data2: 1272232280
+      Data3: 483396753
+      Data4: 1102487299
+    Path: event:/MUSIC/VictoryMusicCredit
 --- !u!114 &5449350625437727486
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -80,3 +87,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   muteAll: 0
   musicVol: 0.5
+  maxVolume: 0.4
