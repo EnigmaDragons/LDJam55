@@ -6,6 +6,7 @@ public class SoundMixer : MonoBehaviour
 {
     public bool muteAll = false;
     public float musicVol = 0.5f;
+    public float maxVolume = 0.4f;
 
     private bool _isInitialized = false;
     
@@ -21,11 +22,6 @@ public class SoundMixer : MonoBehaviour
             if (!RuntimeManager.HaveMasterBanksLoaded)
                 return;
             
-          //  RuntimeManager.GetBus("bus:/MST_BUS/DX_MST").setVolume(PlayerPrefs.GetFloat("bus:/MST_BUS/DX_MST", 0.5f));
-           // RuntimeManager.GetBus("bus:/MST_BUS/ENV_MST").setVolume(PlayerPrefs.GetFloat("bus:/MST_BUS/ENV_MST", 0.5f));
-            //RuntimeManager.GetBus("bus:/MST_BUS/MUSIC_MST").setVolume(PlayerPrefs.GetFloat("bus:/MST_BUS/MUSIC_MST", 0.5f));
-            //RuntimeManager.GetBus("bus:/MST_BUS/SFX_MST").setVolume(PlayerPrefs.GetFloat("bus:/MST_BUS/SFX_MST", 0.5f));
-            //RuntimeManager.GetBus("bus:/MST_BUS").setVolume(PlayerPrefs.GetFloat("bus:/MST_BUS", 0.5f));
             _isInitialized = true;
         }
         catch (Exception e)
@@ -52,10 +48,10 @@ public class SoundMixer : MonoBehaviour
 
             if (!muteAll)
             {
-                RuntimeManager.GetBus("bus:/MST_BUS").setVolume(0.5f);
+                RuntimeManager.GetBus("bus:/MST_BUS").setVolume(maxVolume);
             }
 
-            musicVol = Mathf.Clamp(musicVol, 0f, 0.5f);
+            musicVol = Mathf.Clamp(musicVol, 0f, 0.3f);
             RuntimeManager.GetBus("bus:/MST_BUS/MUSIC_MST").setVolume(musicVol);
         }
         catch (Exception e)
