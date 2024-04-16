@@ -14861,7 +14861,7 @@ PrefabInstance:
     - target: {fileID: 37531266982936407, guid: 06842461889336547bbcf508d1bdb901,
         type: 3}
       propertyPath: signText
-      value: Did you really thiink we would just put the treasure here?
+      value: Did you really think we would just put the treasure here?
       objectReference: {fileID: 0}
     - target: {fileID: 237402133975985904, guid: 06842461889336547bbcf508d1bdb901,
         type: 3}
