@@ -4,14 +4,13 @@ using Input = UnityEngine.Input;
 using UnityEngine.Windows;
 #endif
 
-public class EzScreen : CrossSceneSingleInstance
+public class EzScreen : MonoBehaviour
 {
     [SerializeField] private string filename;
     
-    protected override string UniqueTag => "Screenshots";
     private static int _counter;
 
-    protected override void OnAwake()
+    protected void Awake()
     {
 #if UNITY_EDITOR_WIN
         while (File.Exists($"{filename}_{_counter}.png"))
