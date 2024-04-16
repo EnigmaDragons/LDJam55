@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7415291939644894906}
   - component: {fileID: 3374965049161321732}
+  - component: {fileID: 1498597814975499857}
   m_Layer: 0
   m_Name: SoundGuy
   m_TagString: Untagged
@@ -65,3 +66,18 @@ MonoBehaviour:
       Data3: -1408085595
       Data4: 443347313
     Path: event:/SFX/SummonClicks
+--- !u!114 &1498597814975499857
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7394648716139217544}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a3df9b096bcbd84a8f95dea9809a9d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  muteAll: 0
+  musicVol: 0.5
+  maxVolume: 0.6
