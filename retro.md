@@ -31,7 +31,7 @@ Retro Notes:
 - Andreas - Better boilerplate + Unity integration scene to test every animation and transition + make sure not to trash the UVs
 - Andreas - Will focus less exclusively on my own department and try to contribute more to the idea/design/visual departments
 - NOM - Look at building the FMOD sound file differently or investigate using Wwise instead. Having more chatswith the code team early in the game so they can put in hooks for sound rather than me hacking in to their code.
-- Getting more familiar with Unity and FMOD audio integration is a must
+- Amerigo - Getting more familiar with Unity and FMOD audio integration is a must
 
 4. What was your personal favorite part of the jam?
 - Gordy - Really enjoyed going to Isaac's house and hanging with the team!
@@ -41,7 +41,7 @@ Retro Notes:
 - Silas - The dungeon layout coming together at the 66 hours mark
 - Andreas - Getting to work with a team THAT professional
 - NOM - Great team leaders and direction, pro organisation, almost no gitpull heart palpatations...
-- Looking for underwater sounding samples/sounds and seeing the full game come together at the end
+- Amerigo - Looking for underwater sounding samples/sounds and seeing the full game come together at the end
 
 5. What is your favorite thing in the game?
 - Gordy - The main character model and animations are great! Magical!
