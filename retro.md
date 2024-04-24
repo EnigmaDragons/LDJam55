@@ -49,5 +49,5 @@ Retro Notes:
 - Ryan - The gorgeous environment art!
 - Andreas - The amount and the quality of stuff in the game!
 - NOM - Just seeing and hearing the sound with the gameplay! The fast water works so well!
-- Amerigo - I think the voiceover barks/taunts really add alot of flavor and bring the charachters/world to life. Great work!
+- Amerigo - I think the voiceover barks/taunts really add alot of flavor and bring the characters/world to life. Great work!
 
