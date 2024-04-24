@@ -19,7 +19,7 @@ Retro Notes:
 - Andreas - (Imho) We didnt predict the people not participaitng on monday and the ensuing velocity drop
 - Andreas - I felt lost at times about the art direction and my deliverables and with whom to discuss specific topics
 - NOM - FMOD caused issues with the web build. Not entirely clear that it was becuase of it or settings/filemanagement but it put spanners in the work.
-- Amerigo - Had I been familiar with FMOD I may have been able integrate more audio, adjust levels and dial in the audio a bit better overall
+- Amerigo - Had I been familiar with FMOD I may have been able integrate, adjust levels and dial in the audio a bit better overall
 
 3. What lessons can we take moving forward?
 - Gordy - If project manager is swamped with another role, delegate a lieutenant
